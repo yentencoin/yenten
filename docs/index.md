@@ -1,8 +1,18 @@
 ## Welcome to Yenten Coin
 
-You can use the [editor on GitHub](https://github.com/yentencoin/site/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Algorithm: YescryptR16 (GPU is slower than CPU) 
+Block time: 2.0 minutes 
+Max Block size: 2M 
+Block reward of block #1: 50 YTN 
+Total YTN: 84,000,000 YTN 
+SubsidyHalvingInterval: 800,000 blocks 
+Difficulty re-target: every block (DarkGravityWave v3-1) 
+Premine: none 
+P2P Port: 9981 
+RPC Port: 9982
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Miner:
+cpuminer-opt - [download](https://github.com/JayDDee/cpuminer-opt/releases)
 
 ### Markdown
 
