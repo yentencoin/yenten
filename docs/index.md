@@ -1,6 +1,6 @@
 ## Welcome to Yenten Coin
 
-![]({{site.baseurl}}/docs/aw_yenten.png)
+![]({{site.baseurl}}/aw_yenten.png)
 
 Algorithm: YescryptR16 (GPU is slower than CPU)
 
@@ -26,10 +26,10 @@ RPC Port: 9982
 
 cpuminer-opt - [download](https://github.com/JayDDee/cpuminer-opt/releases)
 
-![]({{site.baseurl}}/docs/yenten_countach.png)
+![]({{site.baseurl}}/yenten_countach.png)
 
 _Winter is coming soon_
-![]({{site.baseurl}}/docs/yentten.png)
+![]({{site.baseurl}}/yentten.png)
 
 ### Markdown
 
