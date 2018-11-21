@@ -1,5 +1,7 @@
 ## Welcome to Yenten Coin
 
+![]({{site.baseurl}}/docs/aw_yenten.png)
+
 Algorithm: YescryptR16 (GPU is slower than CPU)
 
 Block time: 2.0 minutes 
@@ -23,6 +25,11 @@ RPC Port: 9982
 **Miner:**
 
 cpuminer-opt - [download](https://github.com/JayDDee/cpuminer-opt/releases)
+
+![]({{site.baseurl}}/docs/yenten_countach.png)
+
+_Winter is coming soon_
+![]({{site.baseurl}}/docs/yentten.png)
 
 ### Markdown
 
