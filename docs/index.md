@@ -31,34 +31,59 @@ cpuminer-opt - [download](https://github.com/JayDDee/cpuminer-opt/releases)
 _Winter is coming soon_
 ![]({{site.baseurl}}/yentten.png)
 
-### Markdown
+### Links and other
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**Fast_yenten** - quick and easy installation of a wallet - [on github](https://github.com/bubasik/fast_yenten/releases) (tested)
 
-```markdown
-Syntax highlighted code block
+_Automatic installation Yenten wallet in folder c:\yenten with last blockchain. Fast run - 5 min._
 
-# Header 1
-## Header 2
-### Header 3
+**Bootstrap Yenten** (Download blockchain)
 
-- Bulleted
-- List
+https://yadi.sk/d/fr07uTN6jD2umA
 
-1. Numbered
-2. List
+http://yenten-pool.ml/blocks_yenten_last.zip (tested)
 
-**Bold** and _Italic_ and `Code` text
+**Sample miner bat file for mining Yenten coin:**
 
-[Link](url) and ![Image](src)
+```cpuminer-sse2.exe -a yescryptr16 -o stratum+tcp://cpu-pool.com:63368 -u WALLET_ADDRESS```
+
+**Yenten pools:**
+
+http://cpu-pool.com/
+
+https://ytn.firstpool.ru/
+
+http://cpumining.zapto.org/	
+
+http://yenten-pool.ml/
+
+**Yenten faucet:**
+
+http://yenten-pool.ml/faucet/
+
+**Block Exporers:**
+
+https://ytn.overemo.com/
+
+http://cpumining.zapto.org/explorer/YTN
+
+**Exchanges**
+
+https://trade.multicoins.org/market/MC-YNTN
+
+# Solo mining:
+create in data folder - file yenten.conf
+```
+rpcallow=127.0.0.1
+server=1
+daemon=1
+rpcuser=user
+rpcpassword=x
+port=9981
+rpcport=9982
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yentencoin/site/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+In bat file cpuminer-opt
+```
+cpuminer-aes-sse42.exe -a yescryptr16 -o http://127.0.0.1:9982 -u user -p x --coinbase-addr=WALLET_ADDRESS
+```
