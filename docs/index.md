@@ -2,25 +2,21 @@
 
 ![]({{site.baseurl}}/aw_yenten.png)
 
+Yenten is a cryptocurrency of the cpu, by the cpu, for the cpu.
+No ASIC mineable.
+
+```
 Algorithm: YescryptR16 (GPU is slower than CPU)
-
 Block time: 2.0 minutes 
-
 Max Block size: 2M 
-
 Block reward of block #1: 50 YTN 
-
 Total YTN: 84,000,000 YTN 
-
 SubsidyHalvingInterval: 800,000 blocks 
-
 Difficulty re-target: every block (DarkGravityWave v3-1) 
-
 Premine: none 
-
 P2P Port: 9981 
-
 RPC Port: 9982
+```
 
 **Miner:**
 
@@ -49,27 +45,27 @@ http://yenten-pool.ml/blocks_yenten_last.zip (tested)
 
 **Yenten pools:**
 
-http://cpu-pool.com/
+[http://cpu-pool.com/](http://cpu-pool.com/)
 
-https://ytn.firstpool.ru/
+[https://ytn.firstpool.ru/](https://ytn.firstpool.ru/)
 
-http://cpumining.zapto.org/	
+[http://cpumining.zapto.org/](http://cpumining.zapto.org/	)
 
-http://yenten-pool.ml/
+[http://yenten-pool.ml/](http://yenten-pool.ml/)
 
 **Yenten faucet:**
 
-http://yenten-pool.ml/faucet/
+[http://yenten-pool.ml/faucet/](http://yenten-pool.ml/faucet/)
 
 **Block Exporers:**
 
-https://ytn.overemo.com/
+[https://ytn.overemo.com/](https://ytn.overemo.com/)
 
-http://cpumining.zapto.org/explorer/YTN
+[http://cpumining.zapto.org/explorer/YTN](http://cpumining.zapto.org/explorer/YTN)
 
 **Exchanges**
 
-https://trade.multicoins.org/market/MC-YNTN
+[https://trade.multicoins.org/market/MC-YNTN](https://trade.multicoins.org/market/MC-YNTN)
 
 # Solo mining:
 create in data folder - file yenten.conf
