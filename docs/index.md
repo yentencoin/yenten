@@ -59,6 +59,8 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 [http://yenten-pool.ml/faucet/](http://yenten-pool.ml/faucet/)
 
+[http://shiganaiyenten.chocottokozukai.click/](http://shiganaiyenten.chocottokozukai.click/)
+
 **Block Exporers:**
 
 [https://ytn.overemo.com/](https://ytn.overemo.com/)
