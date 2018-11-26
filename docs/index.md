@@ -1,10 +1,12 @@
 ## Welcome to Yenten Coin
 
-![]({{site.baseurl}}/aw_yenten.png)
+![]({{site.baseurl}}/logo_top.png)
 
 Yenten is a cryptocurrency of the cpu, by the cpu, for the cpu.
 No ASIC mineable.
 
+
+**Technical specifications:**
 ```
 Algorithm: YescryptR16 (GPU is slower than CPU)
 Block time: 2.0 minutes 
@@ -35,9 +37,9 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 **Bootstrap Yenten** (Download blockchain)
 
-https://yadi.sk/d/fr07uTN6jD2umA
+[https://yadi.sk/d/fr07uTN6jD2umA](https://yadi.sk/d/fr07uTN6jD2umA)
 
-http://yenten-pool.ml/blocks_yenten_last.zip (tested)
+[http://yenten-pool.ml/blocks_yenten_last.zip](http://yenten-pool.ml/blocks_yenten_last.zip) (tested)
 
 **Sample miner bat file for mining Yenten coin:**
 
@@ -66,6 +68,14 @@ http://yenten-pool.ml/blocks_yenten_last.zip (tested)
 **Exchanges**
 
 [https://trade.multicoins.org/market/MC-YNTN](https://trade.multicoins.org/market/MC-YNTN)
+
+**Community links**
+
+[Yenten on Bitcointalk](https://bitcointalk.org/index.php?topic=2329470.0)
+
+[Yenten on Reddit](https://www.reddit.com/r/Yenten/)
+
+[Russian Forum](https://forum.bits.media/index.php?/topic/61231-ytn-cpu-mining-yenten-v131-yescryptr16/&)
 
 # Solo mining:
 create in data folder - file yenten.conf
