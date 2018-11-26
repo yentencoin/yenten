@@ -21,16 +21,16 @@ RPC Port: 9982
 ```
 
 ### Download Wallet:
-Version 3.0.0 win 64 bit - [https://github.com/yentencoin/yenten/releases/download/3.0.0/yenten_win64_3_0.zip](https://github.com/yentencoin/yenten/releases/download/3.0.0/yenten_win64_3_0.zip)
+Version 3.0.0 win 64 bit - [yenten_win64_3_0.zip](https://github.com/yentencoin/yenten/releases/download/3.0.0/yenten_win64_3_0.zip)
 
-Version 3.0.0 win 32 bit - [https://github.com/yentencoin/yenten/releases/download/3.0.0/yenten_win32_3_0.zip](https://github.com/yentencoin/yenten/releases/download/3.0.0/yenten_win32_3_0.zip)
+Version 3.0.0 win 32 bit - [yenten_win32_3_0.zip](https://github.com/yentencoin/yenten/releases/download/3.0.0/yenten_win32_3_0.zip)
 
-> Version 3.0.0 compatible with 1.3.1 with last qt and ssl and other libs.
+> _Version 3.0.0 compatible with 1.3.1 with last qt and ssl and other libs._
 
 
-Version 1.3.1 win 64 bit - [https://github.com/yentencoin/yenten/releases/download/1.3.1/yenten_1_3_1_win64.zip](https://github.com/yentencoin/yenten/releases/download/1.3.1/yenten_1_3_1_win64.zip)
+Version 1.3.1 win 64 bit - [yenten_1_3_1_win64.zip](https://github.com/yentencoin/yenten/releases/download/1.3.1/yenten_1_3_1_win64.zip)
 
-Version 1.3.1 win 32 bit - [https://github.com/yentencoin/yenten/releases/download/1.3.1/yenten_1_3_1_win32.zip](https://github.com/yentencoin/yenten/releases/download/1.3.1/yenten_1_3_1_win32.zip)
+Version 1.3.1 win 32 bit - [yenten_1_3_1_win32.zip](https://github.com/yentencoin/yenten/releases/download/1.3.1/yenten_1_3_1_win32.zip)
 
 **Miner:**
 
