@@ -68,7 +68,7 @@ public:
 
 //        vFixedSeeds.clear();
         vSeeds.clear();
-//        vSeeds.push_back(CDNSSeedData("yenten.org", "seed.yenten.org"));
+        vSeeds.push_back(CDNSSeedData("yentencoin.info", "seed-main.yentencoin.info"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,78);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,10);
