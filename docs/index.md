@@ -21,11 +21,11 @@ RPC Port: 9982
 ```
 
 ### Download Wallet:
-Version 3.0.0 win 64 bit - [yenten_win64_3_0.zip](https://github.com/yentencoin/yenten/releases/download/3.0.0/yenten_win64_3_0.zip)
+Version 3.0.2 win 64 bit - [yenten_win64_3_0_2.zip](https://github.com/yentencoin/yenten/releases/download/3.0.2/yenten_win64_3_0_2.zip)
 
-Version 3.0.0 win 32 bit - [yenten_win32_3_0.zip](https://github.com/yentencoin/yenten/releases/download/3.0.0/yenten_win32_3_0.zip)
+Version 3.0.2 win 32 bit - [yenten_win32_3_0_2.zip](https://github.com/yentencoin/yenten/releases/download/3.0.2/yenten_win32_3_0_2.zip)
 
-> _Version 3.0.0 compatible with 1.3.1 with last qt and ssl and other libs._
+> _Version 3.0.2 compatible with 1.3.1._
 
 
 Version 1.3.1 win 64 bit - [yenten_1_3_1_win64.zip](https://github.com/yentencoin/yenten/releases/download/1.3.1/yenten_1_3_1_win64.zip)
@@ -43,15 +43,13 @@ _Winter is coming soon_
 
 ### Links and other
 
-**Fast_yenten** - quick and easy installation of a wallet - [on github](https://github.com/bubasik/fast_yenten/releases) (tested)
+**Fast_yenten** - quick and easy installation of a wallet - [on github](https://github.com/bubasik/fast_yenten/releases)
 
 _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. Fast run - 5 min._
 
 **Bootstrap Yenten** (Download blockchain)
 
-[https://yadi.sk/d/fr07uTN6jD2umA](https://yadi.sk/d/fr07uTN6jD2umA)
-
-[http://yenten-pool.ml/blocks_yenten_last.zip](http://yenten-pool.ml/blocks_yenten_last.zip) (tested)
+[http://yenten-pool.ml/blocks_yenten_last.zip](http://yenten-pool.ml/blocks_yenten_last.zip)
 
 **Sample miner bat file for mining Yenten coin:**
 
@@ -81,7 +79,9 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 **Exchanges**
 
-[https://trade.multicoins.org/market/MC-YNTN](https://trade.multicoins.org/market/MC-YNTN)
+[https://trade.multicoins.org/market/MC-YNTN](https://trade.multicoins.org/market/MC-YNTN) MC pair
+
+[https://trade.multicoins.org/market/BTC-YNTN](https://trade.multicoins.org/market/BTC-YNTN) BTC pair
 
 **Community links**
 
