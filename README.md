@@ -1,7 +1,7 @@
 Yenten Core integration/staging tree
 =====================================
 
-https://conan-equal-newone.github.io/yenten/
+http://yentencoin.info/
 
 * Copyright (c) 2017-     Yenten Core Developers
 * Copyright (c) 2009-2017 Bitcoin Core Developers
@@ -27,7 +27,7 @@ Build yentend on Ubuntu 16.04
     sudo apt-get install libdb4.8-dev
     sudo apt-get install libdb4.8++-dev
     
-    git clone https://github.com/conan-equal-newone/yenten.git
+    git clone https://github.com/yentencoin/yenten.git
     cd yenten
     ./autogen.sh
     ./configure --enable-upnp-default --without-gui --disable-tests
