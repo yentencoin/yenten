@@ -79,6 +79,8 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 **Exchanges**
 
+[https://graviex.net/markets/ytnbtc](https://graviex.net/markets/ytnbtc) BTC pair
+
 [https://trade.multicoins.org/market/MC-YNTN](https://trade.multicoins.org/market/MC-YNTN) MC pair
 
 [https://trade.multicoins.org/market/BTC-YNTN](https://trade.multicoins.org/market/BTC-YNTN) BTC pair
@@ -90,6 +92,8 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 [Yenten on Reddit](https://www.reddit.com/r/Yenten/)
 
 [Russian Forum](https://forum.bits.media/index.php?/topic/61231-ytn-cpu-mining-yenten-v131-yescryptr16/&)
+
+[Discord channels](https://discord.gg/RTbPxu3)
 
 # Solo mining:
 create in data folder - file yenten.conf
