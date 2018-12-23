@@ -220,6 +220,7 @@ case $host in
      ;;
   *darwin*)
      TARGET_OS=darwin
+     CXXFLAGS="$CXXFLAGS -std=c++11"
      LEVELDB_TARGET_FLAGS="TARGET_OS=Darwin"
      if  test x$cross_compiling != xyes; then
        BUILD_OS=darwin
