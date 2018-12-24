@@ -25,6 +25,8 @@ Version 3.0.2 win 64 bit - [yenten_win64_3_0_2.zip](https://github.com/yentencoi
 
 Version 3.0.2 win 32 bit - [yenten_win32_3_0_2.zip](https://github.com/yentencoin/yenten/releases/download/3.0.2/yenten_win32_3_0_2.zip)
 
+Version 3.0.2 mac - [Yenten_3_0_2_Qt.dmg](https://github.com/yentencoin/yenten/releases/download/3.0.2/Yenten_3_0_2_Qt.dmg)
+
 > _Version 3.0.2 compatible with 1.3.1._
 
 
