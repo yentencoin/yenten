@@ -77,6 +77,8 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 [https://ytn.overemo.com/](https://ytn.overemo.com/)
 
+[http://explorer.yentencoin.info/](http://explorer.yentencoin.info/)
+
 [http://cpumining.zapto.org/explorer/YTN](http://cpumining.zapto.org/explorer/YTN)
 
 **Exchanges**
@@ -88,6 +90,8 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 [https://trade.multicoins.org/market/BTC-YNTN](https://trade.multicoins.org/market/BTC-YNTN) BTC pair
 
 **Community links**
+
+[Yenten forum](http://forum.yentencoin.info/)
 
 [Yenten on Bitcointalk](https://bitcointalk.org/index.php?topic=2329470.0)
 
@@ -113,3 +117,9 @@ In bat file cpuminer-opt
 ```
 cpuminer-aes-sse42.exe -a yescryptr16 -o http://127.0.0.1:9982 -u user -p x --coinbase-addr=WALLET_ADDRESS
 ```
+
+**Yenten donate address for developers team:**
+
+YXandTfYjFC7fuR8h9aRCo5ZwAz4tvbvDL (bubasik)
+
+YPf5UcG5gB1beJXK49h9aaycgg3H5SYSDW (ohashi3d)
