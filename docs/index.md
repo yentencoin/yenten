@@ -95,7 +95,7 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 [Yenten forum](http://forum.yentencoin.info/)
 
-[Yenten on Bitcointalk](https://bitcointalk.org/index.php?topic=2329470.0)
+[Yenten on Bitcointalk](https://bitcointalk.org/index.php?topic=5098631)
 
 [Yenten on Reddit](https://www.reddit.com/r/Yenten/)
 
