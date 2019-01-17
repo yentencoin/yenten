@@ -83,6 +83,8 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 **Exchanges**
 
+[https://crex24.com/ru/exchange/YTN-BTC](https://crex24.com/ru/exchange/YTN-BTC) BTC pair
+
 [https://graviex.net/markets/ytnbtc](https://graviex.net/markets/ytnbtc) BTC pair
 
 [https://trade.multicoins.org/market/MC-YNTN](https://trade.multicoins.org/market/MC-YNTN) MC pair
