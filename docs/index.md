@@ -135,7 +135,7 @@ cpuminer-aes-sse42.exe -a yescryptr16 -o http://127.0.0.1:9982 -u user -p x --co
 
 *This miner was created for beginners.*
 
-![screen](https://github.com/bubasik/yenten-gui-miner/blob/master/gui_miner_screen.png)
+![screen](https://raw.githubusercontent.com/bubasik/yenten-gui-miner/master/gui_miner_screen.png)
 
 
 ## Yenten donate address for developers team:
