@@ -51,7 +51,7 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 **Bootstrap Yenten** (Download blockchain)
 
-[http://yenten-pool.ml/blocks_yenten_last.zip](http://yenten-pool.ml/blocks_yenten_last.zip)
+[http://yenten-pool.info/blocks_yenten_last.zip](http://yenten-pool.info/blocks_yenten_last.zip)
 
 **Sample miner bat file for mining Yenten coin:**
 
@@ -65,11 +65,11 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 [http://cpumining.zapto.org/](http://cpumining.zapto.org/	)
 
-[http://yenten-pool.ml/](http://yenten-pool.ml/)
+[http://yenten-pool.info/](http://yenten-pool.info/)
 
 **Yenten faucet:**
 
-[http://yenten-pool.ml/faucet/](http://yenten-pool.ml/faucet/)
+[http://yenten-pool.info/faucet/](http://yenten-pool.info/faucet/)
 
 [http://shiganaiyenten.chocottokozukai.click/](http://shiganaiyenten.chocottokozukai.click/)
 
