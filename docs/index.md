@@ -99,6 +99,8 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 [Yenten on Reddit](https://www.reddit.com/r/Yenten/)
 
+[Yenten on Twitter](https://twitter.com/yentencoin/)
+
 [Russian Forum](https://forum.bits.media/index.php?/topic/61231-ytn-cpu-mining-yenten-v131-yescryptr16/&)
 
 [Discord channels](https://discord.gg/RTbPxu3)
