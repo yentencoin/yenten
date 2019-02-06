@@ -21,11 +21,13 @@ RPC Port: 9982
 ```
 
 ### Download Wallet:
-Version 3.0.0 win 64 bit - [yenten_win64_3_0.zip](https://github.com/yentencoin/yenten/releases/download/3.0.0/yenten_win64_3_0.zip)
+Version 3.0.2 win 64 bit - [yenten_win64_3_0_2.zip](https://github.com/yentencoin/yenten/releases/download/3.0.2/yenten_win64_3_0_2.zip)
 
-Version 3.0.0 win 32 bit - [yenten_win32_3_0.zip](https://github.com/yentencoin/yenten/releases/download/3.0.0/yenten_win32_3_0.zip)
+Version 3.0.2 win 32 bit - [yenten_win32_3_0_2.zip](https://github.com/yentencoin/yenten/releases/download/3.0.2/yenten_win32_3_0_2.zip)
 
-> _Version 3.0.0 compatible with 1.3.1 with last qt and ssl and other libs._
+Version 3.0.2 mac - [Yenten_3_0_2_Qt.dmg](https://github.com/yentencoin/yenten/releases/download/3.0.2/Yenten_3_0_2_Qt.dmg)
+
+> _Version 3.0.2 compatible with 1.3.1._
 
 
 Version 1.3.1 win 64 bit - [yenten_1_3_1_win64.zip](https://github.com/yentencoin/yenten/releases/download/1.3.1/yenten_1_3_1_win64.zip)
@@ -43,15 +45,13 @@ _Winter is coming soon_
 
 ### Links and other
 
-**Fast_yenten** - quick and easy installation of a wallet - [on github](https://github.com/bubasik/fast_yenten/releases) (tested)
+**Fast_yenten** - quick and easy installation of a wallet - [on github](https://github.com/bubasik/fast_yenten/releases)
 
 _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. Fast run - 5 min._
 
 **Bootstrap Yenten** (Download blockchain)
 
-[https://yadi.sk/d/fr07uTN6jD2umA](https://yadi.sk/d/fr07uTN6jD2umA)
-
-[http://yenten-pool.ml/blocks_yenten_last.zip](http://yenten-pool.ml/blocks_yenten_last.zip) (tested)
+[http://yenten-pool.info/blocks_yenten_last.zip](http://yenten-pool.info/blocks_yenten_last.zip)
 
 **Sample miner bat file for mining Yenten coin:**
 
@@ -65,11 +65,11 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 [http://cpumining.zapto.org/](http://cpumining.zapto.org/	)
 
-[http://yenten-pool.ml/](http://yenten-pool.ml/)
+[http://yenten-pool.info/](http://yenten-pool.info/)
 
 **Yenten faucet:**
 
-[http://yenten-pool.ml/faucet/](http://yenten-pool.ml/faucet/)
+[http://yenten-pool.info/faucet/](http://yenten-pool.info/faucet/)
 
 [http://shiganaiyenten.chocottokozukai.click/](http://shiganaiyenten.chocottokozukai.click/)
 
@@ -77,19 +77,33 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 [https://ytn.overemo.com/](https://ytn.overemo.com/)
 
+[http://explorer.yentencoin.info/](http://explorer.yentencoin.info/)
+
 [http://cpumining.zapto.org/explorer/YTN](http://cpumining.zapto.org/explorer/YTN)
 
 **Exchanges**
 
-[https://trade.multicoins.org/market/MC-YNTN](https://trade.multicoins.org/market/MC-YNTN)
+[https://crex24.com/ru/exchange/YTN-BTC](https://crex24.com/ru/exchange/YTN-BTC) BTC pair
+
+[https://graviex.net/markets/ytnbtc](https://graviex.net/markets/ytnbtc) BTC pair
+
+[https://trade.multicoins.org/market/MC-YNTN](https://trade.multicoins.org/market/MC-YNTN) MC pair
+
+[https://trade.multicoins.org/market/BTC-YNTN](https://trade.multicoins.org/market/BTC-YNTN) BTC pair
 
 **Community links**
 
-[Yenten on Bitcointalk](https://bitcointalk.org/index.php?topic=2329470.0)
+[Yenten forum](http://forum.yentencoin.info/)
+
+[Yenten on Bitcointalk](https://bitcointalk.org/index.php?topic=5098631)
 
 [Yenten on Reddit](https://www.reddit.com/r/Yenten/)
 
+[Yenten on Twitter](https://twitter.com/yentencoin/)
+
 [Russian Forum](https://forum.bits.media/index.php?/topic/61231-ytn-cpu-mining-yenten-v131-yescryptr16/&)
+
+[Discord channels](https://discord.gg/RTbPxu3)
 
 # Solo mining:
 create in data folder - file yenten.conf
@@ -107,3 +121,29 @@ In bat file cpuminer-opt
 ```
 cpuminer-aes-sse42.exe -a yescryptr16 -o http://127.0.0.1:9982 -u user -p x --coinbase-addr=WALLET_ADDRESS
 ```
+
+### Yenten GUI miner
+
+**Download** - [https://github.com/bubasik/yenten-gui-miner/releases](https://github.com/bubasik/yenten-gui-miner/releases)
+
+**Guide:**
+```
+1) Download Yenten GUI miner
+2) Unpack gui miner
+3) Run file "download_miner.bat" for download cpuminer-opt
+4) Run "Yenten_gui_miner.exe" to start GUI miner
+5) Fill in the fields and click button "start mining!".
+```
+
+**Virus test:** https://www.virustotal.com/ru/file/f0bede56a9b5d4786f52f6373fb8e3d524037f093cb988dae482d8df1c0abe76/analysis/
+
+*This miner was created for beginners.*
+
+![screen](https://raw.githubusercontent.com/bubasik/yenten-gui-miner/master/gui_miner_screen.png)
+
+
+## Yenten donate address for developers team:
+
+YXandTfYjFC7fuR8h9aRCo5ZwAz4tvbvDL (bubasik)
+
+YPf5UcG5gB1beJXK49h9aaycgg3H5SYSDW (ohashi3d)
