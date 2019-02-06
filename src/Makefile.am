@@ -20,6 +20,8 @@ if BUILD_BITCOIN_CLI
   bin_PROGRAMS += yenten-cli
 endif
 
+libbitcoin_common_a_CFLAGS = -fPIC
+
 SUBDIRS = . $(BUILD_QT) $(BUILD_TEST)
 DIST_SUBDIRS = . qt test
 .PHONY: FORCE
