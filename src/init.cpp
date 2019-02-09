@@ -133,12 +133,12 @@ void Shutdown()
             pblocktree->Flush();
         if (pcoinsTip)
             pcoinsTip->Flush();
-        if (yescryptCache)
-            yescryptCache->Flush();
+        if (yespowerCache)
+            yespowerCache->Flush();
         delete pcoinsTip; pcoinsTip = NULL;
         delete pcoinsdbview; pcoinsdbview = NULL;
         delete pblocktree; pblocktree = NULL;
-        delete yescryptCache; yescryptCache = NULL;
+        delete yespowerCache; yespowerCache = NULL;
     }
 #ifdef ENABLE_WALLET
     if (pwalletMain)
@@ -839,7 +839,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     nTotalCache -= nCoinDBCache;
     nCoinCacheSize = nTotalCache / 300; // coins in memory require around 300 bytes
     nTotalCache -= nCoinCacheSize;
-    size_t nBlockYescryptCache = nTotalCache;
+    size_t nBlockYespowerCache = nTotalCache;
 
     bool fLoaded = false;
     while (!fLoaded) {
@@ -855,12 +855,12 @@ bool AppInit2(boost::thread_group& threadGroup)
                 delete pcoinsTip;
                 delete pcoinsdbview;
                 delete pblocktree;
-                delete yescryptCache;
+                delete yespowerCache;
 
                 pblocktree = new CBlockTreeDB(nBlockTreeDBCache, false, fReindex);
                 pcoinsdbview = new CCoinsViewDB(nCoinDBCache, false, fReindex);
                 pcoinsTip = new CCoinsViewCache(*pcoinsdbview);
-                yescryptCache = new CBlockYescryptCache(nBlockYescryptCache, false, fReindex);
+                yespowerCache = new CBlockYespowerCache(nBlockYespowerCache, false, fReindex);
 
                 if (fReindex)
                     pblocktree->WriteReindexing(true);

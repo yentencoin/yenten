@@ -7,7 +7,7 @@
 
 #include "util.h"
 
-#include "yescryptcache.h"
+#include "yespowercache.h"
 
 std::string COutPoint::ToString() const
 {
@@ -214,21 +214,21 @@ uint64_t CTxOutCompressor::DecompressAmount(uint64_t x)
     return n;
 }
 
-extern "C" void yescrypt_hash(const char *input, char *output);
-extern CBlockYescryptCache *yescryptCache;
+extern "C" void yespower_hash(const char *input, char *output);
+extern CBlockYespowerCache *yespowerCache;
 
 uint256 CBlockHeader::GetHash() const
 {
     uint256 hash;
 
-    if (yescryptCache) {
+    if (yespowerCache) {
         uint256 orig_hash = SerializeHash(*this);
-        if (!yescryptCache->ReadHash(orig_hash, hash)) {
-            yescrypt_hash(BEGIN(nVersion), (char*)&hash);
-            yescryptCache->WriteHash(orig_hash, hash);
+        if (!yespowerCache->ReadHash(orig_hash, hash)) {
+            yespower_hash(BEGIN(nVersion), (char*)&hash);
+            yespowerCache->WriteHash(orig_hash, hash);
         }
     } else {
-        yescrypt_hash(BEGIN(nVersion), (char*)&hash);
+        yespower_hash(BEGIN(nVersion), (char*)&hash);
     }
 
     return hash;
@@ -237,7 +237,7 @@ uint256 CBlockHeader::GetHash() const
 uint256 CBlockHeader::GetHashNoCache() const
 {
     uint256 hash;
-    yescrypt_hash(BEGIN(nVersion), (char*)&hash);
+    yespower_hash(BEGIN(nVersion), (char*)&hash);
     return hash;
 }
 

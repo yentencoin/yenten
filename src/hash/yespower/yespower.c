@@ -1,5 +1,6 @@
 /*-
- * Copyright 2005,2007,2009 Colin Percival
+* Copyright 2019 Yenten team
+* Copyright 2018 Cryply team
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -23,40 +24,23 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $FreeBSD: src/lib/libmd/sha256.h,v 1.2 2006/01/17 15:35:56 phk Exp $
+ * This file was originally written by Cryply team as part of the Cryply
+ * coin.
+ * Modification yespower Cryply algo to yespower Yenten (yespowerr16 n=4096, r=16)
  */
+#include "yespower.h"
+#include "sysendian.h"
 
-#ifndef _SHA256_H_
-#define _SHA256_H_
+static const yespower_params_t v1 = {YESPOWER_0_5, 4096, 16, "Client Key", 10};
 
-#include <sys/types.h>
+static const yespower_params_t v2 = {YESPOWER_1_0, 4096, 16, NULL, 0};
 
-#include <stdint.h>
-
-typedef struct SHA256Context {
-	uint32_t state[8];
-	uint32_t count[2];
-	unsigned char buf[64];
-} SHA256_CTX;
-
-typedef struct HMAC_SHA256Context {
-	SHA256_CTX ictx;
-	SHA256_CTX octx;
-} HMAC_SHA256_CTX;
-
-static void	SHA256_Init(SHA256_CTX *);
-static void	SHA256_Update(SHA256_CTX *, const void *, size_t);
-static void	SHA256_Final(unsigned char [32], SHA256_CTX *);
-static void	HMAC_SHA256_Init(HMAC_SHA256_CTX *, const void *, size_t);
-static void	HMAC_SHA256_Update(HMAC_SHA256_CTX *, const void *, size_t);
-static void	HMAC_SHA256_Final(unsigned char [32], HMAC_SHA256_CTX *);
-
-/**
- * PBKDF2_SHA256(passwd, passwdlen, salt, saltlen, c, buf, dkLen):
- * Compute PBKDF2(passwd, salt, c, dkLen) using HMAC-SHA256 as the PRF, and
- * write the output to buf.  The value dkLen must be at most 32 * (2^32 - 1).
- */
-static void	PBKDF2_SHA256(const uint8_t *, size_t, const uint8_t *, size_t,
-    uint64_t, uint8_t *, size_t);
-
-#endif /* !_SHA256_H_ */
+int yespower_hash(const char *input, char *output)
+{
+    uint32_t time = le32dec(&input[68]);
+    if (time > 1553904000) {
+        return yespower_tls(input, 80, &v2, (yespower_binary_t *) output);
+    } else {
+        return yespower_tls(input, 80, &v1, (yespower_binary_t *) output);
+    }
+}
