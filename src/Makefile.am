@@ -71,7 +71,7 @@ BITCOIN_CORE_H = \
   version.h \
   walletdb.h \
   wallet.h \
-  yescryptcache.h
+  yespowercache.h
 
 JSON_H = \
   json/json_spirit.h \
@@ -127,18 +127,16 @@ libbitcoin_common_a_SOURCES = \
   chainparams.cpp \
   txdb.cpp \
   leveldbwrapper.cpp \
-  yescryptcache.cpp \
+  yespowercache.cpp \
   core.cpp \
   hash.cpp \
-  hash/yescrypt/yescrypt.h \
-  hash/yescrypt/yescrypt.c \
-  hash/yescrypt/sha256.h \
-  hash/yescrypt/sha256_c.h \
-  hash/yescrypt/yescrypt-best_c.h \
-  hash/yescrypt/sysendian.h \
-  hash/yescrypt/yescrypt-platform_c.h \
-  hash/yescrypt/yescrypt-opt_c.h \
-  hash/yescrypt/yescrypt-simd_c.h \
+  hash/yespower/yespower.h \
+  hash/yespower/yespower.c \
+  hash/yespower/sha256.h \
+  hash/yespower/sha256.c \
+  hash/yespower/sysendian.h \
+  hash/yespower/yespower-platform_c.h \
+  hash/yespower/yespower-opt.c \
   key.cpp \
   netbase.cpp \
   protocol.cpp \
@@ -218,7 +216,7 @@ clean-local:
 	rm -f leveldb/*/*.gcno leveldb/helpers/memenv/*.gcno
 
 if TARGET_DARWIN
-hash/yescrypt/yescrypt.o: CFLAGS += -O3 -msse4.1 -funroll-loops -fomit-frame-pointer
+hash/yespower/yespower.o: CFLAGS += -O3 -msse4.1 -funroll-loops -fomit-frame-pointer
 else
-hash/yescrypt/yescrypt.o: CFLAGS += -msse4.1 -fPIC
+hash/yespower/yespower.o: CFLAGS += -msse4.1 -fPIC
 endif
