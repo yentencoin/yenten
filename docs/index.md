@@ -21,27 +21,19 @@ RPC Port: 9982
 ```
 
 ### Download Wallet:
-Version 3.0.2 win 64 bit - [yenten_win64_3_0_2.zip](https://github.com/yentencoin/yenten/releases/download/3.0.2/yenten_win64_3_0_2.zip)
+Version 3.1.0 win 64 bit - [yenten_win64_3_1_0.zip](https://github.com/yentencoin/yenten/releases/download/3.1.0/yenten_win64_3_1_0.zip)
 
-Version 3.0.2 win 32 bit - [yenten_win32_3_0_2.zip](https://github.com/yentencoin/yenten/releases/download/3.0.2/yenten_win32_3_0_2.zip)
+Version 3.1.0 win 32 bit - [yenten_win32_3_1_0.zip](https://github.com/yentencoin/yenten/releases/download/3.1.0/yenten_win32_3_1_0.zip)
 
-Version 3.0.2 mac - [Yenten_3_0_2_Qt.dmg](https://github.com/yentencoin/yenten/releases/download/3.0.2/Yenten_3_0_2_Qt.dmg)
+Version 3.1.0 mac - [Yenten_3_1_0_Qt.dmg](https://github.com/yentencoin/yenten/releases/download/3.1.0/Yenten_3_1_0_Qt.dmg)
 
-> _Version 3.0.2 compatible with 1.3.1._
-
-
-Version 1.3.1 win 64 bit - [yenten_1_3_1_win64.zip](https://github.com/yentencoin/yenten/releases/download/1.3.1/yenten_1_3_1_win64.zip)
-
-Version 1.3.1 win 32 bit - [yenten_1_3_1_win32.zip](https://github.com/yentencoin/yenten/releases/download/1.3.1/yenten_1_3_1_win32.zip)
+> _Version 3.1.0 - Changes algorithm to YespowerR16 (Yespower-1.0, N=4096, r=16) - on and after 30 March, 2019 (UTC; unixtime:1553904000)._
 
 **Miner:**
 
 cpuminer-opt - [download](https://github.com/JayDDee/cpuminer-opt/releases)
 
 ![]({{site.baseurl}}/yenten_countach.png)
-
-_Winter is coming soon_
-![]({{site.baseurl}}/yentten.png)
 
 ### Links and other
 
