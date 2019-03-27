@@ -33,6 +33,26 @@ Build yentend on Ubuntu 16.04
     ./configure --enable-upnp-default --without-gui --disable-tests
     make
 
+Build yentend on Ubuntu 18.04.2 LTS
+-------------------
+
+    sudo apt-get update && sudo apt-get -y upgrade
+    sudo apt-get install build-essential
+    sudo apt-get install libtool autotools-dev autoconf
+    sudo apt-get install libminiupnpc10
+    sudo apt-get install libssl1.0-dev
+    sudo apt-get install libboost1.65-all-dev
+    sudo add-apt-repository ppa:bitcoin/bitcoin
+    sudo apt-get update
+    sudo apt-get install libdb4.8-dev
+    sudo apt-get install libdb4.8++-dev
+
+    git clone https://github.com/yentencoin/yenten.git
+    cd yenten
+    ./autogen.sh
+    CXXFLAGS= -O3 ./configure --enable-upnp-default --without-gui --disable-tests
+    make
+
 Development tips and tricks
 ---------------------------
 
