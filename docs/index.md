@@ -8,7 +8,7 @@ No ASIC mineable.
 
 **Technical specifications:**
 ```
-Algorithm: YescryptR16 (GPU is slower than CPU)
+Algorithm: YescpowerR16 (GPU is slower than CPU)
 Block time: 2.0 minutes 
 Max Block size: 2M 
 Block reward of block #1: 50 YTN 
@@ -31,7 +31,7 @@ Version 3.1.0 mac - [Yenten_3_1_0_Qt.dmg](https://github.com/yentencoin/yenten/r
 
 **Miner:**
 
-cpuminer-opt - [download](https://github.com/JayDDee/cpuminer-opt/releases)
+cpuminer-opt-ytn - [download](https://github.com/bubasik/cpuminer-opt-yespower/releases)
 
 ![]({{site.baseurl}}/yenten_countach.png)
 
@@ -47,7 +47,7 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 **Sample miner bat file for mining Yenten coin:**
 
-```cpuminer-sse2.exe -a yescryptr16 -o stratum+tcp://cpu-pool.com:63368 -u WALLET_ADDRESS```
+```cpuminer-sse2.exe -a yespowerr16 -o stratum+tcp://cpu-pool.com:63368 -u WALLET_ADDRESS```
 
 **Yenten pools:**
 
@@ -109,9 +109,9 @@ port=9981
 rpcport=9982
 ```
 
-In bat file cpuminer-opt
+In bat file cpuminer-opt-ytn
 ```
-cpuminer-aes-sse42.exe -a yescryptr16 -o http://127.0.0.1:9982 -u user -p x --coinbase-addr=WALLET_ADDRESS
+cpuminer-aes-sse42.exe -a yespowerr16 -o http://127.0.0.1:9982 -u user -p x --coinbase-addr=WALLET_ADDRESS
 ```
 
 ### Yenten GUI miner
