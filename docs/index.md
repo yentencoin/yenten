@@ -8,7 +8,7 @@ No ASIC mineable.
 
 **Technical specifications:**
 ```
-Algorithm: YescpowerR16 (GPU is slower than CPU)
+Algorithm: YespowerR16 (GPU is slower than CPU)
 Block time: 2.0 minutes 
 Max Block size: 2M 
 Block reward of block #1: 50 YTN 
