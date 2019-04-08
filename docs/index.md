@@ -83,6 +83,8 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 [https://trade.multicoins.org/market/BTC-YNTN](https://trade.multicoins.org/market/BTC-YNTN) BTC pair
 
+[https://tradesatoshi.com/Exchange?market=YTN_BTC](https://tradesatoshi.com/Exchange?market=YTN_BTC) BTC pair
+
 **Community links**
 
 [Yenten forum](http://forum.yentencoin.info/)
