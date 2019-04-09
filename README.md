@@ -50,7 +50,7 @@ Build yentend on Ubuntu 18.04.2 LTS
     git clone https://github.com/yentencoin/yenten.git
     cd yenten
     ./autogen.sh
-    CXXFLAGS= -O3 ./configure --enable-upnp-default --without-gui --disable-tests
+    CXXFLAGS=-O3 ./configure --enable-upnp-default --without-gui --disable-tests
     make
 
 Development tips and tricks
