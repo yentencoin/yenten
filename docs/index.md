@@ -71,6 +71,10 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 [https://thepool.life/](https://thepool.life/)
 
+*New POOLs*
+
+[https://coinstop.me/](https://coinstop.me/)
+
 **Yenten faucet:**
 
 [http://yenten-pool.info/faucet/](http://yenten-pool.info/faucet/)
