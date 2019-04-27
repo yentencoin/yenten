@@ -55,21 +55,21 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 *Diff 0.01 - for low CPU*
 
-https://mccl.pw/ 
+[https://mccl.pw/](https://mccl.pw/)
 
-https://nosuchpool.cloud/ 
+[https://nosuchpool.cloud/](https://nosuchpool.cloud/)
 
-https://nlpool.nl/ 
+[https://nlpool.nl/](https://nlpool.nl/)
 
 *Diff 1 - for fast CPU*
 
-https://pool.sonox.io/ 
+[https://pool.sonox.io/](https://pool.sonox.io/)
 
-http://trossmining.zapto.org/ 
+[http://trossmining.zapto.org/](http://trossmining.zapto.org/)
 
-http://antminepool.com/ 
+[http://antminepool.com/](http://antminepool.com/)
 
-https://thepool.life/
+[https://thepool.life/](https://thepool.life/)
 
 **Yenten faucet:**
 
