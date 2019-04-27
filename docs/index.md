@@ -99,6 +99,8 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 [Discord channels](https://discord.gg/RTbPxu3)
 
+[Telegram russian](https://t.co/4rFhSIYt2P)
+
 # Solo mining:
 create in data folder - file yenten.conf
 ```
