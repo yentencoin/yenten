@@ -156,4 +156,12 @@ cpuminer-aes-sse42.exe -a yespowerr16 -o http://127.0.0.1:9982 -u user -p x --co
 
 ## Yenten donate address for developers team:
 
-YXandTfYjFC7fuR8h9aRCo5ZwAz4tvbvDL
+YTN: YXandTfYjFC7fuR8h9aRCo5ZwAz4tvbvDL
+
+BTC: 18pfmpfDCJvGPBaJtESV5sVMkHsySBcNnE
+
+LTC: LKsNumb4z6jKjMkeNTfjskSgsLgCyvRUkM
+
+BCH: 112h82XJSemZSonWh7GnSvNJZ9oJab77Rx
+
+Doge: DQJQhP5FjcoMMfk5CcfVWKaoqme8quch8A
