@@ -130,6 +130,8 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 [powered by coinpaprika.com](https://coinpaprika.com/coin/ytn-yenten/)
 
+[powered by advfn.com](https://www.advfn.com/crypto/YENTEN-YTN/)
+
 **Community links**
 
 [Yenten forum](http://forum.yentencoin.info/)
