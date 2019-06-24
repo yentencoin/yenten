@@ -8,6 +8,7 @@ No ASIC mineable.
 > Our coin has fast transactions, the wallet takes up little RAM and is not picky about server resources. Mining is available to everyone - 
 
 Yenten can be mined on a home computer and on a server. Friendly for beginners.
+
 **Our motto: Mining on the processor - mining in every home.**
 
 The coin has a very large community - all over the world. Support for the project is carried out completely by the community. The coin has a great future. 
