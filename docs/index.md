@@ -5,9 +5,7 @@
 Yenten is a cryptocurrency of the cpu, by the cpu, for the cpu.
 No ASIC mineable.
 
-> Our coin has fast transactions, the wallet takes up little RAM and is not picky about server resources. Mining is available to everyone - 
-
-Yenten can be mined on a home computer and on a server. Friendly for beginners.
+> Our coin has fast transactions, the wallet takes up little RAM and is not picky about server resources. Mining is available to everyone - Yenten can be mined on a home computer and on a server. Friendly for beginners.
 
 **Our motto: Mining on the processor - mining in every home.**
 
