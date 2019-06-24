@@ -23,7 +23,7 @@ RPC Port: 9982
 ### Download Wallet:
 Version 3.1.0 win 64 bit - [yenten_win64_3_1_0.zip](https://github.com/yentencoin/yenten/releases/download/3.1.0/yenten_win64_3_1_0.zip)
 
-Version 3.1.0 UPnP win 64 bit - [yenten_win64_3_1_0_upnp.zip] (https://github.com/yentencoin/yenten/releases/download/3.1.0/yenten_win64_3_1_0_upnp.zip)
+Version 3.1.0 UPnP win 64 bit - [yenten_win64_3_1_0_upnp.zip](https://github.com/yentencoin/yenten/releases/download/3.1.0/yenten_win64_3_1_0_upnp.zip)
 
 Version 3.1.0 win 32 bit - [yenten_win32_3_1_0.zip](https://github.com/yentencoin/yenten/releases/download/3.1.0/yenten_win32_3_1_0.zip)
 
