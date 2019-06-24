@@ -23,6 +23,8 @@ RPC Port: 9982
 ### Download Wallet:
 Version 3.1.0 win 64 bit - [yenten_win64_3_1_0.zip](https://github.com/yentencoin/yenten/releases/download/3.1.0/yenten_win64_3_1_0.zip)
 
+Version 3.1.0 UPnP win 64 bit - [yenten_win64_3_1_0_upnp.zip] (https://github.com/yentencoin/yenten/releases/download/3.1.0/yenten_win64_3_1_0_upnp.zip)
+
 Version 3.1.0 win 32 bit - [yenten_win32_3_1_0.zip](https://github.com/yentencoin/yenten/releases/download/3.1.0/yenten_win32_3_1_0.zip)
 
 Version 3.1.0 mac - [Yenten_3_1_0_Qt.dmg](https://github.com/yentencoin/yenten/releases/download/3.1.0/Yenten_3_1_0_Qt.dmg)
@@ -71,9 +73,11 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 [https://thepool.life/](https://thepool.life/)
 
-*New POOLs*
+*All pools*
 
-[https://coinstop.me/](https://coinstop.me/)
+[miningpoolstats](https://miningpoolstats.stream/yenten)
+
+[poolexplorer](https://poolexplorer.com/coins?term=YTN)
 
 **Yenten faucet:**
 
@@ -89,6 +93,8 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 [http://cpumining.zapto.org/explorer/YTN](http://cpumining.zapto.org/explorer/YTN)
 
+[Info+explorer](http://spbird.mydns.jp/myexplorer2/myexplorer2.php?timezone=2&coingroupno=20)
+
 **Exchanges**
 
 [https://crex24.com/ru/exchange/YTN-BTC](https://crex24.com/ru/exchange/YTN-BTC) BTC pair
@@ -100,6 +106,18 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 [https://trade.multicoins.org/market/BTC-YNTN](https://trade.multicoins.org/market/BTC-YNTN) BTC pair
 
 [https://tradesatoshi.com/Exchange?market=YTN_BTC](https://tradesatoshi.com/Exchange?market=YTN_BTC) BTC pair
+
+**Market Capitalizations**
+
+[powered by coincodex.com](https://coincodex.com/crypto/yenten/)
+
+[powered by coingecko.com](https://www.coingecko.com/en/price_charts/yenten/usd)
+
+[powered by coinmarketcap.com](https://coinmarketcap.com/currencies/yenten/)
+
+[powered by worldcoinindex.com](https://www.worldcoinindex.com/coin/yenten/)
+
+[powered by coinpaprika.com](https://coinpaprika.com/coin/ytn-yenten/)
 
 **Community links**
 
