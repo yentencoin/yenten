@@ -52,6 +52,39 @@ Build yentend on Ubuntu 18.04.2 LTS
     ./autogen.sh
     CXXFLAGS=-O3 ./configure --enable-upnp-default --without-gui --disable-tests
     make
+    
+Build yenten GUI on Ubuntu 19.04
+-------------------
+
+    sudo apt-get update && sudo apt-get -y upgrade
+    sudo apt-get install build-essential
+    sudo apt-get install libtool autotools-dev autoconf
+    sudo apt-get install libminiupnpc-dev
+    sudo apt-get install libboost1.65-all-dev
+    sudo apt-get install pkg-config libprotobuf-dev protobuf-compiler git
+    sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev
+    
+    git clone https://github.com/yentencoin/yenten.git
+    cd yenten
+    sed -i 's/fPIE/fPIC/g' configure.ac
+    
+    wget http://mirrors.kernel.org/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb
+    sudo dpkg -i libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb
+    wget http://mirrors.kernel.org/ubuntu/pool/main/o/openssl1.0/libssl1.0-dev_1.0.2n-1ubuntu6.2_amd64.deb
+    sudo dpkg -i libssl1.0-dev_1.0.2n-1ubuntu6.2_amd64.deb
+    
+    wget https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin/+build/12096244/+files/libdb4.8_4.8.30-xenial4_amd64.deb
+    sudo dpkg -i libdb4.8_4.8.30-xenial4_amd64.deb
+    wget https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin/+build/12096244/+files/libdb4.8-dev_4.8.30-xenial4_amd64.deb
+    sudo dpkg -i libdb4.8-dev_4.8.30-xenial4_amd64.deb
+    wget https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin/+build/12096244/+files/libdb4.8++_4.8.30-xenial4_amd64.deb
+    sudo dpkg -i libdb4.8++_4.8.30-xenial4_amd64.deb
+    wget https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin/+build/12096244/+files/libdb4.8++-dev_4.8.30-xenial4_amd64.deb
+    sudo dpkg -i libdb4.8++-dev_4.8.30-xenial4_amd64.deb
+    
+    ./autogen.sh
+    CXXFLAGS=-O2 ./configure --enable-upnp-default --with-gui=qt5 --disable-tests
+    make
 
 Development tips and tricks
 ---------------------------
