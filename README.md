@@ -53,7 +53,7 @@ Build yentend on Ubuntu 18.04.2 LTS
     CXXFLAGS=-O3 ./configure --enable-upnp-default --without-gui --disable-tests
     make
     
-Build yenten GUI on Ubuntu 19.04
+Build yenten-qt GUI on Ubuntu 19.04
 -------------------
 
     sudo apt-get update && sudo apt-get -y upgrade
