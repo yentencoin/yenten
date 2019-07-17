@@ -118,6 +118,8 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 [https://tradesatoshi.com/Exchange?market=YTN_BTC](https://tradesatoshi.com/Exchange?market=YTN_BTC) BTC pair
 
+[https://globecryptotrade.com/trading/ytnbtc](https://globecryptotrade.com/trading/ytnbtc) BTC pair
+
 **Market Capitalizations**
 
 [powered by coincodex.com](https://coincodex.com/crypto/yenten/)
