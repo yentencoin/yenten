@@ -84,7 +84,7 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 [https://thepool.life/](https://thepool.life/)
 
-*All pools*
+*All pools list*
 
 [miningpoolstats](https://miningpoolstats.stream/yenten)
 
@@ -119,6 +119,16 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 [https://tradesatoshi.com/Exchange?market=YTN_BTC](https://tradesatoshi.com/Exchange?market=YTN_BTC) BTC pair
 
 [https://globecryptotrade.com/trading/ytnbtc](https://globecryptotrade.com/trading/ytnbtc) BTC pair
+
+[https://satoshishift.com/trading/ytnbtc](https://satoshishift.com/trading/ytnbtc) BTC pair
+
+[https://www.unnamed.exchange/Exchange?market=YTN_BTC](https://www.unnamed.exchange/Exchange?market=YTN_BTC) BTC pair
+
+[https://altmarkets.io/trading/ytnbtc](https://altmarkets.io/trading/ytnbtc) BTC pair
+
+[https://altmarkets.io/trading/ytndoge](https://altmarkets.io/trading/ytndoge) DOGE pair
+
+[https://cryptohubexchange.com/market/YTN/](https://cryptohubexchange.com/market/YTN/) BTC pair
 
 **Market Capitalizations**
 
