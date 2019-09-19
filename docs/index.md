@@ -56,7 +56,7 @@ _Automatic installation Yenten wallet in folder c:\yenten with last blockchain. 
 
 **Bootstrap Yenten** (Download blockchain)
 
-[http://yenten-pool.info/blocks_yenten_last.zip](http://yenten-pool.info/faucet/blocks_yenten_last.zip)
+[http://yenten-pool.info/faucet/blocks_yenten_last.zip](http://yenten-pool.info/faucet/blocks_yenten_last.zip)
 
 **Sample miner bat file for mining Yenten coin:**
 
