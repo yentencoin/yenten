@@ -117,7 +117,7 @@
     <!-- end of header -->
 
 
-    <!-- Customers -->
+    <!-- Exchanges -->
     <div class="slider-1">
         <div class="container">
             <div class="row">
@@ -167,7 +167,7 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of slider-1 -->
-    <!-- end of customers -->
+    <!-- end of exchanges -->
 
 
     <!-- Services -->
@@ -219,7 +219,7 @@
     <!-- end of services -->
 
 
-    <!-- Details 1 -->
+    <!-- Wallet Windows -->
     <div id="wallet" class="basic-1">
         <div class="container">
             <div class="row">
@@ -238,10 +238,10 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-1 -->
-    <!-- end of details 1 -->
+    <!-- end of wallet windows -->
 
     
-    <!-- Details 2 -->
+    <!-- Wallet OSX -->
     <div class="basic-2">
         <div class="container">
             <div class="row">
@@ -273,10 +273,30 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-2 -->
-    <!-- end of details 2 -->
+    <!-- end of wallet osx -->
+    <!-- Wallet Linux -->
+    <div id="wallet" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Download Wallet: Ubuntu</h2>
+                        <p>Yenten is a cryptocurrency of the cpu, by the cpu, for the cpu. No ASIC mineable.</p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-3">READ</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/details-3-office-team-work.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of wallet linux -->
 
     <!-- Details Lightboxes -->
-    <!-- Details Lightbox 1 -->
+    <!-- Details Wallet Windows -->
 	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="container">
             <div class="row">
@@ -308,9 +328,9 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of lightbox-basic -->
-    <!-- end of details lightbox 1 -->
+    <!-- end of details wallet windows -->
 
-    <!-- Details Lightbox 2 -->
+    <!-- Details Wallet OSX -->
 	<div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="container">
             <div class="row">
@@ -341,9 +361,66 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of lightbox-basic -->
-    <!-- end of details lightbox 2 -->
+    <!-- end of details wallet osx -->
     <!-- end of details lightboxes -->
 
+    <!-- Details Wallet Ubuntu -->
+	<div id="details-lightbox-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="container">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                   <!--     <img class="img-fluid" src="images/details-lightbox-2.svg" alt="alternative"> -->
+                     <h3>Howto install Yenten Wallet in Linux</h3>
+                    <hr>
+                    <h5>Build yentend on Ubuntu 16.04</h5>
+                    <p>sudo apt-get install build-essential<br />sudo apt-get install libtool autotools-dev autoconf<br />sudo apt-get install libssl-dev<br />sudo apt-get install libboost-all-dev<br />sudo apt-get install pkg-config<br />sudo add-apt-repository ppa:bitcoin/bitcoin<br />sudo apt-get update<br />sudo apt-get install libdb4.8-dev<br />sudo apt-get install libdb4.8++-dev</p>
+                    <p>git clone https://github.com/yentencoin/yenten.git<br />cd yenten<br />./autogen.sh<br />./configure --enable-upnp-default --without-gui --disable-tests<br />make</p>
+                    <h5>Build yentend on Ubuntu 18.04.2 LTS</h5>
+                    <p>sudo apt-get update && sudo apt-get -y upgrade<br />sudo apt-get install build-essential<br />sudo apt-get install libtool autotools-dev autoconf<br />sudo apt-get install libminiupnpc10<br />sudo apt-get install libssl1.0-dev<br />sudo apt-get install libboost1.65-all-dev<br />sudo add-apt-repository ppa:bitcoin/bitcoin<br />sudo apt-get update<br />sudo apt-get install libdb4.8-dev<br />sudo apt-get install libdb4.8++-dev<br /></p>
+                    <p>git clone https://github.com/yentencoin/yenten.git<br />cd yenten<br />./autogen.sh<br />CXXFLAGS=-O3 ./configure --enable-upnp-default --without-gui --disable-tests<br />make</p>
+                    <h5>Build yenten-qt GUI on Ubuntu 19.04</h5>
+                    <p>sudo apt-get update && sudo apt-get -y upgrade<br />sudo apt-get install build-essential<br />sudo apt-get install libtool autotools-dev autoconf<br />sudo apt-get install libminiupnpc-dev<br />sudo apt-get install libboost1.65-all-dev<br />sudo apt-get install pkg-config libprotobuf-dev protobuf-compiler git<br />sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev</p>
+                    <p>git clone https://github.com/yentencoin/yenten.git<br />cd yenten<br />sed -i 's/fPIE/fPIC/g' configure.ac</p>
+                   <p>wget http://mirrors.kernel.org/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb<br />sudo dpkg -i libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb<br />wget http://mirrors.kernel.org/ubuntu/pool/main/o/openssl1.0/libssl1.0-dev_1.0.2n-1ubuntu6.2_amd64.deb<br />sudo dpkg -i libssl1.0-dev_1.0.2n-1ubuntu6.2_amd64.deb<br /></p>
+                   <p>wget https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin/+build/12096244/+files/libdb4.8_4.8.30-xenial4_amd64.deb<br />sudo dpkg -i libdb4.8_4.8.30-xenial4_amd64.deb<br />wget https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin/+build/12096244/+files/libdb4.8-dev_4.8.30-xenial4_amd64.deb<br />sudo dpkg -i libdb4.8-dev_4.8.30-xenial4_amd64.deb<br />wget https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin/+build/12096244/+files/libdb4.8++_4.8.30-xenial4_amd64.deb<br />sudo dpkg -i libdb4.8++_4.8.30-xenial4_amd64.deb<br />wget https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin/+build/12096244/+files/libdb4.8++-dev_4.8.30-xenial4_amd64.deb<br />sudo dpkg -i libdb4.8++-dev_4.8.30-xenial4_amd64.deb</p>
+                    <p>./autogen.sh<br />CXXFLAGS=-O2 ./configure --enable-upnp-default --with-gui=qt5 --disable-tests<br />make</p>
+                    <h3>Development tips and tricks</h3>
+                    <hr>
+                    <h5>Compiling for debugging</h5>
+                    <p>Run configure with the --enable-debug option, then make. Or run configure with CXXFLAGS="-g -ggdb -O0" or whatever debug flags you need.</p>
+                    <h5>debug.log</h5>
+                    <p>If the code is behaving strangely, take a look in the debug.log file in the data directory; error and debugging message are written there. The -debug=... command-line option controls debugging; running with just -debug will turn on all categories (and give you a very large debug.log file). The Qt code routes qDebug() output to debug.log under category "qt": run with -debug=qt to see it.</p>
+                    <h5>Testnet and regtest modes</h5>
+                    <p>Run with the -testnet option to run with "play bitcoins" on the test network, if you are testing multi-machine code that needs to operate across the internet. If you are testing something that can run on one machine, run with the -regtest option. In regression test mode blocks can be created on-demand; see qa/rpc-tests/ for tests that run in -regest mode.</p>                    
+                     <h5>DEBUG_LOCKORDER</h5>
+                    <p>Bitcoin Core is a multithreaded application, and deadlocks or other multithreading bugs can be very difficult to track down. Compiling with -DDEBUG_LOCKORDER (configure CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time checks to keep track of what locks are held, and adds warning to the debug.log file if inconsistencies are detected.</p>
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Linux Ubuntu</h3>
+                    <hr>
+                    <h5>Wallet</h5>
+                    <p>If your wallet stops (out of memory, etc.) syncing block data after header syncing, try block data below.</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body"><a href="http://yenten-pool.info/faucet/blocks_yenten_last.zip" target="_blank">Download block data.</a></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Extract data in Application Directory</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Restart Application</div>
+                        </li>
+                    </ul>
+                    <a class="btn-solid-reg mfp-close page-scroll"  <a class="btn-solid-reg mfp-close page-scroll" href="https://github.com/yentencoin/yenten/releases/" target="_blank">ALL RELEASES</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details wallet ubuntu -->
+    <!-- end of details lightboxes -->
 
     <!-- Miner -->
     <div id="pricing" class="cards-2">
@@ -357,16 +434,12 @@
             <div class="row">
                 <div class="col-lg-12">
 
-                    <!-- Card-->
+                    <!-- windows console-->
                     <div class="card">
                         <div class="card-body">
                             <div class="card-title">Windows</div>
                             <div class="card-subtitle">Windows 64 bit cosole miner</div>
                             <hr class="cell-divide-hr">
-                            <!--<div class="price">
-                                <span class="currency">$</span><span class="value">199</span>
-                                <div class="frequency">monthly</div>
-                            </div>-->
                             <hr class="cell-divide-hr">
                             <ul class="list-unstyled li-space-lg">
                                 <li class="media">
@@ -384,9 +457,9 @@
                             </div>
                         </div>
                     </div> <!-- end of card -->
-                    <!-- end of card -->
+                    <!-- end of windows console -->
 
-                    <!-- Card-->
+                    <!-- windows gui-->
                     <div class="card">
                         <div class="label">
                             <p class="best-value">GUI</p>
@@ -395,10 +468,6 @@
                             <div class="card-title">Windows</div>
                             <div class="card-subtitle">Windows 64 bit GUI miner</div>
                             <hr class="cell-divide-hr">
-                            <!--<div class="price">
-                                <span class="currency">$</span><span class="value">299</span>
-                                <div class="frequency">monthly</div>
-                            </div>-->
                             <hr class="cell-divide-hr">
                             <ul class="list-unstyled li-space-lg">
                                 <li class="media">
@@ -428,18 +497,14 @@
                             </div>
                         </div>
                     </div> <!-- end of card -->
-                    <!-- end of card -->
+                    <!-- end of windows gui -->
 
-                    <!-- Card-->
+                    <!-- Linux-->
                     <div class="card">
                         <div class="card-body">
                             <div class="card-title">Linux</div>
                             <div class="card-subtitle">Linux console miner</div>
                             <hr class="cell-divide-hr">
-                            <!--<div class="price">
-                                <span class="currency">$</span><span class="value">399</span>
-                                <div class="frequency">monthly</div>
-                            </div>-->
                             <hr class="cell-divide-hr">
                             <ul class="list-unstyled li-space-lg">
                                 <li class="media">
@@ -460,7 +525,7 @@
                             </div>
                         </div>
                     </div> <!-- end of card -->
-                    <!-- end of card -->
+                    <!-- end of linux -->
 
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -469,7 +534,7 @@
     <!-- end of Miner -->
 
 
-    <!-- Testimonials -->
+    <!-- Hints -->
     <div class="slider-2">
         <div class="container">
             <div class="row">
@@ -537,7 +602,7 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of slider-2 -->
-    <!-- end of testimonials -->
+    <!-- end of hints -->
 
     <!-- Quick Info -->
     <div id="services" class="cards-1">
@@ -576,8 +641,7 @@
                             <p><b>Create in data folder - file yenten.conf</b><br /><i>rpcallow=127.0.0.1<br />server=1<br />daemon=1<br />rpcuser=user<br />rpcpassword=x<br />port=9981<br />rpcport=9982<br /></i><b>In bat file cpuminer-opt-ytn</b><br /><i>cpuminer-aes-sse42.exe -a yespowerr16 -o http://127.0.0.1:9982 -u user -p x --coinbase-addr=WALLET_ADDRESS</i></p>
                         </div>
                     </div>
-                    <!-- end of card -->
-                    
+                    <!-- end of card -->                    
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
