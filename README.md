@@ -6,6 +6,8 @@ https://yentencoin.info
 What is Yenten Coin?
 ----------------
 
+![screenshot](https://raw.githubusercontent.com/yentencoin/yenten/yenten-4.0.0/docs/screen.png)
+
 
 License
 -------
