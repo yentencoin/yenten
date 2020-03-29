@@ -923,7 +923,7 @@
     </message>
     <message>
         <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>まだ表示されていないトランザクションが影響するベルコインを使用しようとすると、ネットワークから認証がなされないでしょう。</translation>
+        <translation>まだ表示されていないトランザクションが影響するYentenを使用しようとすると、ネットワークから認証がなされないでしょう。</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
