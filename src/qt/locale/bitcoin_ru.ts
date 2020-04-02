@@ -259,7 +259,55 @@
     </context>
 <context>
     <name>ModalOverlay</name>
-    </context>
+    <message>
+        <source>Form</source>
+        <translation>Форма</translation>
+    </message>
+    <message>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <translation>Недавние транзакции могут быть пока не видны, поэтому ваш баланс может отображаться некорректно. Эта информация станет корректной, как только ваш бумажник будет синхронизирован с сетью, см. подробности ниже.</translation>
+    </message>
+    <message>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Попытка потратить Yenten из ещё не отображённых транзакций будет отвергнута сетью.</translation>
+    </message>
+    <message>
+        <source>Number of blocks left</source>
+        <translation>Число оставшихся блоков</translation>
+    </message>
+    <message>
+        <source>Unknown...</source>
+        <translation>Неизвестно...</translation>
+    </message>
+    <message>
+        <source>Last block time</source>
+        <translation>Время последнего блока</translation>
+    </message>
+    <message>
+        <source>Progress</source>
+        <translation>Прогресс</translation>
+    </message>
+    <message>
+        <source>Progress increase per hour</source>
+        <translation>Прогресс за час</translation>
+    </message>
+    <message>
+        <source>calculating...</source>
+        <translation>расчёт...</translation>
+    </message>
+    <message>
+        <source>Estimated time left until synced</source>
+        <translation>Примерное время до завершения синхронизации</translation>
+    </message>
+    <message>
+        <source>Hide</source>
+        <translation>Скрыть</translation>
+    </message>
+    <message>
+        <source>Unknown. Syncing Headers (%1)...</source>
+        <translation>Неизвестно. Синхронизация заголовков (%1)...</translation>
+    </message>
+</context>
 <context>
     <name>OpenURIDialog</name>
     </context>
