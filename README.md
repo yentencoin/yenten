@@ -127,9 +127,9 @@ addnode=spbird.mydns.jp:9981
 ```
 
 **Other node links:**
-https://xpoolx.com/explorer/peers?id=1897
-https://leywapool.com/explorer/peers?id=1428
-https://trossmining.de/explorer/peers?id=1943
+  https://xpoolx.com/explorer/peers?id=1897 . 
+  https://leywapool.com/explorer/peers?id=1428 . 
+  https://trossmining.de/explorer/peers?id=1943 . 
 
 **Pool list**
 https://miningpoolstats.stream/yenten
