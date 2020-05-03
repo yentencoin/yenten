@@ -314,7 +314,7 @@
                     <p>If your wallet stops (out of memory, etc.) syncing block data after header syncing, try block data below.</p>
                     <ul class="list-unstyled li-space-lg">
                         <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body"><a href="http://yenten-pool.info/faucet/blocks_yenten_last.zip" target="_blank">Download block data.</a></div>
+                            <i class="fas fa-check"></i><div class="media-body"><a href="https://github.com/yentencoin/yenten/releases/download/4.0.0/bootstrap_yenten4.tar.gz" target="_blank">Download block data.</a></div>
                         </li>
                         <li class="media">
                             <i class="fas fa-check"></i><div class="media-body">Extract data in User Directory in Application folder</div>
@@ -323,7 +323,7 @@
                             <i class="fas fa-check"></i><div class="media-body">Restart Application</div>
                         </li>
                     </ul>
-                    <a class="btn-solid-reg mfp-close page-scroll" href="https://github.com/yentencoin/yenten/releases/download/3.1.0/Yenten-installer-with-blockchain-x64-3.1.0.exe" target="_blank">WINDOWS 64 bit - Version 3.1.0</a> <a class="btn-solid-reg mfp-close page-scroll" href="https://github.com/yentencoin/yenten/releases/download/3.1.0/Yenten-installer-with-blockchain-x86-3.1.0.exe" target="_blank">WINDOWS 32 bit - Version 3.1.0</a> <a class="btn-solid-reg mfp-close page-scroll" href="https://github.com/yentencoin/yenten/releases/" target="_blank">ALL RELEASES</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+                    <a class="btn-solid-reg mfp-close page-scroll" href="https://github.com/yentencoin/yenten/releases/download/4.0.0/yenten-4.0.0-win64.zip" target="_blank">WINDOWS 64 bit - Version 4.0.0</a> <a class="btn-solid-reg mfp-close page-scroll" href="https://github.com/yentencoin/yenten/releases/download/3.1.0/Yenten-installer-with-blockchain-x86-3.1.0.exe" target="_blank">WINDOWS 32 bit - Version 3.1.0</a> <a class="btn-solid-reg mfp-close page-scroll" href="https://github.com/yentencoin/yenten/releases/" target="_blank">ALL RELEASES</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -347,7 +347,7 @@
                     <p>If your wallet stops (out of memory, etc.) syncing block data after header syncing, try block data below.</p>
                     <ul class="list-unstyled li-space-lg">
                         <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body"><a href="http://yenten-pool.info/faucet/blocks_yenten_last.zip" target="_blank">Download block data.</a></div>
+                            <i class="fas fa-check"></i><div class="media-body"><a href="https://github.com/yentencoin/yenten/releases/download/4.0.0/bootstrap_yenten4.tar.gz" target="_blank">Download block data.</a></div>
                         </li>
                         <li class="media">
                             <i class="fas fa-check"></i><div class="media-body">Extract data in User Directory ~/Library/Application Support/Yenten/</div>
@@ -356,7 +356,7 @@
                             <i class="fas fa-check"></i><div class="media-body">Restart Application</div>
                         </li>
                     </ul>
-                    <a class="btn-solid-reg mfp-close page-scroll" href="https://github.com/yentencoin/yenten/releases/download/3.1.0/Yenten_3_1_0_Qt.dmg" target="_blank">MAC OSX Version 3.1.0</a> <a class="btn-solid-reg mfp-close page-scroll" href="https://github.com/yentencoin/yenten/releases/download/3.1.0/Yenten_3_1_0_Qt-for-macOS-version-10.12+.dmg" target="_blank">MAC OSX 10.12+ Version 3.1.0</a> <a class="btn-solid-reg mfp-close page-scroll" href="https://github.com/yentencoin/yenten/releases/" target="_blank">ALL RELEASES</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+                    <a class="btn-solid-reg mfp-close page-scroll" href="https://github.com/yentencoin/yenten/releases/download/4.0.0/Yenten-Core-4.0.0.dmg" target="_blank">MAC OSX Version 4.0.0</a> <a class="btn-solid-reg mfp-close page-scroll" href="https://github.com/yentencoin/yenten/releases/download/3.1.0/Yenten_3_1_0_Qt-for-macOS-version-10.12+.dmg" target="_blank">MAC OSX 10.12+ Version 3.1.0</a> <a class="btn-solid-reg mfp-close page-scroll" href="https://github.com/yentencoin/yenten/releases/" target="_blank">ALL RELEASES</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -374,29 +374,36 @@
                    <!--     <img class="img-fluid" src="images/details-lightbox-2.svg" alt="alternative"> -->
                      <h3>Howto install Yenten Wallet in Linux</h3>
                     <hr>
-                    <h5>Build yentend on Ubuntu 16.04</h5>
-                    <p>sudo apt-get install build-essential<br />sudo apt-get install libtool autotools-dev autoconf<br />sudo apt-get install libssl-dev<br />sudo apt-get install libboost-all-dev<br />sudo apt-get install pkg-config<br />sudo add-apt-repository ppa:bitcoin/bitcoin<br />sudo apt-get update<br />sudo apt-get install libdb4.8-dev<br />sudo apt-get install libdb4.8++-dev</p>
-                    <p>git clone https://github.com/yentencoin/yenten.git<br />cd yenten<br />./autogen.sh<br />./configure --enable-upnp-default --without-gui --disable-tests<br />make</p>
-                    <h5>Build yentend on Ubuntu 18.04.2 LTS</h5>
-                    <p>sudo apt-get update && sudo apt-get -y upgrade<br />sudo apt-get install build-essential<br />sudo apt-get install libtool autotools-dev autoconf<br />sudo apt-get install libminiupnpc10<br />sudo apt-get install libssl1.0-dev<br />sudo apt-get install libboost1.65-all-dev<br />sudo add-apt-repository ppa:bitcoin/bitcoin<br />sudo apt-get update<br />sudo apt-get install libdb4.8-dev<br />sudo apt-get install libdb4.8++-dev<br /></p>
-                    <p>git clone https://github.com/yentencoin/yenten.git<br />cd yenten<br />./autogen.sh<br />CXXFLAGS=-O3 ./configure --enable-upnp-default --without-gui --disable-tests<br />make</p>
-                    <h5>Build yenten-qt GUI on Ubuntu 19.04</h5>
-                    <p>sudo apt-get update && sudo apt-get -y upgrade<br />sudo apt-get install build-essential<br />sudo apt-get install libtool autotools-dev autoconf<br />sudo apt-get install libminiupnpc-dev<br />sudo apt-get install libboost1.65-all-dev<br />sudo apt-get install pkg-config libprotobuf-dev protobuf-compiler git<br />sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev</p>
-                    <p>git clone https://github.com/yentencoin/yenten.git<br />cd yenten<br />sed -i 's/fPIE/fPIC/g' configure.ac</p>
-                   <p>wget http://mirrors.kernel.org/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb<br />sudo dpkg -i libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb<br />wget http://mirrors.kernel.org/ubuntu/pool/main/o/openssl1.0/libssl1.0-dev_1.0.2n-1ubuntu6.2_amd64.deb<br />sudo dpkg -i libssl1.0-dev_1.0.2n-1ubuntu6.2_amd64.deb<br /></p>
-                   <p>wget https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin/+build/12096244/+files/libdb4.8_4.8.30-xenial4_amd64.deb<br />sudo dpkg -i libdb4.8_4.8.30-xenial4_amd64.deb<br />wget https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin/+build/12096244/+files/libdb4.8-dev_4.8.30-xenial4_amd64.deb<br />sudo dpkg -i libdb4.8-dev_4.8.30-xenial4_amd64.deb<br />wget https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin/+build/12096244/+files/libdb4.8++_4.8.30-xenial4_amd64.deb<br />sudo dpkg -i libdb4.8++_4.8.30-xenial4_amd64.deb<br />wget https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin/+build/12096244/+files/libdb4.8++-dev_4.8.30-xenial4_amd64.deb<br />sudo dpkg -i libdb4.8++-dev_4.8.30-xenial4_amd64.deb</p>
-                    <p>./autogen.sh<br />CXXFLAGS=-O2 ./configure --enable-upnp-default --with-gui=qt5 --disable-tests<br />make</p>
-                    <h3>Development tips and tricks</h3>
-                    <hr>
-                    <h5>Compiling for debugging</h5>
-                    <p>Run configure with the --enable-debug option, then make. Or run configure with CXXFLAGS="-g -ggdb -O0" or whatever debug flags you need.</p>
-                    <h5>debug.log</h5>
-                    <p>If the code is behaving strangely, take a look in the debug.log file in the data directory; error and debugging message are written there. The -debug=... command-line option controls debugging; running with just -debug will turn on all categories (and give you a very large debug.log file). The Qt code routes qDebug() output to debug.log under category "qt": run with -debug=qt to see it.</p>
-                    <h5>Testnet and regtest modes</h5>
-                    <p>Run with the -testnet option to run with "play bitcoins" on the test network, if you are testing multi-machine code that needs to operate across the internet. If you are testing something that can run on one machine, run with the -regtest option. In regression test mode blocks can be created on-demand; see qa/rpc-tests/ for tests that run in -regest mode.</p>                    
-                     <h5>DEBUG_LOCKORDER</h5>
-                    <p>Bitcoin Core is a multithreaded application, and deadlocks or other multithreading bugs can be very difficult to track down. Compiling with -DDEBUG_LOCKORDER (configure CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time checks to keep track of what locks are held, and adds warning to the debug.log file if inconsistencies are detected.</p>
-                    </div> <!-- end of image-container -->
+                    <h5>Build yentend on Ubuntu 16.04, 18.04</h5>
+                    
+			    <p>&nbsp;</p>
+
+<pre>
+<code>sudo add-apt-repository universe
+sudo apt-get update
+sudo apt-get install git
+sudo apt-get install build-essential
+sudo apt-get install libtool autotools-dev autoconf
+sudo apt-get install libssl-dev
+sudo apt-get install libboost-all-dev
+sudo apt-get install pkg-config
+sudo apt-get install libevent-dev
+sudo apt-get install libzmq3-dev
+sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install libdb4.8-dev
+sudo apt-get install libdb4.8++-dev
+
+git clone https://github.com/yentencoin/yenten.git
+cd yenten
+./autogen.sh
+./configure --enable-upnp-default --without-gui
+make -j 4</code></pre>
+
+<p>&nbsp;</p>
+
+			
+			</div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
                     <h3>Linux Ubuntu</h3>
@@ -405,7 +412,7 @@
                     <p>If your wallet stops (out of memory, etc.) syncing block data after header syncing, try block data below.</p>
                     <ul class="list-unstyled li-space-lg">
                         <li class="media">
-                            <i class="fas fa-check"></i><div class="media-body"><a href="http://yenten-pool.info/faucet/blocks_yenten_last.zip" target="_blank">Download block data.</a></div>
+                            <i class="fas fa-check"></i><div class="media-body"><a href="https://github.com/yentencoin/yenten/releases/download/4.0.0/bootstrap_yenten4.tar.gz" target="_blank">Download block data.</a></div>
                         </li>
                         <li class="media">
                             <i class="fas fa-check"></i><div class="media-body">Extract data in Application Directory</div>
