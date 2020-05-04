@@ -62,19 +62,30 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     pixPaint.setPen(QColor(100,100,100));
 
     // draw a slightly radial gradient
-    QRadialGradient gradient(QPoint(0,0), splashSize.width()/devicePixelRatio);
-    gradient.setColorAt(0, Qt::white);
-    gradient.setColorAt(1, QColor(247,247,247));
-    QRect rGradient(QPoint(0,0), splashSize);
-    pixPaint.fillRect(rGradient, gradient);
+    // // QRadialGradient gradient(QPoint(0,0), splashSize.width()/devicePixelRatio);
+    // // gradient.setColorAt(0, Qt::white);
+    // // gradient.setColorAt(1, QColor(247,247,247));
+    // // QRect rGradient(QPoint(0,0), splashSize);
+    // // pixPaint.fillRect(rGradient, gradient);
 
     // draw the bitcoin icon, expected size of PNG: 1024x1024
-    QRect rectIcon(QPoint(-94,-66), QSize(340,340));
+    // // QRect rectIcon(QPoint(-94,-66), QSize(340,340));
+    QRect rectIcon(QPoint(0,0), QSize(480,320));
 
-    const QSize requiredSize(1024,1024);
-    QPixmap icon(networkStyle->getAppIcon().pixmap(requiredSize));
+    // // const QSize requiredSize(1024,1024);
+    const QSize requiredSize(480,320);
 
-    pixPaint.drawPixmap(rectIcon, icon);
+    // // QPixmap icon(networkStyle->getAppIcon().pixmap(requiredSize));
+    // load the bitmap for writing some text over it
+    QPixmap newPixmap;
+    if(titleAddText != "") {
+        newPixmap     = QPixmap(":/images/splash_testnet");
+    }
+    else {
+        newPixmap     = QPixmap(":/images/splash");
+    }
+
+    pixPaint.drawPixmap(rectIcon, newPixmap);
 
     // check font size and drawing with
     pixPaint.setFont(QFont(font, 33*fontFactor));
