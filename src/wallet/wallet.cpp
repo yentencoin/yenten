@@ -3964,12 +3964,14 @@ CWallet* CWallet::CreateWalletFromFile(const std::string walletFile)
         }
 
         // segwit address
+        /**
         CPubKey newDefaultKeySegWit;
         if (walletInstance->GetKeyFromPool(newDefaultKeySegWit, false)) {
             walletInstance->LearnRelatedScripts(newDefaultKeySegWit, OutputType::OUTPUT_TYPE_P2SH_SEGWIT);
             CTxDestination dest = GetDestinationForKey(newDefaultKeySegWit, OutputType::OUTPUT_TYPE_P2SH_SEGWIT);
             walletInstance->SetAddressBook(dest, "", "receive");
         }
+        **/
 
         // legacy address
         CPubKey newDefaultKeyLegacy;
