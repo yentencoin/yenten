@@ -76,7 +76,7 @@ public:
     CMainParams() {
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 800000;
-      //consensus.BIP16Height = 0;
+        consensus.BIP16Height = 0; // fixed
         consensus.BIP34Height = 700000;
 //		consensus.BIP34Height = 17;
 //        consensus.BIP34Hash = uint256();
@@ -190,7 +190,7 @@ public:
     CTestNetParams() {
         strNetworkID = "test";
         consensus.nSubsidyHalvingInterval = 800000;
-        //consensus.BIP16Height = 0;
+        consensus.BIP16Height = 0; // fixed
         consensus.BIP34Height = 0;
         consensus.BIP34Hash = uint256S("0x00002a66f0c687f619934409d376c52fe721833f05940e4c20deaaa0122d7fb8");
         consensus.BIP65Height = 12720;
@@ -282,7 +282,7 @@ public:
     CRegTestParams() {
         strNetworkID = "regtest";
         consensus.nSubsidyHalvingInterval = 150;
-        //consensus.BIP16Height = 0;
+        consensus.BIP16Height = 0; // fixed
         consensus.BIP34Height = 100000000; // BIP34 has not activated on regtest (far in the future so block v1 are not rejected in tests)
         consensus.BIP34Hash = uint256();
         consensus.BIP65Height = 1351; // BIP65 activated on regtest (Used in rpc activation tests)
