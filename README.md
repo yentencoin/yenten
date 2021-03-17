@@ -103,6 +103,7 @@ cd contrib
 chmod +x install_db4.sh
 ./install_db4.sh .
 cd ..
+./autogen.sh
 export BDB_PREFIX='/home/ubuntu/yenten/contrib/db4'
 ./configure --enable-upnp-default --without-gui BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" BDB_CFLAGS="-I${BDB_PREFIX}/include"
 make -j 4
@@ -126,17 +127,19 @@ addnode=185.185.70.244:9981
 addnode=spbird.mydns.jp:9981
 ```
 
-**Other node links:**
+Other node links
+----------------
 
-  https://xpoolx.com/explorer/peers?id=1897  
+&nbsp;  http://ytn.ccore.online/connections
   
-  https://leywapool.com/explorer/peers?id=1428   
+&nbsp;  https://leywapool.com/explorer/peers?id=1428
   
-  https://trossmining.de/explorer/peers?id=1943  
+&nbsp;  http://explorer.yentencoin.info/network
 
-**Pool list**
+Pool list
+---------
 
-https://miningpoolstats.stream/yenten
+&nbsp; https://miningpoolstats.stream/yenten
 
 
 

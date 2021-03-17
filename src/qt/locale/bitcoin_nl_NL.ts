@@ -168,7 +168,7 @@
         <translation>Bevestig portemonnee versleuteling</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR YENTENS&lt;/b&gt;!</source>
         <translation>Waarschuwing: Als je je portemonnee versleutelt en je wachtwoord kwijtraakt, raak je &lt;b&gt;AL JE YENTENS KWIJT&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -180,7 +180,7 @@
         <translation>Portemonnee versleuteld</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your yentens from being stolen by malware infecting your computer.</source>
         <translation>%1 zal nu sluiten om het versleutel proces te voltooien. Onthoudt dat het versleutelen van je portemonnee jouw yentens niet volledig van diefstal via malware kan beschermen.</translation>
     </message>
     <message>

@@ -132,7 +132,7 @@
         <translation>지갑 암호화 확인</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR YENTENS&lt;/b&gt;!</source>
         <translation>경고: 지갑이 암호화된 상태로 당신의 암호문을 잃어버리셨다면, 당신은 &lt;b&gt;모든 비트코인을 잃게됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -144,7 +144,7 @@
         <translation>지갑 암호화</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your yentens from being stolen by malware infecting your computer.</source>
         <translation>%1 이(가) 암호화 작업을 위해 종료됩니다. 이 암호화 작업이 바이러스로부터 비트코인을 완전히 지키지 못한다는 점을 기억하십시요.</translation>
     </message>
     <message>
