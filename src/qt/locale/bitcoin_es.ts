@@ -172,7 +172,7 @@
         <translation>Confirmar cifrado del monedero</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR YENTENS&lt;/b&gt;!</source>
         <translation>Advertencia: Si cifra su monedero y pierde su contraseña&lt;b&gt;¡PERDERÁ TODOS SUS YENTENS!&lt;/b&gt;</translation>
     </message>
     <message>
@@ -184,7 +184,7 @@
         <translation>Monedero cifrado</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your yentens from being stolen by malware infecting your computer.</source>
         <translation>%1 se cerrará ahora para terminar el proceso de cifrado. Recuerde que cifrar su monedero no puede proteger completamente su monedero de ser robado por malware que infecte su ordenador.</translation>
     </message>
     <message>
@@ -918,11 +918,11 @@
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the yenten network, as detailed below.</source>
         <translation>Las transacciones recientes aún no pueden ser visibles, y por lo tanto el saldo de su monedero podría ser incorrecto. Esta información será correcta cuando su monedero haya terminado de sincronizarse con la red de yenten, como se detalla abajo.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend yentens that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>La red no aceptará el intentar gastar yentens que están afectados por transacciones aún no mostradas.</translation>
     </message>
     <message>

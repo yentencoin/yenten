@@ -168,7 +168,7 @@
         <translation>Brieftaschenverschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR YENTENS&lt;/b&gt;!</source>
         <translation>Achtung: Wenn Sie Ihre Wallet verschlüsseln und das Passwort verlieren, gehen &lt;b&gt;alle Ihre Yentens verloren&lt;/b&gt;!</translation>
     </message>
     <message>
