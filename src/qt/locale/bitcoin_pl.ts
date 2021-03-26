@@ -2300,7 +2300,7 @@
         <translation>To jest standardowa płatność</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Yenten address to send the payment to</source>
         <translation>Adres Yenten gdzie wysłać płatność</translation>
     </message>
     <message>
@@ -2393,7 +2393,7 @@
         <translation>Możesz podpisywać wiadomości swoimi adresami aby udowodnić, że jesteś ich właścicielem. Uważaj, aby nie podpisywać niczego co wzbudza Twoje podejrzenia, ponieważ ktoś może stosować phishing próbując nakłonić Cię do ich podpisania. Akceptuj i podpisuj tylko w pełni zrozumiałe komunikaty i wiadomości.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Yenten address to sign the message with</source>
         <translation>Adres Yenten, za pomocą którego podpisać wiadomość</translation>
     </message>
     <message>

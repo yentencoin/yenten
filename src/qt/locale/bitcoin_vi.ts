@@ -2264,7 +2264,7 @@
         <translation>Đây là một thông thường payment.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Yenten address to send the payment to</source>
         <translation>The Yenten address để gửi the payment đến</translation>
     </message>
     <message>
@@ -2357,7 +2357,7 @@
         <translation>Bạn có thể ký/đồng ý với địa chỉ chứng minh bạn có thể receive yentens đã gửi đến chúng. Cẩn thận không ký bất cứ không rõ hay random, như các cuộc tấn công lừa đảo có thể cố lừa bạn ký tên vào danh tính của bạn.. Chỉ ký các bản tuyên bố hoàn chỉnh mà bạn đồng ý.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Yenten address to sign the message with</source>
         <translation>The Yenten address để ký với tin nhắn</translation>
     </message>
     <message>

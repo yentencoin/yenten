@@ -2313,7 +2313,7 @@ Var vänlig och försök igen.</translation>
         <translation>Detta är en normal betalning.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Yenten address to send the payment to</source>
         <translation>Yenten-adress att sända betalning till</translation>
     </message>
     <message>
@@ -2410,7 +2410,7 @@ Var vänlig och försök igen.</translation>
         <translation>Du kan signera meddelanden/avtal med dina adresser för att bevisa att du kan ta emot yenten som skickats till dem. Var försiktig så du inte signerar något oklart eller konstigt, eftersom phishing-angrepp kan försöka få dig att signera över din identitet till dem. Signera endast väldetaljerade meddelanden som du godkänner.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Yenten address to sign the message with</source>
         <translation>Yenten-adress att signera meddelandet med</translation>
     </message>
     <message>

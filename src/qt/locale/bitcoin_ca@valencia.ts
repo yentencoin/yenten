@@ -1832,7 +1832,7 @@
         <translation>Això és un pagament normal.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Yenten address to send the payment to</source>
         <translation>L'adreça Yenten on enviar el pagament</translation>
     </message>
     <message>
@@ -1921,7 +1921,7 @@
         <translation>Podeu signar missatges/acords amb les vostres adreces per provar que rebeu les yentens que s'hi envien. Aneu amb compte no signar res que siga vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Yenten address to sign the message with</source>
         <translation>L'adreça Yenten amb què signar el missatge</translation>
     </message>
     <message>

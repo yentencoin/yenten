@@ -3006,8 +3006,8 @@
     </message>
     <message>
         <location line="+39"/>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>The Yenten address to send the payment to</translation>
+        <source>The Yenten address to send the payment to</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
@@ -3130,7 +3130,7 @@
     </message>
     <message>
         <location line="+18"/>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Yenten address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

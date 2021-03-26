@@ -2304,7 +2304,7 @@
         <translation>This is a normal payment.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Yenten address to send the payment to</source>
         <translation>The Yenten address to send the payment to</translation>
     </message>
     <message>
@@ -2401,7 +2401,7 @@
         <translation>You can sign messages/agreements with your addresses to prove you can receive yentens sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Yenten address to sign the message with</source>
         <translation>The Yenten address to sign the message with</translation>
     </message>
     <message>

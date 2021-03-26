@@ -2148,7 +2148,7 @@
         <translation>Este es un pago normal</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Yenten address to send the payment to</source>
         <translation>Dirección Yenten a enviar el pago</translation>
     </message>
     <message>
@@ -2229,7 +2229,7 @@
         <translation>&amp;Firmar Mensaje</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Yenten address to sign the message with</source>
         <translation>Dirección Yenten con la que firmar el mensaje</translation>
     </message>
     <message>

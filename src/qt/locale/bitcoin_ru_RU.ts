@@ -1367,6 +1367,10 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
+        <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Вы можете подписать сообщение/соглашение Вашим адресом, чтобы доказать, что Вы можете получить или отправить монеты Yenten. Опасайтесь подписывать что-либо неопределенное или случайное, поскольку фишинговые атаки могут обмануть Вас для подписа ния вашей личности им. Соглашайтесь подписывать только полностью подробные заявления.</translation>
+    </message>
+    <message>
         <source>Choose previously used address</source>
         <translation>Выбрать предыдущий использованный адрес</translation>
     </message>

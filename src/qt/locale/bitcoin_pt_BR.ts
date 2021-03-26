@@ -2312,7 +2312,7 @@
         <translation>Este é um pagamento normal.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Yenten address to send the payment to</source>
         <translation>O endereço Yenten para enviar o pagamento</translation>
     </message>
     <message>
@@ -2409,7 +2409,7 @@
         <translation>Você pode assinar mensagens com seus endereços para provar que você pode receber yentens enviados por alguém. Cuidado para não assinar nada vago ou aleatório, pois ataques phishing podem tentar te enganar para assinar coisas para eles como se fosse você. Somente assine termos bem detalhados que você concorde.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Yenten address to sign the message with</source>
         <translation>O endereço Yenten que assinará a mensagem</translation>
     </message>
     <message>

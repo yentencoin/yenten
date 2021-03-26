@@ -1468,7 +1468,7 @@
         <translation>Αυτή είναι μια απλή πληρωμή.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Yenten address to send the payment to</source>
         <translation>Η διεύθυνση Yenten που θα σταλεί η πληρωμή</translation>
     </message>
     <message>
@@ -1525,7 +1525,7 @@
         <translation>&amp;Υπογραφή Μηνύματος</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Yenten address to sign the message with</source>
         <translation>Διεύθυνση Yenten που θα σταλεί το μήνυμα</translation>
     </message>
     <message>

@@ -2320,7 +2320,7 @@
         <translation>Dette er en normal betaling.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Yenten address to send the payment to</source>
         <translation>Yenten-adressen betalingen skal sendes til</translation>
     </message>
     <message>
@@ -2417,7 +2417,7 @@
         <translation>Du kan signere meldinger/avtaler med adresser for å bevise at du kan motta yentens sendt til dem. Vær forsiktig med å signere noe vagt eller tilfeldig, siden phishing-angrep kan prøve å lure deg til å signere din identitet over til dem. Bare signer fullt detaljerte utsagn som du er enig i.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Yenten address to sign the message with</source>
         <translation>Yenten-adressen meldingen skal signeres med</translation>
     </message>
     <message>

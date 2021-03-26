@@ -1445,7 +1445,7 @@
         <translation>&amp;Allkirjastamise teade</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Yenten address to sign the message with</source>
         <translation>Yenten aadress millega sõnum allkirjastada</translation>
     </message>
     <message>
