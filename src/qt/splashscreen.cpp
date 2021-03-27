@@ -82,7 +82,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
         newPixmap     = QPixmap(":/images/splash_testnet");
     }
     else {
-        newPixmap     = QPixmap(":/images/splash");
+        newPixmap     = QPixmap(":/images/bg");
     }
 
     pixPaint.drawPixmap(rectIcon, newPixmap);
