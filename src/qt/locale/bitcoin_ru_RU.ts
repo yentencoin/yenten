@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши Yenten адреса для отправки платежа. Всегда проверяйте сумму и адрес получателя перед отправкой платежа.</translation>
+        <translation>Это ваши Yenten адреса для отправки переводов. Всегда проверяйте сумму и адрес получателя перед отправкой перевода.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши Yenten адреса для получения платежей. Настоятельно рекомендуем использовать новые адреса для получения каждой транзакции.</translation>
+        <translation>Это ваши Yenten адреса для получения переводов. Настоятельно рекомендуем использовать новые адреса для получения каждой транзакции.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -272,6 +272,38 @@
     <message>
         <source>Show information about %1</source>
         <translation>Показать информацию о %1</translation>
+    </message>
+    <message>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <translation>Подписать сообщение используя ваш Yenten адрес, чтобы доказать что вы им вледеете</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n active connection(s) to Bitcoin network</source>
+        <translation>
+            <numerusform>Активных подключений к Yenten сети: %n</numerusform>
+            <numerusform>Активных подключений к Yenten сети: %n</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Open a bitcoin: URI or payment request</source>
+        <translation>Открыть yenten: URI или запрос перевода.</translation>
+    </message>
+    <message>
+        <source>Show the list of used sending addresses and labels</source>
+        <translation>Отобразить список используемых адресов с метками для отправки</translation>
+    </message>
+    <message>
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation>Отобразить список используемых адресов с метками для получения</translation>
+    </message>
+    <message>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation>Запросить перевод (генерирует QR код и yenten: URI)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>Подтвердить сообщение, чтобы гарантировать что оно было подписано используя конкретный Yenten адрес</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -501,6 +533,35 @@
         <translation>После комиссии:</translation>
     </message>
     <message>
+        <source>Change:</source>
+        <translation>Сдача:</translation>
+    </message>
+    <message>
+        <source>(un)select all</source>
+        <translation>Отменить выделение</translation>
+    </message>
+    <message>
+        <source>Tree mode</source>
+        <translation>Древовидное отображение</translation>
+    </message>
+    <message>
+        <source>List mode</source>
+        <translation>Отображение в виде списка</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Сумма</translation>
+    </message>
+    <message>
+        <source>Received with label</source>
+        <translation>Получено меткой</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Received with address</source>
+        <translation>Получено адресом</translation>
+    </message>
+    <message>
         <source>Date</source>
         <translation>Дата</translation>
     </message>
@@ -722,12 +783,48 @@
         <translation>Автоматически запускать %1 после входа в систему.</translation>
     </message>
     <message>
+        <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
+        <translation>Выберите стандартную единицу измерения для отображения интерфейса, и отправки монет.</translation>
+    </message>
+    <message>
+        <source>&amp;Start %1 on system login</source>
+        <translation>Запускать %1 при запуске системы</translation>
+    </message>
+    <message>
         <source>Size of &amp;database cache</source>
         <translation>Размер кеша &amp;базы данных</translation>
     </message>
     <message>
         <source>MB</source>
         <translation>МБ</translation>
+    </message>
+    <message>
+        <source>Enable coin &amp;control features</source>
+        <translation>Включить ручное управления монетами</translation>
+    </message>
+    <message>
+        <source>Whether to show coin control features or not.</source>
+        <translation>Показывать функции ручного управления монетами или нет.</translation>
+    </message>
+    <message>
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>Использовать неподтвержденную сдачу</translation>
+    </message>
+    <message>
+        <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
+        <translation>Если вы выключите использование неподтвержденной сдачи, сдача из транзакции не сможет быть использована пока эта транзакция не получит как минимум 1 подтверждение. Это также влияет на то как рассчитывается ваш баланс.</translation>
+    </message>
+    <message>
+        <source>User Interface &amp;language:</source>
+        <translation>Язык интерфейса:</translation>
+    </message>
+    <message>
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>Единица измерения для отображения:</translation>
+    </message>
+    <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting %1.</source>
+        <translation>Язык пользователского интерфейса может быть задан здесь. Эта настройка будет применена после перезапуска %1.</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
@@ -871,6 +968,31 @@
     <message>
         <source>Your current balance in watch-only addresses</source>
         <translation>Ваш текущий баланс (только чтение):</translation>
+    </message>
+    <message>
+        <source>Watch-only:</source>
+        <translation>Только для просмотра:</translation>
+    </message>
+    <message>
+        <source>Available:</source>
+        <translation>Доступно:</translation>
+    </message>
+    <message>
+        <source>Your current spendable balance</source>
+        <translation>Ваш текущий баланс который вы можете использовать</translation>
+    </message>
+    <message>
+        <source>Pending:</source>
+        <translation>В ожидании:</translation>
+    </message>
+    <message>
+        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
+        <translation>Сумма всех транзакций, которые еще не были подтверждены, и еще не отображаются на доступном для использования балансе</translation>
+    </message>
+    <message>
+        <location line="-29"/>
+        <source>Mined balance that has not yet matured</source>
+        <translation>Баланс полученный майнингом, который еще не созрел</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -1119,7 +1241,11 @@
     </message>
     <message>
         <source>Clear</source>
-        <translation>Отчистить</translation>
+        <translation>Очистить</translation>
+    </message>
+    <message>
+        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
+        <translation>Используйте эту форму, чтобы запрашивать переводы. Все поля являются &lt;b&gt;необязательными&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>Show the selected request (does the same as double clicking an entry)</source>
@@ -1130,8 +1256,40 @@
         <translation>Показать</translation>
     </message>
     <message>
+        <source>&amp;Label:</source>
+        <translation>&amp;Метка:</translation>
+    </message>
+    <message>
+        <source>An optional label to associate with the new receiving address.</source>
+        <translation>Необязательная метка для ассоциации нового адреса.</translation>
+    </message>
+    <message>
+        <source>&amp;Amount:</source>
+        <translation>&amp;Сумма:</translation>
+    </message>
+    <message>
+        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
+        <translation>Необязательное поле суммы запроса. Оставьте это поле пустым или равным нулю, если не хотите запрашивать конкретную сумму.</translation>
+    </message>
+    <message>
+        <source>&amp;Message:</source>
+        <translation>&amp;Сообщение:</translation>
+    </message>
+     <message>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <translation>Необязательное сообщение прикрепляемое к запросу перевода, которое будет отображено когда запрос открыт. Заметка: Это сообщение не будет отправлено в Yenten сеть.</translation>
+    </message>
+    <message>
         <source>Remove the selected entries from the list</source>
         <translation>Удалить выбранные записи со списка</translation>
+    </message>
+    <message>
+        <source>&amp;Request payment</source>
+        <translation>&amp;Запросить перевод</translation>
+    </message>
+    <message>
+        <source>Requested payments history</source>
+        <translation>История запрошенных переводов</translation>
     </message>
     <message>
         <source>Remove</source>
@@ -1161,12 +1319,25 @@
         <translation>QR-код</translation>
     </message>
     <message>
+        <source>Copy &amp;URI</source>
+        <translation>Скопировать &amp;URI</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Copy &amp;Address</source>
+        <translation>Скопировать &amp;адрес</translation>
+    </message>
+    <message>
         <source>&amp;Save Image...</source>
         <translation>&amp;Сохранить изображение...</translation>
     </message>
     <message>
+        <source>Request payment to %1</source>
+        <translation>Запрос перевода на %1</translation>
+    </message>
+    <message>
         <source>Payment information</source>
-        <translation>Информация о платеже</translation>
+        <translation>Информация о переводе</translation>
     </message>
     <message>
         <source>Address</source>
@@ -1207,6 +1378,14 @@
         <source>(no message)</source>
         <translation>(нет сообщений)</translation>
     </message>
+    <message>
+        <source>Requested</source>
+        <translation>Запрошено</translation>
+    </message>
+    <message>
+        <source>(no amount requested)</source>
+        <translation>(сумма не указана)</translation>
+    </message>
     </context>
 <context>
     <name>SendCoinsDialog</name>
@@ -1215,8 +1394,24 @@
         <translation>Отправить монеты</translation>
     </message>
     <message>
+        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
+        <translation>Если это активировано, но адрес для сдачи не указан или он неверный, сдача будет отправлена на новый сгенеррированный адрес.</translation>
+    </message>
+    <message>
         <source>automatically selected</source>
         <translation>выбрано автоматически</translation>
+    </message>
+    <message>
+        <source>Coin Control Features</source>
+        <translation>Ручное управление монетами</translation>
+    </message>
+    <message>
+        <source>Custom change address</source>
+        <translation>Указать адрес для сдачи</translation>
+    </message>
+    <message>
+        <source>Inputs...</source>
+        <translation>Источники...</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -1255,8 +1450,25 @@
         <translation>Рекомендованное значение:</translation>
     </message>
     <message>
+        <location line="+3"/>
+        <source>Add &amp;Recipient</source>
+        <translation>Добавить &amp;получателя</translation>
+    </message>
+    <message>
         <source>Custom:</source>
         <translation>Пользовательское значение:</translation>
+    </message>
+    <message>
+        <source>Clear &amp;All</source>
+        <translation>Очистить &amp;все</translation>
+    </message>
+    <message>
+        <source>Confirm the send action</source>
+        <translation>Подтвердить отправку перевода</translation>
+    </message>
+    <message>
+        <source>S&amp;end</source>
+        <translation>Отправить</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -1326,12 +1538,32 @@
         <translation>Alt+A</translation>
     </message>
     <message>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Комиссия будет вычтена из отправленной суммы. Получатель получит меньше yenten чем вы ввели в поле Сумма. Если выбрано несколько получателей, комиссия будет равномерно поделена между ними.</translation>
+    </message>
+    <message>
+        <source>The Yenten address to send the payment to</source>
+        <translation>Yenten адрес на который будет совершен перевод</translation>
+    </message>
+    <message>
+        <source>S&amp;ubtract fee from amount</source>
+        <translation>В&amp;ычесть комиссию из суммы</translation>
+    </message>
+    <message>
         <source>Paste address from clipboard</source>
         <translation>Вставить адрес из буфера обмена</translation>
     </message>
     <message>
         <source>Alt+P</source>
         <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation>Введите метку для этого адреса, чтобы добавить его в список ранее использованных адресов</translation>
+    </message>
+    <message>
+        <source>Enter a label for this address to add it to your address book</source>
+        <translation>Введите метку для этого адреса, чтобы добавить его в вашу адресную книгу</translation>
     </message>
     <message>
         <source>Remove this entry</source>
@@ -1342,12 +1574,28 @@
         <translation>Использовать доступный баланс</translation>
     </message>
     <message>
+        <source>This is a normal payment.</source>
+        <translation>Это обычной перевод.</translation>
+    </message>
+    <message>
         <source>Message:</source>
         <translation>Сообщение:</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>Сумма:</translation>
+    </message>
+    <message>
+        <source>Pay &amp;To:</source>
+        <translation>Перевод &amp;на:</translation>
+    </message>
+    <message>
+        <source>&amp;Label:</source>
+        <translation>&amp;Метка:</translation>
+    </message>
+    <message>
         <source>Pay To:</source>
-        <translation>Выполнить оплату в пользу:</translation>
+        <translation>Перевод на:</translation>
     </message>
     </context>
 <context>
@@ -1363,24 +1611,89 @@
         <source>%1 is shutting down...</source>
         <translation>%1 завершает работу...</translation>
     </message>
+    <message>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation>Не выключайте компьютер пока это окно не исчезнет.</translation>
+    </message>
     </context>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Вы можете подписать сообщение/соглашение Вашим адресом, чтобы доказать, что Вы можете получить или отправить монеты Yenten. Опасайтесь подписывать что-либо неопределенное или случайное, поскольку фишинговые атаки могут обмануть Вас для подписа ния вашей личности им. Соглашайтесь подписывать только полностью подробные заявления.</translation>
+        <source>Choose previously used address</source>
+        <translation>Выбрать ранее использованный адрес</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Выбрать предыдущий использованный адрес</translation>
+        <source>Signatures - Sign / Verify a Message</source>
+        <translation>Подписи - Подписать / Подтвердить сообщение</translation>
+    </message>
+    <message>
+        <source>The Bitcoin address to sign the message with</source>
+        <translation>Yenten адрес для подписи сообщения</translation>
+    </message>
+    <message>
+        <source>The Bitcoin address the message was signed with</source>
+        <translation>Yenten адрес которым было подписано сообщение</translation>
+    </message>
+    <message>
+        <source>Sign the message to prove you own this Bitcoin address</source>
+        <translation>Подпишите это сообщение, чтобы доказать что вы владеете этим Yenten адресом</translation>
+    </message>
+    <message>
+        <source>Enter the message you want to sign here</source>
+        <translation>Введите здесь сообщение, которое вы ходить подписать</translation>
+    </message>
+    <message>
+        <source>Reset all sign message fields</source>
+        <translation>Сбросить все поля подписи сообщения.</translation>
+    </message>
+    <message>
+        <source>&amp;Sign Message</source>
+        <translation>&amp;Подписать сообщение</translation>
+    </message>
+    <message>
+        <source>Sign &amp;Message</source>
+        <translation>Подписать &amp;сообщение</translation>
+    </message>
+
+    <message>
+        <source>Clear &amp;All</source>
+        <translation>Очистить &amp;все</translation>
+    </message>
+    <message>
+        <source>Verify &amp;Message</source>
+        <translation>Подтвердить &amp;сообщение</translation>
+    </message>
+    <message>
+        <source>Reset all verify message fields</source>
+        <translation>Сбросить все поля подтверждения сообщения</translation>
+    </message>
+    <message>
+        <source>&amp;Verify Message</source>
+        <translation>&amp;Подтвердить сообщение</translation>
+    </message>
+    <message>
+        <source>Click &quot;Sign Message&quot; to generate signature</source>
+        <translation>Нажмите &quot;Подписать сообщение&quot; чтобы сгенерировать подпись</translation>
     </message>
     <message>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
+        <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Вы можете подписать сообщение/соглашение Вашим адресом, чтобы доказать, что Вы можете получать или отправлять монеты Yenten. Опасайтесь подписывать что-либо неопределенное или случайное, поскольку фишинговые атаки могут обмануть вас для подписания вашей личности им. Соглашайтесь подписывать только полностью подробные заявления.</translation>
+    </message>
+    <message>
+        <source>Enter the receiver&apos;s address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
+        <translation>Введите адрес получателя, сообщение (точно скопируйте разрывы строк, места, закладки и т.д.) и подпись ниже для проверки сообщения. Будьте осторожны, не читайте в подписи больше, чем то, что есть в подписанном сообщении, чтобы избежать обмана со стороны атаки посредника. Обратите внимание, что подпись только доказывает, что подписавшая сторона получает с адресом, но не может доказать отправление какой-либо транзакции!</translation>
+    </message>
+    <message>
         <source>Paste address from clipboard</source>
         <translation>Вставить адрес из буфера обмена</translation>
+    </message>
+    <message>
+        <source>Message verified.</source>
+        <translation>Сообщение подтверждено.</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -1485,12 +1798,125 @@
         <source>Type of transaction.</source>
         <translation>Тип транзакции.</translation>
     </message>
+     <message>
+        <source>Unconfirmed</source>
+        <translation>Неподтвержденная</translation>
+    </message>
+    <message>
+        <source>Abandoned</source>
+        <translation>Прерванная</translation>
+    </message>
+    <message>
+        <source>Confirming (%1 of %2 recommended confirmations)</source>
+        <translation>Подтверждение (%1 из %2 рекомендуемых подтверждений)</translation>
+    </message>
+    <message>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation>Подтверждена (%1 подтверждений)</translation>
+    </message>
+    <message>
+        <source>Conflicted</source>
+        <translation>Конфликтная</translation>
+    </message>
+    <message>
+        <source>Immature (%1 confirmations, will be available after %2)</source>
+        <translation>Незрелая (%1 подтверждений, будет доступна после %2)</translation>
+    </message>
+    <message>
+        <source>Received with</source>
+        <translation>Получено на</translation>
+    </message>
+    <message>
+        <source>Received from</source>
+        <translation>Получено от</translation>
+    </message>
+    <message>
+        <source>Sent to</source>
+        <translation>Отправлено на</translation>
+    </message>
+    <message>
+        <source>Payment to yourself</source>
+        <translation>Перевод себе</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Добыто</translation>
+    </message>
+<message>
+        <source>User-defined intent/purpose of the transaction.</source>
+        <translation>Обозначенная пользователем цель транзакции.</translation>
+    </message>
+    <message>
+        <source>Amount removed from or added to balance.</source>
+        <translation>Сумма удаленная или добавленная на баланс.</translation>
+    </message>
+
     </context>
 <context>
     <name>TransactionView</name>
     <message>
         <source>Increase transaction fee</source>
         <translation>Увеличить комиссию за транзакцию</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Все</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Сегодня</translation>
+    </message>
+    <message>
+        <source>This week</source>
+        <translation>На этой неделе</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>В этом месяце</translation>
+    </message>
+    <message>
+        <source>Enter address, transaction id, or label to search</source>
+        <translation>Введите адрес, id транзакции, или метку для поиска</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>В предыдущем месяце</translation>
+    </message>
+    <message>
+        <source>Received with</source>
+        <translation>Получено</translation>
+    </message>
+    <message>
+        <source>Sent to</source>
+        <translation>Отправлено</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>Себе</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Добыто</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Другое</translation>
+    </message>
+    <message>
+        <source>This year</source>
+        <translation>В этом году</translation>
+    </message>
+    <message>
+        <source>Range...</source>
+        <translation>Диапазон...</translation>
+    </message>
+    <message>
+        <source>Range:</source>
+        <translation>Диапазон:</translation>
+    </message>
+    <message>
+        <source>to</source>
+        <translation>по</translation>
     </message>
     <message>
         <source>Copy address</source>
@@ -1660,6 +2086,11 @@
         <translation>%d из последних 100 блоков имеют неожиданную версию</translation>
     </message>
     <message>
+        <location line="+2"/>
+        <source>Verifying blocks...</source>
+        <translation>Подтверждение блоков...</translation>
+    </message>
+    <message>
         <source>Connection options:</source>
         <translation>Опции соединения:</translation>
     </message>
@@ -1758,6 +2189,14 @@
     <message>
         <source>(default: %s)</source>
         <translation>(значение по умолчанию: %s)</translation>
+    </message>
+    <message>
+        <source>Loading block index...</source>
+        <translation>Выполняется загрузка блоков...</translation>
+    </message>
+    <message>
+        <source>Rewinding blocks...</source>
+        <translation>Перемотка блоков...</translation>
     </message>
     <message>
         <source>Loading wallet...</source>
