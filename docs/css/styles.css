@@ -53,14 +53,17 @@ html {
 body, p {
 	color: #626262; 
 	font: 400 0.875rem/1.375rem "Raleway", sans-serif;
+  font-family: 'Roboto',Tahoma;
 }
 
 .p-large {
 	font: 400 1rem/1.5rem "Raleway", sans-serif;
+  font-family: 'Roboto',Tahoma;
 }
 
 .p-small {
 	font: 400 0.75rem/1.25rem "Raleway", sans-serif;
+  font-family: 'Roboto',Tahoma;
 }
 
 .p-heading {
@@ -1620,10 +1623,19 @@ a:hover.back-to-top {
 
 /*****************************/
 /*     20. Media Queries     */
-/*****************************/	
+/*****************************/
+
+/* For mobile */
+@media (max-width: 575.98px) {
+
+.img-fluid_3 {display:none;}
+
+}
+
+	
 /* Min-width width 768px */
 @media (min-width: 768px) {
-	
+
 	/* General Styles */
 	.p-heading {
 		width: 85%;
@@ -2012,6 +2024,8 @@ a:hover.back-to-top {
 
 /* Min-width width 1200px */
 @media (min-width: 1200px) {
+
+.youtube_frame {width: 560px;}
 	
 	/* Navigation */
 	.navbar-custom {
@@ -2083,8 +2097,8 @@ a:hover.back-to-top {
 	/* Details 2 */
 	.basic-2 .text-container {
 		margin-top: 5.375rem;
-		margin-right: 1rem;
-		margin-left: 4rem;
+		margin-right: 0.1rem;
+		margin-left: 0.1rem;
 	}
 	/* end of details 2 */
 
