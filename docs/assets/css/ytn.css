@@ -1,0 +1,78 @@
+.text-blue {
+  color: #00bfd8 !important;
+}
+
+.text-bblack {
+  color: #393939 !important;
+}
+
+.rotating-card-container .card .back:after, .rotating-card-container .card .front:after {
+    background-image: linear-gradient(195deg, #00A2E8, #0085BF);
+}
+
+.text-gradient.text-primary {
+    background-image: linear-gradient(195deg, #00A2E8, #00ABF6);
+}
+
+.bg-gradient-white {
+    background-image: linear-gradient( 
+309deg
+ , #ffffff 0%, #0ca0e3 100%);
+ color: white;
+}
+
+.bg-gradient-white2 {
+    background-image: linear-gradient( 
+309deg
+ , #056f99 0%, #0ca0e3 100%);
+}
+
+.h1-min {
+  font-size: 34px;
+}
+
+.fa-stack .fa-stack-1x {
+    color: #fff;
+    transition: all 0.2s ease;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.fa-stack .fa-stack-2x {
+    color: #00bfd8;
+    transition: all 0.2s ease;
+    font-size: 40px;
+}
+
+pre code {
+  font-size: 12px;
+  line-height: 10px !important;
+}
+
+
+/* Min-width width 1200px */
+@media (min-width: 1200px) {
+
+.youtube_frame {width: 560px;}
+
+}
+
+@media (max-width: 575.98px) {
+
+  .top-row {
+    margin-top: 84px;
+  }
+  
+  .text-blue {
+  text-shadow: 1px 1px 2px black, 0px 0 1em white;
+  }
+
+  .mob_margin {
+    margin-top: 40px;  
+  }
+  
+.navbar .navbar-brand {
+    font-size: 11px;
+}  
+  
+}
