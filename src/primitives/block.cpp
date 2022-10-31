@@ -10,9 +10,61 @@
 #include <utilstrencodings.h>
 #include <crypto/common.h>
 
+#include <stdlib.h>
+#include "crypto/yespower/yespower.h"
+#include "streams.h"
+#include "version.h"
+#include "crypto/yespower/sysendian.h"
+
 uint256 CBlockHeader::GetHash() const
 {
-    return SerializeHashYespower(*this);
+    CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
+    ss << *this;
+    uint32_t time = le32dec(&ss[68]);
+    if (time > 1675036800) {
+        return SerializeHash(*this);
+    } else {
+        return SerializeHashYespower(*this);
+    }    
+    
+}
+
+uint256 CBlockHeader::GetPoWHash() const
+{
+    uint256 thash;
+    CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
+    ss << *this;
+    
+    yespower_params_t yespower_1_0_v1 = {
+        .version = YESPOWER_0_5, 
+        .N = 4096, 
+        .r = 16, 
+        .pers = (const uint8_t *)"Client Key",
+        .perslen = 10
+    };
+    
+    yespower_params_t yespower_1_0_v2 = {
+        .version = YESPOWER_1_0, 
+        .N = 4096, 
+        .r = 16, 
+        .pers = NULL,
+        .perslen = 0
+    };
+
+    uint32_t time = le32dec(&ss[68]);
+    if (time > 1553904000) {
+        if (yespower_tls((unsigned char *)&ss[0], ss.size(), &yespower_1_0_v2, (yespower_binary_t *)&thash)) {
+            abort();
+        }
+    } else {
+        if (yespower_tls((unsigned char *)&ss[0], ss.size(), &yespower_1_0_v1, (yespower_binary_t *)&thash)) {
+            abort();
+    }
+    }
+
+    
+    
+    return thash;
 }
 
 std::string CBlock::ToString() const
