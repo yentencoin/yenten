@@ -6,6 +6,9 @@ https://yentencoin.info
 **Download latest wallet:**
 https://github.com/yentencoin/yenten/releases
 
+**Yenten 5 version** -  is currently in beta, and is undergoing final testing.
+The full transition to version 5 will be January 30, 2023.
+
 What is Yenten Coin?
 
 ----------------
