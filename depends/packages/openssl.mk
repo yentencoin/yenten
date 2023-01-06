@@ -1,6 +1,6 @@
 package=openssl
 $(package)_version=1.0.2t
-$(package)_download_path=https://www.openssl.org/source
+$(package)_download_path=http://slackware.cs.utah.edu/pub/openssl-ftp/source/old/1.0.2/
 $(package)_file_name=$(package)-$($(package)_version).tar.gz
 $(package)_sha256_hash=14cb464efe7ac6b54799b34456bd69558a749a4931ecfd9cf9f71d7881cac7bc
 
