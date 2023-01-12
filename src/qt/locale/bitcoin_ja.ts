@@ -1892,6 +1892,14 @@
         <translation>クリア</translation>
     </message>
     <message>
+        <source>Native segwit addresses (aka Bech32 or BIP-173) reduce your transaction fees later on and offer better protection against typos, but old wallets don&apos;t support them. When unchecked, an address compatible with older wallets will be created instead.</source>
+        <translation>Native segwitアドレス（別名Bech32、BIP-173）は取引手数料が安くなり、誤記に対する保護も強くなりますが、古いウォレットでは扱えません。チェックを外すと、古いウォレットと互換性のあるアドレスを生成します。</translation>
+    </message>
+    <message>
+        <source>Generate native segwit (Bech32) address</source>
+        <translation>Native segwit (Bech32)アドレスを生成</translation>
+    </message>
+    <message>
         <source>Requested payments history</source>
         <translation>支払リクエスト履歴</translation>
     </message>
@@ -3737,6 +3745,18 @@
     <message>
         <source>Signing transaction failed</source>
         <translation>取引の署名に失敗しました</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" does not exist</source>
+        <translation>指定された -walletdir "%s" は存在しません</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" is a relative path</source>
+        <translation>指定された -walletdir "%s" は相対パスです</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" is not a directory</source>
+        <translation>指定された-walletdir "%s" はディレクトリではありません</translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
