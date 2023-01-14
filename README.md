@@ -6,14 +6,16 @@ https://yentencoin.info
 **Download latest wallet:**
 https://github.com/yentencoin/yenten/releases
 
-**Yenten 5 version** -  is currently in beta, and is undergoing final testing.
+**Yenten 5.0.0 released**
 The full transition to version 5 will be January 30, 2023.
+The old version will no longer work after Jan. 30.
+The new version is backward-compatible and works fine now, so you can migrate now.
 
 What is Yenten Coin?
 
 ----------------
 
-![screenshot](https://raw.githubusercontent.com/yentencoin/yenten/yenten-4.0.0/docs/screen.png)
+![screenshot](https://raw.githubusercontent.com/yentencoin/yenten/yenten-5.0.0/docs/screen.png)
 ![](https://raw.githubusercontent.com/yentencoin/yenten/yenten-4.0.0/docs/images/header-teamwork.png)
 
 # Yenten is a cryptocurrency of the cpu, by the cpu, for the cpu.
