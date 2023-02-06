@@ -1069,7 +1069,7 @@
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
-        <translation>(0 = 自動、0以上 = 指定した数のコアをフリーにする)</translation>
+        <translation>(0 = 自動、&lt;0 = 指定した数のコアをフリーにする)</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1890,6 +1890,14 @@
     <message>
         <source>Clear</source>
         <translation>クリア</translation>
+    </message>
+    <message>
+        <source>Native segwit addresses (aka Bech32 or BIP-173) reduce your transaction fees later on and offer better protection against typos, but old wallets don&apos;t support them. When unchecked, an address compatible with older wallets will be created instead.</source>
+        <translation>Native segwitアドレス（別名Bech32、BIP-173）は取引手数料が安くなり、誤記に対する保護も強くなりますが、古いウォレットでは扱えません。チェックを外すと、古いウォレットと互換性のあるアドレスを生成します。</translation>
+    </message>
+    <message>
+        <source>Generate native segwit (Bech32) address</source>
+        <translation>Native segwit (Bech32)アドレスを生成</translation>
     </message>
     <message>
         <source>Requested payments history</source>
@@ -3259,7 +3267,7 @@
     </message>
     <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation>スクリプト検証スレッドを設定 (%uから%dの間, 0 = 自動, &lt;0 = たくさんのコアを自由にしておく, 初期値: %d)</translation>
+        <translation>スクリプト検証スレッド数を設定 (%uから%dの間, 0 = 自動, &lt;0 = 指定した数のコアを使わずに残す, 初期値: %d)</translation>
     </message>
     <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
@@ -3327,11 +3335,11 @@
     </message>
     <message>
         <source>Append comment to the user agent string</source>
-        <translation>ユーザエージェント文字列にコメントを</translation>
+        <translation>ユーザエージェント文字列にコメントを追加する</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet on startup</source>
-        <translation>起動時に壊れたウォレットから秘密鍵を復旧することを試す</translation>
+        <translation>起動時に壊れたウォレットから秘密鍵の復元を試みる</translation>
     </message>
     <message>
         <source>Block creation options:</source>
@@ -3476,7 +3484,7 @@
     </message>
     <message>
         <source>Location of the auth cookie (default: data dir)</source>
-        <translation>認証クッキーの場所 (デフォルト: )</translation>
+        <translation>認証クッキーの場所 (デフォルト: データディレクトリ)</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -3528,7 +3536,7 @@
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
-        <translation>ウォレットのファイルを指定　(データ・ディレクトリの中に)</translation>
+        <translation>ウォレットのファイルを指定 (データディレクトリ内)</translation>
     </message>
     <message>
         <source>The source code is available from %s.</source>
@@ -3612,7 +3620,7 @@
     </message>
     <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>関連のアラートをもらってもすごく長いのフォークを見てもコマンドを実行 (コマンドの中にあるの%sはメッセージから置き換えさせる)</translation>
+        <translation>関連するアラートを受け取った、またはとても長いフォークがあった際にコマンドを実行 (cmd の %s はメッセージに置換される)</translation>
     </message>
     <message>
         <source>Fees (in %s/kB) smaller than this are considered zero fee for relaying, mining and transaction creation (default: %s)</source>
@@ -3739,6 +3747,18 @@
         <translation>取引の署名に失敗しました</translation>
     </message>
     <message>
+        <source>Specified -walletdir "%s" does not exist</source>
+        <translation>指定された -walletdir "%s" は存在しません</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" is a relative path</source>
+        <translation>指定された -walletdir "%s" は相対パスです</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" is not a directory</source>
+        <translation>指定された-walletdir "%s" はディレクトリではありません</translation>
+    </message>
+    <message>
         <source>The transaction amount is too small to pay the fee</source>
         <translation>トランザクションの金額が小さすぎて手数料を支払えません</translation>
     </message>
@@ -3820,7 +3840,7 @@
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>最良のブロックに変更する際にコマンドを実行 (cmd の %s はブロック ハッシュに置換される)</translation>
+        <translation>最良のブロックが変わった際にコマンドを実行 (cmd の %s はブロック ハッシュに置換される)</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
@@ -3884,7 +3904,7 @@
     </message>
     <message>
         <source>Specify directory to hold wallets (default: &lt;datadir&gt;/wallets if it exists, otherwise &lt;datadir&gt;)</source>
-        <translation>ウォレットを保持するディレクトリの指定 (初期値: &lt;datadir&gt;/wallets 存在する場合、その他の場合 &lt;datadir&gt;)</translation>
+        <translation>ウォレットを保持するディレクトリの指定 (初期値: 存在する場合 &lt;datadir&gt;/wallets、その他の場合 &lt;datadir&gt;)</translation>
     </message>
     <message>
         <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
@@ -3936,7 +3956,7 @@
     </message>
     <message>
         <source>Whitelist peers connecting from the given IP address (e.g. 1.2.3.4) or CIDR notated network (e.g. 1.2.3.0/24). Can be specified multiple times.</source>
-        <translation>ホワイトリストとして登録するピアノ、接続元の IP アドレス (例: 1.2.3.4) または CIDR 表現のネットワーク (例: 1.2.3.0/24)。複数回指定することもできる</translation>
+        <translation>ホワイトリストとして登録するピアの、接続元の IP アドレス (例: 1.2.3.4) または CIDR 表現のネットワーク (例: 1.2.3.0/24)。複数回指定することもできる。</translation>
     </message>
     <message>
         <source>%s is set very high!</source>
