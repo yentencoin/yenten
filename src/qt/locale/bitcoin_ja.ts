@@ -3186,6 +3186,10 @@
         <translation>%s の開発者</translation>
     </message>
     <message>
+        <source>-sysperms is not allowed in combination with enabled wallet functionality</source>
+        <translation>-sysperms は有効化されているウォレットの機能と同時に使うことができません</translation>
+    </message>
+    <message>
         <source>A fee rate (in %s/kB) that will be used when fee estimation has insufficient data (default: %s)</source>
         <translation>十分なデータが蓄積されていない場合に手数料推定機能が利用する手数料レート (%s/kB) (デフォルト: %s)</translation>
     </message>
@@ -3232,6 +3236,10 @@
     <message>
         <source>Extra transactions to keep in memory for compact block reconstructions (default: %u)</source>
         <translation>コンパクトブロック再構成のために追加のトランザクションをメモリ内に保管しておく (デフォルト: %u)</translation>
+    </message>
+    <message>
+        <source>Flush wallet database activity from memory to disk log every &lt;n&gt; megabytes (default: %u)</source>
+        <translation>ウォレットデータベースのアクティビティを &lt;n&gt; メガバイトごとにメモリからディスクログに書き出す (デフォルト: %u)</translation>
     </message>
     <message>
         <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
@@ -3310,6 +3318,14 @@
         <translation>警告: ピアと完全に合意が取れていないようです！このノードまたは他のノードのアップグレードが必要なようです。</translation>
     </message>
     <message>
+        <source>What type of addresses to use (&quot;legacy&quot;, &quot;p2sh-segwit&quot;, or &quot;bech32&quot;, default: &quot;%s&quot;)</source>
+        <translation>使用するアドレスの種類  (&quot;legacy&quot;, &quot;p2sh-segwit&quot;, または &quot;bech32&quot;, デフォルト: &quot;%s&quot;)</translation>
+    </message>
+    <message>
+        <source>What type of change to use (&quot;legacy&quot;, &quot;p2sh-segwit&quot;, or &quot;bech32&quot;). Default is same as -addresstype, except when -addresstype=p2sh-segwit a native segwit output is used when sending to a native segwit address)</source>
+        <translation>使用するおつりの種類  (&quot;legacy&quot;, &quot;p2sh-segwit&quot;, or &quot;bech32&quot;)。デフォルトは -addresstype と同じ、ただし -addresstype=p2sh-segwit の場合にnative segwitアドレス宛に送るときはnative segwitアウトプットが使われます</translation>
+    </message>
+    <message>
         <source>Whether to save the mempool on shutdown and load on restart (default: %u)</source>
         <translation>シャットダウン時に mempool を保存し、再起動時にロードするかどうか (初期値: %u)</translation>
     </message>
@@ -3320,6 +3336,10 @@
     <message>
         <source>%s corrupt, salvage failed</source>
         <translation>%s が壊れています。復旧にも失敗しました</translation>
+    </message>
+    <message>
+        <source>%s is only allowed with a single wallet file</source>
+        <translation>%s は単一のウォレットファイルでのみ許可されます</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
@@ -3360,6 +3380,10 @@
     <message>
         <source>Connection options:</source>
         <translation>接続オプション：</translation>
+    </message>
+    <message>
+        <source>Copyright (C) %i</source>
+        <translation>Copyright (C) %i</translation>
     </message>
     <message>
         <source>Copyright (C) %i-%i</source>
@@ -3527,12 +3551,20 @@
         <translation>ブロックを巻き戻しています...</translation>
     </message>
     <message>
+        <source>Run a thread to flush wallet periodically (default: %u)</source>
+        <translation>ウォレットの変更を書き出すスレッドを定期的に実行する (default: %u)</translation>
+    </message>
+    <message>
         <source>Send transactions with full-RBF opt-in enabled (RPC only, default: %u)</source>
         <translation>手数料上乗せ(RBF)がオプトイン形式で有効化されているときRBFを利用してトランザクションを送信する (RPCコマンドのみ。初期値: %u)</translation>
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
         <translation>データベースのキャッシュサイズをメガバイトで設定 (%dから%d。初期値: %d)</translation>
+    </message>
+    <message>
+        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
+        <translation>ウォレットdb環境でDB_PRIVATEフラグを設定する (デフォルト: %u)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
@@ -3549,6 +3581,14 @@
     <message>
         <source>Unable to bind to %s on this computer. %s is probably already running.</source>
         <translation>このコンピュータの %s にバインドすることができません。おそらく %s は既に実行されています。</translation>
+    </message>
+    <message>
+        <source>Unknown address type &apos;%s&apos;</source>
+        <translation>未知のアドレス種別 &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Unknown change type &apos;%s&apos;</source>
+        <translation>未知のおつり種別 &apos;%s&apos;</translation>
     </message>
     <message>
         <source>Unsupported argument -benchmark ignored, use -debug=bench.</source>
