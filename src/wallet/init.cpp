@@ -16,8 +16,8 @@
 std::string GetWalletHelpString(bool showDebug)
 {
     std::string strUsage = HelpMessageGroup(_("Wallet options:"));
-    strUsage += HelpMessageOpt("-addresstype", strprintf("What type of addresses to use (\"legacy\", \"p2sh-segwit\", or \"bech32\", default: \"%s\")", FormatOutputType(OUTPUT_TYPE_DEFAULT)));
-    strUsage += HelpMessageOpt("-changetype", "What type of change to use (\"legacy\", \"p2sh-segwit\", or \"bech32\"). Default is same as -addresstype, except when -addresstype=p2sh-segwit a native segwit output is used when sending to a native segwit address)");
+    strUsage += HelpMessageOpt("-addresstype", strprintf(_("What type of addresses to use (\"legacy\", \"p2sh-segwit\", or \"bech32\", default: \"%s\")"), FormatOutputType(OUTPUT_TYPE_DEFAULT)));
+    strUsage += HelpMessageOpt("-changetype", _("What type of change to use (\"legacy\", \"p2sh-segwit\", or \"bech32\"). Default is same as -addresstype, except when -addresstype=p2sh-segwit a native segwit output is used when sending to a native segwit address)"));
     strUsage += HelpMessageOpt("-disablewallet", _("Do not load the wallet and disable wallet RPC calls"));
     strUsage += HelpMessageOpt("-keypool=<n>", strprintf(_("Set key pool size to <n> (default: %u)"), DEFAULT_KEYPOOL_SIZE));
     strUsage += HelpMessageOpt("-fallbackfee=<amt>", strprintf(_("A fee rate (in %s/kB) that will be used when fee estimation has insufficient data (default: %s)"),
@@ -46,9 +46,9 @@ std::string GetWalletHelpString(bool showDebug)
     {
         strUsage += HelpMessageGroup(_("Wallet debugging/testing options:"));
 
-        strUsage += HelpMessageOpt("-dblogsize=<n>", strprintf("Flush wallet database activity from memory to disk log every <n> megabytes (default: %u)", DEFAULT_WALLET_DBLOGSIZE));
-        strUsage += HelpMessageOpt("-flushwallet", strprintf("Run a thread to flush wallet periodically (default: %u)", DEFAULT_FLUSHWALLET));
-        strUsage += HelpMessageOpt("-privdb", strprintf("Sets the DB_PRIVATE flag in the wallet db environment (default: %u)", DEFAULT_WALLET_PRIVDB));
+        strUsage += HelpMessageOpt("-dblogsize=<n>", strprintf(_("Flush wallet database activity from memory to disk log every <n> megabytes (default: %u)"), DEFAULT_WALLET_DBLOGSIZE));
+        strUsage += HelpMessageOpt("-flushwallet", strprintf(_("Run a thread to flush wallet periodically (default: %u)"), DEFAULT_FLUSHWALLET));
+        strUsage += HelpMessageOpt("-privdb", strprintf(_("Sets the DB_PRIVATE flag in the wallet db environment (default: %u)"), DEFAULT_WALLET_PRIVDB));
         strUsage += HelpMessageOpt("-walletrejectlongchains", strprintf(_("Wallet will not create transactions that violate mempool chain limits (default: %u)"), DEFAULT_WALLET_REJECT_LONG_CHAINS));
     }
 
@@ -74,7 +74,7 @@ bool WalletParameterInteraction()
 
     if (gArgs.GetBoolArg("-salvagewallet", false)) {
         if (is_multiwallet) {
-            return InitError(strprintf("%s is only allowed with a single wallet file", "-salvagewallet"));
+            return InitError(strprintf(_("%s is only allowed with a single wallet file"), "-salvagewallet"));
         }
         // Rewrite just private keys: rescan to find transactions
         if (gArgs.SoftSetBoolArg("-rescan", true)) {
@@ -91,7 +91,7 @@ bool WalletParameterInteraction()
     // -zapwallettxes implies a rescan
     if (zapwallettxes) {
         if (is_multiwallet) {
-            return InitError(strprintf("%s is only allowed with a single wallet file", "-zapwallettxes"));
+            return InitError(strprintf(_("%s is only allowed with a single wallet file"), "-zapwallettxes"));
         }
         if (gArgs.SoftSetBoolArg("-rescan", true)) {
             LogPrintf("%s: parameter interaction: -zapwallettxes enabled -> setting -rescan=1\n", __func__);
@@ -100,12 +100,12 @@ bool WalletParameterInteraction()
 
     if (is_multiwallet) {
         if (gArgs.GetBoolArg("-upgradewallet", false)) {
-            return InitError(strprintf("%s is only allowed with a single wallet file", "-upgradewallet"));
+            return InitError(strprintf(_("%s is only allowed with a single wallet file"), "-upgradewallet"));
         }
     }
 
     if (gArgs.GetBoolArg("-sysperms", false))
-        return InitError("-sysperms is not allowed in combination with enabled wallet functionality");
+        return InitError(_("-sysperms is not allowed in combination with enabled wallet functionality"));
     if (gArgs.GetArg("-prune", 0) && gArgs.GetBoolArg("-rescan", false))
         return InitError(_("Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again."));
 
@@ -179,14 +179,14 @@ bool WalletParameterInteraction()
 
     g_address_type = ParseOutputType(gArgs.GetArg("-addresstype", ""));
     if (g_address_type == OUTPUT_TYPE_NONE) {
-        return InitError(strprintf("Unknown address type '%s'", gArgs.GetArg("-addresstype", "")));
+        return InitError(strprintf(_("Unknown address type '%s'"), gArgs.GetArg("-addresstype", "")));
     }
 
     // If changetype is set in config file or parameter, check that it's valid.
     // Default to OUTPUT_TYPE_NONE if not set.
     g_change_type = ParseOutputType(gArgs.GetArg("-changetype", ""), OUTPUT_TYPE_NONE);
     if (g_change_type == OUTPUT_TYPE_NONE && !gArgs.GetArg("-changetype", "").empty()) {
-        return InitError(strprintf("Unknown change type '%s'", gArgs.GetArg("-changetype", "")));
+        return InitError(strprintf(_("Unknown change type '%s'"), gArgs.GetArg("-changetype", "")));
     }
 
     return true;
