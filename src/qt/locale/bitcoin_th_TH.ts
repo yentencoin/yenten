@@ -102,10 +102,6 @@
         <translation>&amp;ภาพรวม</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Node/โหนด</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>แสดงภาพรวมทั่วไปของกระเป๋าเงิน</translation>
     </message>
@@ -162,14 +158,6 @@
         <translation>&amp;เปลี่ยนรหัสผ่าน...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;ที่เก็บเงิน ที่จะส่ง yenten</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;ที่เก็บเงิน ที่จะรับ yenten</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>เปิด &amp;URI</translation>
     </message>
@@ -179,7 +167,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>ส่ง coins ไปยัง ที่เก็บ Yenten</translation>
+        <translation>ส่ง coins ไปยัง ที่เก็บ Bitcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -203,11 +191,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Yenten</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>กระเป๋าเงิน</translation>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -231,11 +215,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Yenten เพื่อแสดงว่าท่านเป็นเจ้าของ yenten นี้จริง</translation>
+        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Bitcoin เพื่อแสดงว่าท่านเป็นเจ้าของ bitcoin นี้จริง</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>ตรวจสอบ ข้อความ เพื่อให้แน่ใจว่า การเซ็นต์ชื่อ ด้วยที่เก็บ Yenten แล้ว</translation>
+        <translation>ตรวจสอบ ข้อความ เพื่อให้แน่ใจว่า การเซ็นต์ชื่อ ด้วยที่เก็บ Bitcoin แล้ว</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -255,19 +239,19 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>เรียกเก็บ การชำระเงิน (สร้าง QR codes และ yenten: URIs)</translation>
+        <translation>เรียกเก็บ การชำระเงิน (สร้าง QR codes และ bitcoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>แสดงรายการ ที่เก็บเงินที่จะส่ง yenten ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะส่ง bitcoin ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>แสดงรายการ ที่เก็บเงินที่จะรับ yenten เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะรับ bitcoin เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>เปิด yenten: URI หรือ การเรียกเก็บเงิน (การเรียกให้ชำระเงิน)</translation>
+        <translation>เปิด bitcoin: URI หรือ การเรียกเก็บเงิน (การเรียกให้ชำระเงิน)</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -275,7 +259,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n ช่องการเชื่อมต่อที่ใช้งานได้ เพื่อเชื่อมกับเครือข่าย Yenten</numerusform></translation>
+        <translation><numerusform>%n ช่องการเชื่อมต่อที่ใช้งานได้ เพื่อเชื่อมกับเครือข่าย Bitcoin</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -319,7 +303,11 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>แสดง %1 ข้อความช่วยเหลือ เพื่อแสดงรายการ ตัวเลือกที่เป็นไปได้สำหรับ Yenten command-line</translation>
+        <translation>แสดง %1 ข้อความช่วยเหลือ เพื่อแสดงรายการ ตัวเลือกที่เป็นไปได้สำหรับ Bitcoin command-line</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>&amp;วันโดว์</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -511,42 +499,6 @@
         <source>Command-line options</source>
         <translation>ตัวเลือก Command-line</translation>
     </message>
-    <message>
-        <source>Usage:</source>
-        <translation>วิธีใช้งาน:</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>ตัวเลือก command-line</translation>
-    </message>
-    <message>
-        <source>UI Options:</source>
-        <translation>ตัวเลือก UI:</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: %u)</source>
-        <translation>เลือกไดเร็กทอรี่ข้อมูลตั้งแต่เริ่มต้นสตาร์ทอัพ (ค่าเริ่มต้น: %u)</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>ตั้งค่าภาษา ยกตัวอย่าง "de_DE" (ค่าเริ่มต้น: ภาษาท้องถิ่นของระบบ)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>เริ่มต้นมินิไมซ์</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>ตั้งค่า SSL root certificates สำหรับเรียกการชำระเงิน (ค่าเริ่มต้น: -system-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: %u)</source>
-        <translation>แสดง splash screen ตอนเริ่มต้น (ค่าเริ่มต้น: %u)</translation>
-    </message>
-    <message>
-        <source>Reset all settings changed in the GUI</source>
-        <translation>รีเซตการเปลี่ยนการตั้งค่าทั้งหมดใน GUI</translation>
-    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -572,7 +524,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Yenten</translation>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -640,10 +592,6 @@
         <translation>ขนาดของ &amp;database cache</translation>
     </message>
     <message>
-        <source>MB</source>
-        <translation>MB</translation>
-    </message>
-    <message>
         <source>Number of script &amp;verification threads</source>
         <translation>จำนวนของสคริปท์ &amp;verification threads</translation>
     </message>
@@ -658,10 +606,6 @@
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>URL แบบอื่น (ยกตัวอย่าง เอ็กพลอเลอร์บล็อก) ที่อยู่ใน เมนูรายการ ลำดับ %s ใน URL จะถูกเปลี่ยนด้วย รายการแฮช URL ที่เป็นแบบหลายๆอัน จะถูกแยก โดย เครื่องหมายเส้นบาร์ตั้ง |</translation>
-    </message>
-    <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>ตัวเลือก command-line แอกทีฟอยู่นี้ จะแทนที่ ตัวเลือกด้านบนนี้:</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -701,7 +645,7 @@
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>เปิด Yenten ไคล์เอ็นท์พอร์ต/client port บน router โดยอัตโนมัติ วิธีนี้ใช้ได้เมื่อ router สนับสนุน UPnP และสถานะเปิดใช้งาน</translation>
+        <translation>เปิด Bitcoin ไคล์เอ็นท์พอร์ต/client port บน router โดยอัตโนมัติ วิธีนี้ใช้ได้เมื่อ router สนับสนุน UPnP และสถานะเปิดใช้งาน</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -709,7 +653,7 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>เชื่อมต่อกับ Yenten เน็ตเวิร์ก ผ่านพร็อกซี่แบบ SOCKS5</translation>
+        <translation>เชื่อมต่อกับ Bitcoin เน็ตเวิร์ก ผ่านพร็อกซี่แบบ SOCKS5</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -745,7 +689,7 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>เชื่อมต่อกับ เครือข่าย Yenten ผ่านทาง พร้อกซี่ SOCKS5 แยกต่างหาก สำหรับ Tor เซอร์วิส</translation>
+        <translation>เชื่อมต่อกับ เครือข่าย Bitcoin ผ่านทาง พร้อกซี่ SOCKS5 แยกต่างหาก สำหรับ Tor เซอร์วิส</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -802,6 +746,10 @@
     </context>
 <context>
     <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Wallet</source>
+        <translation>กระเป๋าเงิน</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -883,6 +831,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -893,10 +844,6 @@
     </context>
 <context>
     <name>bitcoin-core</name>
-    <message>
-        <source>Options:</source>
-        <translation>ตัวเลือก:</translation>
-    </message>
     <message>
         <source>Information</source>
         <translation>ข้อมูล</translation>

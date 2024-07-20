@@ -30,6 +30,10 @@
         <translation>Обришите тренутно одабрану адресу са листе</translation>
     </message>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>Navedite adresu ili naziv koji bi ste potražili</translation>
+    </message>
+    <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Извези податке из одабране картице у фајлj</translation>
     </message>
@@ -172,7 +176,7 @@
         <translation>Потврди шифрирање новчаника</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR YENTENS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
         <translation>Упозорење: Уколико шифрирате новчаник и изгубите своју лозинку, &lt;b&gt;ИЗГУБИЋЕТЕ СВЕ СВОЈЕ БИТКОИНЕ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -182,10 +186,6 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>Новчаник шифриран</translation>
-    </message>
-    <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your yentens from being stolen by malware infecting your computer.</source>
-        <translation>%1 ће се сада затворити како би се завршио процес шифрирања.  Запамтите да шифрирањем свог новчаника не можете у потпуности заштити своје биткоине од крађе од стране злоћудних програма и компјутерских инфекција.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -250,10 +250,6 @@
         <translation>&amp;Општи преглед</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Ноде</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>Погледајте општи преглед новчаника</translation>
     </message>
@@ -310,16 +306,12 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Адресе за слање...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Адресе за пријем</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>Отвори &amp;УРИ...</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Новчаник</translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
@@ -340,6 +332,10 @@
     <message>
         <source>Reindexing blocks on disk...</source>
         <translation>Поново идексирање блокова на диску.</translation>
+    </message>
+    <message>
+        <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation>Прокси је &lt;b&gt;омогућен&lt;/b&gt;: %1</translation>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
@@ -368,10 +364,6 @@
     <message>
         <source>Bitcoin</source>
         <translation>Биткоин</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Новчаник</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -437,6 +429,10 @@
         <source>&amp;Command-line options</source>
         <translation>&amp;Опције командне линије</translation>
     </message>
+    <message numerus="yes">
+        <source>%n active connection(s) to Bitcoin network</source>
+        <translation><numerusform>%n aктивна веза са Биткоин мрежом</numerusform><numerusform>%n aктивних веза са Биткоин мрежом</numerusform><numerusform>%n aктивних веза са Биткоин мрежом</numerusform></translation>
+    </message>
     <message>
         <source>Indexing blocks on disk...</source>
         <translation>Идексирање блокова на диску...</translation>
@@ -478,6 +474,14 @@
         <translation>Ажурно</translation>
     </message>
     <message>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation>Прикажи  поруку помоћи %1 за листу са могућим опцијама Биткоин командне линије</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>подразумевани новчаник</translation>
+    </message>
+    <message>
         <source>%1 client</source>
         <translation>%1 клијент</translation>
     </message>
@@ -495,6 +499,12 @@
         <source>Amount: %1
 </source>
         <translation>Износ: %1
+</translation>
+    </message>
+    <message>
+        <source>Wallet: %1
+</source>
+        <translation>Новчаник: %1
 </translation>
     </message>
     <message>
@@ -699,10 +709,6 @@
         <translation>&amp;Адреса</translation>
     </message>
     <message>
-        <source>New receiving address</source>
-        <translation>Нова адреса за пријем</translation>
-    </message>
-    <message>
         <source>New sending address</source>
         <translation>Нова адреса за слање</translation>
     </message>
@@ -713,10 +719,6 @@
     <message>
         <source>Edit sending address</source>
         <translation>Измени адресу за слање</translation>
-    </message>
-    <message>
-        <source>The entered address "%1" is already in the address book.</source>
-        <translation>Унета адреса "%1" се већ налази у адресару.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -768,19 +770,7 @@
         <source>Command-line options</source>
         <translation>Опције командне линије</translation>
     </message>
-    <message>
-        <source>Usage:</source>
-        <translation>Korišćenje:</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>опције командне линије</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: %u)</source>
-        <translation>Изаберите директоријум података при покретању (подразумевано: %u)</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>Intro</name>
     <message>
@@ -1008,6 +998,10 @@
         <source>Label</source>
         <translation>Налепница</translation>
     </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Новчаник</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -1214,11 +1208,18 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
     <name>WalletModel</name>
-    </context>
+    <message>
+        <source>default wallet</source>
+        <translation>подразумевани новчаник</translation>
+    </message>
+</context>
 <context>
     <name>WalletView</name>
     <message>
@@ -1233,36 +1234,12 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Options:</source>
-        <translation>Opcije</translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>Gde je konkretni data direktorijum </translation>
-    </message>
-    <message>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation>Prihvati komandnu liniju i JSON-RPC komande</translation>
-    </message>
-    <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>Radi u pozadini kao daemon servis i prihvati komande</translation>
-    </message>
-    <message>
         <source>Information</source>
         <translation>Информације</translation>
     </message>
     <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>Korisničko ime za JSON-RPC konekcije</translation>
-    </message>
-    <message>
         <source>Warning</source>
         <translation>Упозорење</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Lozinka za JSON-RPC konekcije</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

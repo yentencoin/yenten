@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ovo su Vaše Yenten adrese na koju se vrše uplate. Uvek proverite iznos i prijemnu adresu pre slanja novčića.</translation>
+        <translation>Ovo su Vaše Bitcoin adrese na koju se vrše uplate. Uvek proverite iznos i prijemnu adresu pre slanja novčića.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ovo su Vaše Yenten adrese za primanje uplata. Preporučuje se upotreba nove adrese za svaku transakciju.</translation>
+        <translation>Ovo su Vaše Bitcoin adrese za primanje uplata. Preporučuje se upotreba nove adrese za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,7 +168,7 @@
         <translation>Potvrdite šifrovanje novčanika</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR YENTENS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
         <translation>Upozorenje: Ako šifrujete svoj novčanik, i potom izgubite svoju pristupnu frazu &lt;b&gt;IZGUBIĆETE SVE SVOJE BITKOINE&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -178,10 +178,6 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>Novčanik je šifrovan</translation>
-    </message>
-    <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your yentens from being stolen by malware infecting your computer.</source>
-        <translation>%1 će se ugasiti da bi dovršio proces enkriptovanja. Imajte u vidu da enkripcija novčanika ne garantuje potpunu zaštitu yentena od krađe od strane nekog virusa koji bi zarazio vaš kompjuter.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -246,10 +242,6 @@
         <translation>&amp;Pregled</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Čvor</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>Prikaži opšti pregled novčanika</translation>
     </message>
@@ -306,14 +298,6 @@
         <translation>&amp;Izmeni pristupnu frazu...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Slanje adresa...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Primanje adresa...</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>Otvori &amp;URI...</translation>
     </message>
@@ -339,7 +323,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Pošalji novčiće na Yenten adresu</translation>
+        <translation>Pošalji novčiće na Bitcoin adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -363,11 +347,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Yenten</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Novčanik</translation>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -391,11 +371,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Potpišite poruke sa svojim Yenten adresama da biste dokazali njihovo vlasništvo</translation>
+        <translation>Potpišite poruke sa svojim Bitcoin adresama da biste dokazali njihovo vlasništvo</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Proverite poruke da biste utvrdili sa kojim Yenten adresama su potpisane</translation>
+        <translation>Proverite poruke da biste utvrdili sa kojim Bitcoin adresama su potpisane</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -415,7 +395,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Zatražite plaćanje (generiše QR kodove i yenten: URI-e)</translation>
+        <translation>Zatražite plaćanje (generiše QR kodove i bitcoin: URI-e)</translation>
     </message>
     <message>
         <source>Error</source>
@@ -520,7 +500,7 @@
     <name>Intro</name>
     <message>
         <source>Bitcoin</source>
-        <translation>Yenten</translation>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -582,6 +562,10 @@
         <source>Label</source>
         <translation>Oznaka</translation>
     </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Novčanik</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -611,6 +595,10 @@
     <message>
         <source>After Fee:</source>
         <translation>Nakon Naknade:</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Taksa transakcije</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -675,6 +663,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -687,7 +678,7 @@
     <name>bitcoin-core</name>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Yenten Core</translation>
+        <translation>Bitcoin Core</translation>
     </message>
     <message>
         <source>Information</source>

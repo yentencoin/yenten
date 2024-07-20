@@ -30,6 +30,10 @@
         <translation>حذف العنوان المحدد من القائمة</translation>
     </message>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>ادخل عنوان أووصف للبحث</translation>
+    </message>
+    <message>
         <source>Export the data in the current tab to a file</source>
         <translation>تحميل البيانات في علامة التبويب الحالية إلى ملف.</translation>
     </message>
@@ -63,11 +67,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>هذه هي عناوين Yenten التابعة لك من أجل إرسال الدفعات. تحقق دائما من المبلغ و عنوان المرسل المستقبل قبل إرسال العملات</translation>
+        <translation>هذه هي عناوين Bitcoin التابعة لك من أجل إرسال الدفعات. تحقق دائما من المبلغ و عنوان المرسل المستقبل قبل إرسال العملات</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>هذه هي عناوين Yenten التابعة لك من أجل إستقبال الدفعات. ينصح استخدام عنوان جديد من أجل كل صفقة</translation>
+        <translation>هذه هي عناوين Bitcoin التابعة لك من أجل إستقبال الدفعات. ينصح استخدام عنوان جديد من أجل كل صفقة</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +176,8 @@
         <translation>تأكيد تشفير المحفظة</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR YENTENS&lt;/b&gt;!</source>
-        <translation>تحذير: إذا قمت بتشفير محفظتك وفقدت كلمة المرور الخاص بك, ستفقد كل عملات YENTENS الخاصة بك.</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation>تحذير: إذا قمت بتشفير محفظتك وفقدت كلمة المرور الخاص بك, ستفقد كل عملات BITCOINS الخاصة بك.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -182,10 +186,6 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>محفظة مشفرة</translation>
-    </message>
-    <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your yentens from being stolen by malware infecting your computer.</source>
-        <translation>سيتم إغلاق %1 الآن لإنهاء عملية التشفير. تذكر أن تشفير محفظتك لا يمكن أن يحمي البتكوين الخاص بك بالكامل من السرقة عبر البرامج الضارة التي بامكانها أن تصيب جهاز الكمبيوتر الخاص بك.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -250,10 +250,6 @@
         <translation>&amp;نظرة عامة</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>جهاز</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>إظهار نظرة عامة على المحفظة</translation>
     </message>
@@ -310,16 +306,12 @@
         <translation>&amp;تغيير كلمة المرور</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;عناوين الإرسال...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;عناوين الاستقبال...</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>افتح &amp;URI...</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>محفظة:</translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
@@ -370,10 +362,6 @@
         <translation>بتكوين</translation>
     </message>
     <message>
-        <source>Wallet</source>
-        <translation>محفظة</translation>
-    </message>
-    <message>
         <source>&amp;Send</source>
         <translation>&amp;ارسل</translation>
     </message>
@@ -395,11 +383,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>وقَع الرسائل بواسطة ال: Yenten الخاص بك لإثبات امتلاكك لهم</translation>
+        <translation>وقَع الرسائل بواسطة ال: Bitcoin الخاص بك لإثبات امتلاكك لهم</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>تحقق من الرسائل للتأكد من أنَها وُقعت برسائل Yenten محدَدة</translation>
+        <translation>تحقق من الرسائل للتأكد من أنَها وُقعت برسائل Bitcoin محدَدة</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -431,15 +419,11 @@
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>فتح URI : Yenten أو طلب دفع</translation>
+        <translation>فتح URI : Bitcoin أو طلب دفع</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;خيارات سطر الأوامر</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n اتصال نشطة بشبكة بتكوين</numerusform><numerusform>%n اتصال نشطة بشبكة بتكوين</numerusform><numerusform>%n اتصال نشطة بشبكة بتكوين</numerusform><numerusform>%n اتصالات نشطة بشبكة بتكوين</numerusform><numerusform>%n اتصالات نشطة بشبكة بتكوين</numerusform><numerusform>%n اتصالات نشطة بشبكة بتكوين</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -448,10 +432,6 @@
     <message>
         <source>Processing blocks on disk...</source>
         <translation>معالجة الكتل على القرص...</translation>
-    </message>
-    <message numerus="yes">
-        <source>Processed %n block(s) of transaction history.</source>
-        <translation><numerusform>تمت معالجة %n كتلة من محفوظات المعاملة.</numerusform><numerusform>تمت معالجة %n كتلة من محفوظات المعاملة.</numerusform><numerusform>تمت معالجة %n كتلة من محفوظات المعاملة.</numerusform><numerusform>تمت معالجة %n كتلات من محفوظات المعاملة.</numerusform><numerusform>تمت معالجة %n كتلات من محفوظات المعاملة.</numerusform><numerusform>تمت معالجة %n كتلات من محفوظات المعاملة.</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -482,8 +462,64 @@
         <translation>محدث</translation>
     </message>
     <message>
+        <source>&amp;Sending addresses</source>
+        <translation>&amp;عناوين الإرسال</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses</source>
+        <translation>&amp;عناوين الإستقبال</translation>
+    </message>
+    <message>
+        <source>Open Wallet</source>
+        <translation>افتح المحفظة</translation>
+    </message>
+    <message>
+        <source>Open a wallet</source>
+        <translation>افتح محفظة</translation>
+    </message>
+    <message>
+        <source>Close Wallet...</source>
+        <translation>اغلق المحفظة</translation>
+    </message>
+    <message>
+        <source>Close wallet</source>
+        <translation>اغلق المحفظة</translation>
+    </message>
+    <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
         <translation>بين اشارة المساعدة %1 للحصول على قائمة من خيارات اوامر البت كوين المحتملة </translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>محفظة إفتراضية</translation>
+    </message>
+    <message>
+        <source>Opening Wallet &lt;b&gt;%1&lt;/b&gt;...</source>
+        <translation>يتم فتح المحفظة&lt;b&gt;%1&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Open Wallet Failed</source>
+        <translation>فشل فتح المحفظة</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>نافذه</translation>
+    </message>
+    <message>
+        <source>Minimize</source>
+        <translation>تصغير</translation>
+    </message>
+    <message>
+        <source>Zoom</source>
+        <translation>تكبير</translation>
+    </message>
+    <message>
+        <source>Restore</source>
+        <translation>إرجاع</translation>
+    </message>
+    <message>
+        <source>Main Window</source>
+        <translation>النافذة الرئيسية</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -544,6 +580,10 @@
     <message>
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
         <translation>توليد المفاتيح الهرمية الحتمية HD &lt;b&gt;معطل&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
+        <translation>المفتاح السري &lt;b&gt;معطل&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -697,6 +737,10 @@
         <translation>(لا وصف)</translation>
     </message>
     <message>
+        <source>change from %1 (%2)</source>
+        <translation>تغير من %1 (%2)</translation>
+    </message>
+    <message>
         <source>(change)</source>
         <translation>(تغير)</translation>
     </message>
@@ -724,10 +768,6 @@
         <translation>&amp;العنوان</translation>
     </message>
     <message>
-        <source>New receiving address</source>
-        <translation>عنوان أستلام جديد</translation>
-    </message>
-    <message>
         <source>New sending address</source>
         <translation>عنوان إرسال جديد</translation>
     </message>
@@ -742,10 +782,6 @@
     <message>
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
         <translation>العنوان المدخل "%1" ليس عنوان بيت كوين صحيح.</translation>
-    </message>
-    <message>
-        <source>The entered address "%1" is already in the address book.</source>
-        <translation>هدا العنوان "%1" موجود مسبقا في دفتر العناوين</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -796,42 +832,6 @@
     <message>
         <source>Command-line options</source>
         <translation>خيارات سطر الأوامر</translation>
-    </message>
-    <message>
-        <source>Usage:</source>
-        <translation>المستخدم</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>خيارات سطر الأوامر</translation>
-    </message>
-    <message>
-        <source>UI Options:</source>
-        <translation>خيارات واجهة المستخدم</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: %u)</source>
-        <translation>اختر دليل البيانات عند بدء التشغير (افتراضي: %u)</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>أضع لغة, على سبيل المثال " de_DE "  (افتراضي:- مكان النظام)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>البدء مصغراً</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>أضع شهادة بروتوكول الشبقة الأمنية لطلب المدفوع (افتراضي: -نظام-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: %u)</source>
-        <translation>أظهر شاشة البداية عند بدء التشغيل (افتراضي: %u)</translation>
-    </message>
-    <message>
-        <source>Reset all settings changed in the GUI</source>
-        <translation>اعد تعديل جميع النظم المتغيرة في GUI</translation>
     </message>
 </context>
 <context>
@@ -896,15 +896,7 @@
         <source>Error</source>
         <translation>خطأ</translation>
     </message>
-    <message numerus="yes">
-        <source>%n GB of free space available</source>
-        <translation><numerusform>%n جيجابايت من المساحة المتوفرة</numerusform><numerusform>%n جيجابايت من المساحة المتوفرة</numerusform><numerusform>%n جيجابايت من المساحة المتوفرة</numerusform><numerusform>%n جيجابايت من المساحة المتوفرة</numerusform><numerusform>%n جيجابايت من المساحة المتوفرة</numerusform><numerusform>%n جيجابايت من المساحة المتوفرة</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>(of %n GB needed)</source>
-        <translation><numerusform>(من %n جيجابايت اللازمة)</numerusform><numerusform>(من %n جيجابايت اللازمة)</numerusform><numerusform>(من %n جيجابايت اللازمة)</numerusform><numerusform>(من %n جيجابايت اللازمة)</numerusform><numerusform>(من %n جيجابايت اللازمة)</numerusform><numerusform>(من %n جيجابايت اللازمة)</numerusform></translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>ModalOverlay</name>
     <message>
@@ -912,11 +904,11 @@
         <translation>نمودج</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the yenten network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
         <translation>قد لا تكون المعاملات الأخيرة مرئية بعد، وبالتالي قد يكون رصيد محفظتك غير صحيح. ستكون هذه المعلومات صحيحة بمجرد الانتهاء من محفظتك مع شبكة البيتكوين، كما هو مفصل أدناه.</translation>
     </message>
     <message>
-        <source>Attempting to spend yentens that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>لن تقبل الشبكة محاولة إنفاق البتكوين المتأثرة بالمعاملات التي لم يتم عرضها بعد.</translation>
     </message>
     <message>
@@ -951,11 +943,7 @@
         <source>Hide</source>
         <translation>إخفاء</translation>
     </message>
-    <message>
-        <source>Unknown. Syncing Headers (%1)...</source>
-        <translation>غير معروف. مزامنة الرؤوس (%1) ...</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -1002,10 +990,6 @@
         <translation>حجم ذاكرة التخزين المؤقت لقاعدة البيانات</translation>
     </message>
     <message>
-        <source>MB</source>
-        <translation>م ب</translation>
-    </message>
-    <message>
         <source>Number of script &amp;verification threads</source>
         <translation>عدد مؤشرات التحقق من البرنامج النصي</translation>
     </message>
@@ -1028,10 +1012,6 @@
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
         <translation>التصغير بدلاً من الخروج من التطبيق عند إغلاق النافذة. عند تفعيل هذا الخيار، سيتم إغلاق التطبيق فقط بعد اختيار الخروج من القائمة.</translation>
-    </message>
-    <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>خيارات سطر الأوامر النشطة التي تتجاوز الخيارات أعلاه:</translation>
     </message>
     <message>
         <source>Open the %1 configuration file from the working directory.</source>
@@ -1437,33 +1417,9 @@
         <source>%1 ms</source>
         <translation>%1 جزء من الثانية</translation>
     </message>
-    <message numerus="yes">
-        <source>%n second(s)</source>
-        <translation><numerusform>%n ثانية</numerusform><numerusform>%n ثانية</numerusform><numerusform>%n ثانية</numerusform><numerusform>%n ثواني</numerusform><numerusform>%n ثانية</numerusform><numerusform>%n ثانية</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n minute(s)</source>
-        <translation><numerusform>%n دقيقة</numerusform><numerusform>%n دقيقة</numerusform><numerusform>%n دقيقة</numerusform><numerusform>%n دقائق</numerusform><numerusform>%n دقيقة</numerusform><numerusform>%n دقيقة</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n ساعة</numerusform><numerusform>%n ساعة</numerusform><numerusform>%n ساعة</numerusform><numerusform>%n ساعة</numerusform><numerusform>%n ساعات</numerusform><numerusform>%n ساعة</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n يوم</numerusform><numerusform>%n يوم</numerusform><numerusform>%n يوم</numerusform><numerusform>%n أيام</numerusform><numerusform>%n يوم</numerusform><numerusform>%n يوم</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n أسبوع</numerusform><numerusform>%n أسبوع</numerusform><numerusform>%n أسبوع</numerusform><numerusform>%n أسابيع</numerusform><numerusform>%n أسابيع</numerusform><numerusform>%n أسابيع</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 و %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n يوم</numerusform><numerusform>%n يوم</numerusform><numerusform>%n يوم</numerusform><numerusform>%n أيام</numerusform><numerusform>%n أيام</numerusform><numerusform>%n أيام</numerusform></translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -1933,6 +1889,10 @@
         <translation>رسالة </translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>محفظة</translation>
+    </message>
+    <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
         <translation>العنوان المستخدم طويل جدًا، حاول أن تقوم بتقليل نص التسمية / الرسالة.</translation>
     </message>
@@ -2051,14 +2011,6 @@
         <translation>إخفاء</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>إن دفع الحد الأدنى فقط من الرسوم يجوز طالما أن حجم المعاملات أقل من المساحة الموجودة في الكتل. ولكن كن على علم بأن هذا يمكن أن ينتهي في معاملة غير مؤكدة أبداً عندما يكون هناك طلب أكبر على معاملات البتكوين مما تستطيع الشبكة معالجته.</translation>
-    </message>
-    <message>
-        <source>(read the tooltip)</source>
-        <translation>(اقرأ تلميح الأدوات)</translation>
-    </message>
-    <message>
         <source>Recommended:</source>
         <translation>موصى به:</translation>
     </message>
@@ -2155,20 +2107,16 @@
         <translation>هل أنت متأكد من أنك تريد أن ترسل؟</translation>
     </message>
     <message>
-        <source>added as transaction fee</source>
-        <translation>أضيفت كرسوم للمعاملة</translation>
-    </message>
-    <message>
-        <source>Total Amount %1</source>
-        <translation>إجمالي المبلغ %1</translation>
-    </message>
-    <message>
         <source>or</source>
         <translation>أو</translation>
     </message>
     <message>
         <source>You can increase the fee later (signals Replace-By-Fee, BIP-125).</source>
         <translation>يمكنك زيادة الرسوم لاحقًا (بإشارة الإستبدال بواسطة الرسوم، BIP-125).</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>رسوم المعاملة</translation>
     </message>
     <message>
         <source>Not signalling Replace-By-Fee, BIP-125.</source>
@@ -2215,14 +2163,6 @@
         <translation>انتهاء صلاحية طلب الدفع.</translation>
     </message>
     <message>
-        <source>Pay only the required fee of %1</source>
-        <translation>دفع فقط الرسوم المطلوبة ل %1</translation>
-    </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>يقدر أن يبدأ التأكيد ضمن %n من الكتل.</numerusform><numerusform>يقدر أن يبدأ التأكيد ضمن %n من الكتل.</numerusform><numerusform>يقدر أن يبدأ التأكيد ضمن %n من الكتل.</numerusform><numerusform>يقدر أن يبدأ التأكيد ضمن %n من الكتل.</numerusform><numerusform>يقدر أن يبدأ التأكيد ضمن %n من الكتل.</numerusform><numerusform>يقدر أن يبدأ التأكيد ضمن %n من الكتل.</numerusform></translation>
-    </message>
-    <message>
         <source>Warning: Invalid Bitcoin address</source>
         <translation>تحذير: عنوان بتكوين غير صالح</translation>
     </message>
@@ -2262,7 +2202,7 @@
         <translation>هذا دفع اعتيادي</translation>
     </message>
     <message>
-        <source>The Yenten address to send the payment to</source>
+        <source>The Bitcoin address to send the payment to</source>
         <translation>عنوان البت كوين المرسل اليه الدفع</translation>
     </message>
     <message>
@@ -2355,7 +2295,7 @@
         <translation>&amp;توقيع الرسالة</translation>
     </message>
     <message>
-        <source>The Yenten address to sign the message with</source>
+        <source>The Bitcoin address to sign the message with</source>
         <translation>عنوان البتكوين لتوقيع الرسالة به</translation>
     </message>
     <message>
@@ -2491,10 +2431,6 @@
 </context>
 <context>
     <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>مفتوح ل %n كتلة إضافية</numerusform><numerusform>مفتوح ل %n كتلة إضافية</numerusform><numerusform>مفتوح ل %n كتلة إضافية</numerusform><numerusform>مفتوح ل %n كتلات إضافية</numerusform><numerusform>مفتوح ل %n كتلة إضافية</numerusform><numerusform>مفتوح ل %n كتلة إضافية</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>مفتوح حتى %1</translation>
@@ -2502,10 +2438,6 @@
     <message>
         <source>conflicted with a transaction with %1 confirmations</source>
         <translation>تعارضت مع معاملة لديها %1 تأكيدات</translation>
-    </message>
-    <message>
-        <source>%1/offline</source>
-        <translation>%1 غير متواجد</translation>
     </message>
     <message>
         <source>in memory pool</source>
@@ -2530,10 +2462,6 @@
     <message>
         <source>Status</source>
         <translation>الحالة.</translation>
-    </message>
-    <message>
-        <source>, has not been successfully broadcast yet</source>
-        <translation>,  لم يتم حتى الآن البث بنجاح</translation>
     </message>
     <message>
         <source>Date</source>
@@ -2574,10 +2502,6 @@
     <message>
         <source>Credit</source>
         <translation>رصيد</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>تنضج خلال %n كتل إضافية</numerusform><numerusform>تنضج خلال %n كتل إضافية</numerusform><numerusform>تنضج خلال %n كتل إضافية</numerusform><numerusform>تنضج خلال %n كتل إضافية</numerusform><numerusform>تنضج خلال %n كتل إضافية</numerusform><numerusform>تنضج خلال %n كتل إضافية</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -2677,17 +2601,9 @@
         <source>Label</source>
         <translation>وصف</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>مفتوح لـ %n كتلة إضافية</numerusform><numerusform>مفتوح لـ %n كتلة إضافية</numerusform><numerusform>مفتوح لـ %n كتلة إضافية</numerusform><numerusform>مفتوح لـ %n كتلة إضافية</numerusform><numerusform>مفتوح لـ %n كتلة إضافية</numerusform><numerusform>مفتوح لـ %n كتلة إضافية</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>مفتوح حتى %1</translation>
-    </message>
-    <message>
-        <source>Offline</source>
-        <translation>غير متصل</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
@@ -2708,10 +2624,6 @@
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>غير ناضجة (تأكيدات %1 ، ستكون متوفرة بعد %2)</translation>
-    </message>
-    <message>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>لم يتم تلقى هذه الكتلة (Block) من قبل أي العقد الأخرى وربما لن تكون مقبولة!</translation>
     </message>
     <message>
         <source>Generated but not accepted</source>
@@ -2937,6 +2849,13 @@
     </message>
 </context>
 <context>
+    <name>WalletController</name>
+    <message>
+        <source>Close wallet</source>
+        <translation>اغلق المحفظة</translation>
+    </message>
+    </context>
+<context>
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
@@ -2985,6 +2904,10 @@
         <source>Could not commit transaction</source>
         <translation>لا يمكن تنفيذ المعاملة</translation>
     </message>
+    <message>
+        <source>default wallet</source>
+        <translation>محفظة إفتراضية</translation>
+    </message>
 </context>
 <context>
     <name>WalletView</name>
@@ -3016,25 +2939,9 @@
         <source>The wallet data was successfully saved to %1.</source>
         <translation>تم حفظ بيانات المحفظة بنجاح إلى %1.</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>bitcoin-core</name>
-    <message>
-        <source>Options:</source>
-        <translation>خيارات: </translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>حدد مجلد المعلومات</translation>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation>حدد العنوان العام لمحفظتك</translation>
-    </message>
-    <message>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation>قبول أوامر وحدة التحكم وأوامر JSON-RPC</translation>
-    </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
         <translation>خطأ: حدث خطأ داخلي فادح، راجع debug.log للحصول على التفاصيل</translation>
@@ -3042,10 +2949,6 @@
     <message>
         <source>Pruning blockstore...</source>
         <translation>تجريد مخزن الكتل...</translation>
-    </message>
-    <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>تشغيل في الخلفية بشكل مخفي لقبول الأوامر</translation>
     </message>
     <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
@@ -3064,48 +2967,17 @@
         <translation>لا يمكن توفير اتصالات محددة ولابد أن يكون لدى addrman اتصالات صادرة في نفس الوقت.</translation>
     </message>
     <message>
-        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>حذف جميع معاملات المحفظة واسترداد فقط تلك الأجزاء من سلسلة الكتل عبر -escan عند بدء التشغيل</translation>
-    </message>
-    <message>
         <source>Please contribute if you find %s useful. Visit %s for further information about the software.</source>
         <translation>يرجى المساهمة إذا وجدت %s مفيداً. تفضل بزيارة %s لمزيد من المعلومات حول البرنامج.</translation>
     </message>
     <message>
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect used)</source>
-        <translation>الاستعلام عن عناوين النظراء من خلال البحث عبر ال DNS إذا كان عدد العناوين منخفضاً (القيمة الافتراضية: 1 ، إلّا في حالة استخدام -connect)</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; يمكن أن يكون</translation>
-    </message>
-    <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>قبول الاتصالات من خارج</translation>
-    </message>
-    <message>
-        <source>Append comment to the user agent string</source>
-        <translation>إلحاق تعليق إلى سلسلة وكيل المستخدم</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet on startup</source>
-        <translation>محاولة استرداد المفاتيح الخاصة من المحفظة في حالة تلفها عند بدء التشغيل</translation>
-    </message>
-    <message>
-        <source>Block creation options:</source>
-        <translation>خيارات إنشاء الكتل:</translation>
-    </message>
-    <message>
-        <source>Chain selection options:</source>
-        <translation>خيارات اختيار السلسلة:</translation>
+        <source>%s corrupt, salvage failed</source>
+        <translation>
+%s تالف, فشل الانقاذ.</translation>
     </message>
     <message>
         <source>Change index out of range</source>
         <translation>فهرس الفكة خارج النطاق</translation>
-    </message>
-    <message>
-        <source>Connection options:</source>
-        <translation>خيارات الاتصال:</translation>
     </message>
     <message>
         <source>Copyright (C) %i-%i</source>
@@ -3116,24 +2988,24 @@
         <translation>تم الكشف عن قاعدة بيانات كتل تالفة</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
-        <translation>خيارات التصحيح / الاختبار:</translation>
-    </message>
-    <message>
-        <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation>لا تقم بتحميل المحفظة وتعطيل استدعاءات RPC للمحفظة</translation>
-    </message>
-    <message>
         <source>Do you want to rebuild the block database now?</source>
         <translation>هل تريد إعادة بناء قاعدة بيانات الكتل الآن؟</translation>
     </message>
     <message>
-        <source>Error creating %s: You can't create non-HD wallets with this version.</source>
-        <translation>خطأ في إنشاء %s: لا يمكنك إنشاء محافظ بلا خاصية الهرمية الحتمية non-HD باستخدام هذا الإصدار.</translation>
-    </message>
-    <message>
         <source>Error loading %s</source>
         <translation>خطأ في تحميل %s</translation>
+    </message>
+    <message>
+        <source>Error loading %s: Private keys can only be disabled during creation</source>
+        <translation>خطأ في تحميل %s:  لا يمكن تعطيل المفاتيح الخاصة إلا أثناء الإنشاء.</translation>
+    </message>
+    <message>
+        <source>Error loading %s: Wallet corrupted</source>
+        <translation>خطأ في التحميل %s: المحفظة تالفة.</translation>
+    </message>
+    <message>
+        <source>Error loading %s: Wallet requires newer version of %s</source>
+        <translation>خطا تحميل %s: المحفظة تتطلب النسخة الجديدة من %s.</translation>
     </message>
     <message>
         <source>Error loading block database</source>
@@ -3150,6 +3022,10 @@
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>فشل في الاستماع على أي منفذ. استخدام الاستماع = 0 إذا كنت تريد هذا.</translation>
+    </message>
+    <message>
+        <source>Failed to rescan the wallet during initialization</source>
+        <translation>فشل في اعادة مسح المحفظة خلال عملية التهيئة.</translation>
     </message>
     <message>
         <source>Importing...</source>
@@ -3172,20 +3048,8 @@
         <translation>جاري تحميل قائمة الحظر...</translation>
     </message>
     <message>
-        <source>Location of the auth cookie (default: data dir)</source>
-        <translation>موقع ملف تعريف ارتباط المصادقة (القيمة الافتراضية: دليل البيانات)</translation>
-    </message>
-    <message>
         <source>Not enough file descriptors available.</source>
         <translation>لا تتوفر واصفات ملفات كافية.</translation>
-    </message>
-    <message>
-        <source>Print this help message and exit</source>
-        <translation>اطبع رسالة المساعدة هذه واخرج منها</translation>
-    </message>
-    <message>
-        <source>Print version and exit</source>
-        <translation>طباعة النسخة ومن ثم الخروج</translation>
     </message>
     <message>
         <source>Prune cannot be configured with a negative value.</source>
@@ -3204,44 +3068,24 @@
         <translation>العودة بالكتل...</translation>
     </message>
     <message>
-        <source>Specify wallet file (within data directory)</source>
-        <translation>تحديد ملف المحفظة (داخل دليل البيانات)</translation>
-    </message>
-    <message>
         <source>The source code is available from %s.</source>
         <translation>شفرة المصدر متاحة من %s.</translation>
     </message>
     <message>
-        <source>Unsupported argument -tor found, use -onion.</source>
-        <translation>تم العثور على وسيطة غير مدعومة -tor ، استخدم -onion.</translation>
+        <source>Unable to generate keys</source>
+        <translation> غير قادر على توليد مفاتيح.</translation>
     </message>
     <message>
         <source>Upgrading UTXO database</source>
         <translation>ترقية قاعدة بيانات UTXO</translation>
     </message>
     <message>
-        <source>Use the test chain</source>
-        <translation>إستخدم السلسلة التجريبية</translation>
-    </message>
-    <message>
         <source>Verifying blocks...</source>
         <translation>التحقق من الكتل...</translation>
     </message>
     <message>
-        <source>Wallet debugging/testing options:</source>
-        <translation>خيارات تصحيح / اختبار المحفظة:</translation>
-    </message>
-    <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>
         <translation>يلزم إعادة كتابة المحفظة: إعادة تشغيل %s لإكمال العملية</translation>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation>خيارات المحفظة :</translation>
-    </message>
-    <message>
-        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation>عشوائية وثائق الاعتماد لكل اتصال عبر وكيل. يتيح ذلك عزل تيار تور (القيمة الافتراضية: %u)</translation>
     </message>
     <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
@@ -3252,26 +3096,6 @@
         <translation>تحتاج إلى إعادة إنشاء قاعدة البيانات باستخدام -reindex للعودة إلى الوضعية الغير مجردة. هذا سوف يعيد تحميل سلسلة الكتل بأكملها</translation>
     </message>
     <message>
-        <source>(default: %u)</source>
-        <translation>(القيمة الافتراضية: %u)</translation>
-    </message>
-    <message>
-        <source>Accept public REST requests (default: %u)</source>
-        <translation>قبول طلبات REST العامة (القيمة الافتراضية: %u)</translation>
-    </message>
-    <message>
-        <source>Automatically create Tor hidden service (default: %d)</source>
-        <translation>إنشاء خدمة تور المخفية تلقائيًا (القيمة الافتراضية: %d)</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS5 proxy</source>
-        <translation>الاتصال من خلال وكيل SOCKS5</translation>
-    </message>
-    <message>
-        <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
-        <translation>خطأ أثناء تحميل %s: لا يمكنك تعطيل خاصية الهرمية الحتمية HD في محفظة مفعلة بخاصية الهرمية الحتمية HD مسبقاً</translation>
-    </message>
-    <message>
         <source>Error reading from database, shutting down.</source>
         <translation>خطأ في القراءة من قاعدة البيانات ، والتوقف.</translation>
     </message>
@@ -3280,20 +3104,8 @@
         <translation>خطأ في ترقية قاعدة بيانات chainstate</translation>
     </message>
     <message>
-        <source>Imports blocks from external blk000??.dat file on startup</source>
-        <translation>استيراد كتل من ملف blk000??.dat الخارجي عند بدء التشغيل</translation>
-    </message>
-    <message>
         <source>Information</source>
         <translation>معلومات</translation>
-    </message>
-    <message>
-        <source>Node relay options:</source>
-        <translation>خيارات ترحيل العقد:</translation>
-    </message>
-    <message>
-        <source>RPC server options:</source>
-        <translation>خيارات خادم RPC:</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -3306,14 +3118,6 @@
     <message>
         <source>This is experimental software.</source>
         <translation>هذا برنامج تجريبي.</translation>
-    </message>
-    <message>
-        <source>Tor control port password (default: empty)</source>
-        <translation>كلمة مرور منفذ تحكم تور (القيمة الافتراضية: فارغة)</translation>
-    </message>
-    <message>
-        <source>Tor control port to use if onion listening enabled (default: %s)</source>
-        <translation>منفذ تحكم Tor لاستخدامه في حالة تفعيل الاستماع بالبصل (افتراضي: %s)</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
@@ -3336,14 +3140,6 @@
         <translation>غير قادر على توليد مفاتيح أولية</translation>
     </message>
     <message>
-        <source>Upgrade wallet to latest format on startup</source>
-        <translation>ترقية المحفظة إلى التنسيق الأحدث عند بدء التشغيل</translation>
-    </message>
-    <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>اسم المستخدم لاتصالات JSON-RPC</translation>
-    </message>
-    <message>
         <source>Verifying wallet(s)...</source>
         <translation>التحقق من المحفظة (المحافظ)...</translation>
     </message>
@@ -3356,28 +3152,12 @@
         <translation>إزالة جميع المعاملات من المحفظة...</translation>
     </message>
     <message>
-        <source>Error loading %s: You can't enable HD on an already existing non-HD wallet</source>
-        <translation>خطأ أثناء تحميل %s: لا يمكنك تفعيل خاصية الهرمية الحتمية HD في محفظة لا تملك خاصية الهرمية الحتمية non-HD مسبقاً</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
-        <translation>استخدام وكيل SOCKS5 منفصل للوصول إلى الأقران عبر خدمات تور المخفية (القيمة الافتراضية: %s)</translation>
-    </message>
-    <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>تحذير: ملف المحفظة فاسد ، تم انقاذ البيانات! تم حفظ %s الأصلي ك %s في %s؛ إذا كان رصيدك أو كانت معاملاتك غير صحيحة، فيجب عليك الإستعادة من نسخة احتياطية.</translation>
     </message>
     <message>
         <source>%s is set very high!</source>
         <translation>%s عالٍ جداً</translation>
-    </message>
-    <message>
-        <source>(default: %s)</source>
-        <translation>(القيمة الافتراضية: %s)</translation>
-    </message>
-    <message>
-        <source>Make the wallet broadcast transactions</source>
-        <translation>إنتاج معاملات بث المحفظة</translation>
     </message>
     <message>
         <source>Starting network threads...</source>
@@ -3392,12 +3172,20 @@
         <translation>يجب ألا تكون قيمة المعاملة سلبية</translation>
     </message>
     <message>
+        <source>Transaction has too long of a mempool chain</source>
+        <translation>المعاملات طويلة جداً على حجم سلسلة الذاكرة </translation>
+    </message>
+    <message>
         <source>Transaction must have at least one recipient</source>
         <translation>يجب أن تحتوي المعاملة على مستلم واحد على الأقل</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
         <translation>اموال غير كافية</translation>
+    </message>
+    <message>
+        <source>Cannot write to data directory '%s'; check permissions.</source>
+        <translation>لايمكن الكتابة على دليل البيانات '%s'؛ تحقق من السماحيات.</translation>
     </message>
     <message>
         <source>Loading block index...</source>

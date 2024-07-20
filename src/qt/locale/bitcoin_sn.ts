@@ -86,24 +86,12 @@
         <translation>Taridza ruzivo rwe Qt</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Makero ekutumira nawo</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Makero ekutambira nawo</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>Vhura &amp;URI</translation>
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Yenten</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Chikwama</translation>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -166,7 +154,7 @@
     <name>Intro</name>
     <message>
         <source>Bitcoin</source>
-        <translation>Yenten</translation>
+        <translation>Bitcoin</translation>
     </message>
     </context>
 <context>
@@ -195,7 +183,7 @@
     </message>
     <message>
         <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Nyora kero ye Yenten (sekuti %1)</translation>
+        <translation>Nyora kero ye Bitcoin (sekuti %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -251,6 +239,10 @@
     <message>
         <source>Label</source>
         <translation>Zita</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Chikwama</translation>
     </message>
     </context>
 <context>
@@ -339,6 +331,9 @@
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletController</name>
     </context>
 <context>
     <name>WalletFrame</name>

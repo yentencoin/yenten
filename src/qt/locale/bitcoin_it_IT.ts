@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>copia l'indirizzo selezionato correntemente nella clipboard di sistema</translation>
+        <translation>Copia l'indirizzo selezionato nella clipboard di sistema</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -28,6 +28,10 @@
     <message>
         <source>Delete the currently selected address from the list</source>
         <translation>Cancella l'indirizzo attualmente selezionato dalla lista.</translation>
+    </message>
+    <message>
+        <source>Enter address or label to search</source>
+        <translation>Inserire indirizzo o etichetta da cercare</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -63,11 +67,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono i suoi indirizzi Yenten per ricevere i pagamenti. Controlla sempre l'importo e gli indirizzi prima di inviare i coins.</translation>
+        <translation>Questi sono i suoi indirizzi Bitcoin per ricevere i pagamenti. Controlla sempre l'importo e gli indirizzi prima di inviare i coins.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono i tuoi indirizzi Yenten per ricevere i pagamenti. Si raccomanda di usare un nuovo indirizzo per ogni transazione.</translation>
+        <translation>Questi sono i tuoi indirizzi Bitcoin per ricevere i pagamenti. Si raccomanda di usare un nuovo indirizzo per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,8 +172,8 @@
         <translation>Conferma criptaggio portafoglio</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR YENTENS&lt;/b&gt;!</source>
-        <translation>Attenzione: Se cripti il tuo portafoglio e perdi la password, &lt;b&gt;PERDERAI TUTTI I TUOI YENTEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation>Attenzione: Se cripti il tuo portafoglio e perdi la password, &lt;b&gt;PERDERAI TUTTI I TUOI BITCOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -178,10 +182,6 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>Portafoglio criptato</translation>
-    </message>
-    <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your yentens from being stolen by malware infecting your computer.</source>
-        <translation>%1 ora si chiuderà per concludere il processo di criptaggio. Ricorda che criptare il tuo portafoglio non può definitivamente proteggere i tuoi yenten da furti tramite malware che infetta il tuo computer.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -228,7 +228,7 @@
     </message>
     <message>
         <source>Banned Until</source>
-        <translation>bannato fino </translation>
+        <translation>Bannato fino </translation>
     </message>
 </context>
 <context>
@@ -244,10 +244,6 @@
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;Panoramica</translation>
-    </message>
-    <message>
-        <source>Node</source>
-        <translation>Nodo</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
@@ -306,16 +302,12 @@
         <translation>Cambia Password...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>Indirizzi di invio...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>Indirizzi di ricezione...</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>Apri &amp;URI...</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Portafoglio</translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
@@ -339,7 +331,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Invia monete ad un indirizzo Yenten...</translation>
+        <translation>Invia monete ad un indirizzo Bitcoin...</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -363,11 +355,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Yenten</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Portafoglio</translation>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -391,11 +379,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Firma messaggi con i tuoi indirizzi Yenten per provare che li possiedi</translation>
+        <translation>Firma messaggi con i tuoi indirizzi Bitcoin per provare che li possiedi</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifica messaggi per accertarti che siano firmati dagli indirizzi Yenten specificati</translation>
+        <translation>Verifica messaggi per accertarti che siano firmati dagli indirizzi Bitcoin specificati</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -415,7 +403,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e yenten: URI)</translation>
+        <translation>Richiedi pagamenti (genera codici QR e bitcoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -427,7 +415,7 @@
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>Apri un yenten: URI o una richiesta di pagamento</translation>
+        <translation>Apri un bitcoin: URI o una richiesta di pagamento</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -471,7 +459,11 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Mostra il %1 messaggio d'aiuto per ottenere una lista con le possibili opzioni per la riga di comando di Yenten</translation>
+        <translation>Mostra il %1 messaggio d'aiuto per ottenere una lista con le possibili opzioni per la riga di comando di Bitcoin</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>Portafoglio predefinito</translation>
     </message>
     <message>
         <source>Date: %1
@@ -512,8 +504,16 @@
         <translation>Transazione in arrivo</translation>
     </message>
     <message>
+        <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
+        <translation>Generazione  di chiavi HD &lt;b&gt;abilitata&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
+        <translation>Generazione di chiavi HD &lt;b&gt;disabilitata&lt;/b&gt;</translation>
+    </message>
+    <message>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Si è verificato un errore fatale. Yenten non può continuare in maniera sicura e sarà chiuso.</translation>
+        <translation>Si è verificato un errore fatale. Bitcoin non può continuare in maniera sicura e sarà chiuso.</translation>
     </message>
 </context>
 <context>
@@ -674,10 +674,6 @@
         <translation>&amp;Indirizzo</translation>
     </message>
     <message>
-        <source>New receiving address</source>
-        <translation>Nuovo indirizzo di ricezione</translation>
-    </message>
-    <message>
         <source>New sending address</source>
         <translation>Nuovo indirizzo di invio</translation>
     </message>
@@ -691,11 +687,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>L'indirizzo inserito "%1" non è un indirizzo Yenten valido.</translation>
-    </message>
-    <message>
-        <source>The entered address "%1" is already in the address book.</source>
-        <translation>L'indirizzo inserito "%1" è già nella rubrica.</translation>
+        <translation>L'indirizzo inserito "%1" non è un indirizzo Bitcoin valido.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -743,19 +735,7 @@
         <source>Command-line options</source>
         <translation>Opzioni linea di comando</translation>
     </message>
-    <message>
-        <source>Usage:</source>
-        <translation>Utilizzo:</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>opzioni linea di comando</translation>
-    </message>
-    <message>
-        <source>UI Options:</source>
-        <translation>Opzioni UI</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>Intro</name>
     <message>
@@ -764,11 +744,11 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Yenten</translation>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
-        <translation>Il portafoglio sara' </translation>
+        <translation>Il wallet verra' inoltre memorizzato su questa cartella.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -777,6 +757,14 @@
     </context>
 <context>
     <name>ModalOverlay</name>
+    <message>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <translation>Le transazioni recenti potrebbero non essere ancora visibili, e quindi il saldo del wallet potrebbe essere incorretto. Questa informazione verra' corretta non appena il tuo wallet ha finito di sincronizzarsi con la rete bitcoin, come specificato di seguito.</translation>
+    </message>
+    <message>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Tentare di spendere bitcoin che sono affetti da transazioni non ancora mostrate, non verra' accettato dal network.</translation>
+    </message>
     <message>
         <source>Number of blocks left</source>
         <translation>Numero di blocchi rimanente</translation>
@@ -815,19 +803,59 @@
         <translation>Saldo disponibile</translation>
     </message>
     <message>
+        <source>Total:</source>
+        <translation>Totale:</translation>
+    </message>
+    <message>
+        <source>Your current total balance</source>
+        <translation>Bilancio totale attuale</translation>
+    </message>
+    <message>
+        <source>Spendable:</source>
+        <translation>Spendibile:</translation>
+    </message>
+    <message>
         <source>Recent transactions</source>
         <translation>Transazioni recenti</translation>
     </message>
-    </context>
+    <message>
+        <source>Current total balance in watch-only addresses</source>
+        <translation>Bilancio totale attuale su indirizzi watch-only</translation>
+    </message>
+</context>
 <context>
     <name>PaymentServer</name>
+    <message>
+        <source>URI handling</source>
+        <translation>Gestione URI</translation>
+    </message>
+    <message>
+        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
+        <translation>'bitcoin://' non è un URI valido. Usa invece 'bitcoin:'.</translation>
+    </message>
+    <message>
+        <source>Invalid payment address %1</source>
+        <translation>Indirizzo di pagamento non valido %1</translation>
+    </message>
     <message>
         <source>Payment request rejected</source>
         <translation>Richiesta di pagamento rifiutata</translation>
     </message>
     <message>
+        <source>Payment request expired.</source>
+        <translation>Richiesta di pagamento scaduta.</translation>
+    </message>
+    <message>
+        <source>Invalid payment request.</source>
+        <translation>Richiesta di pagamento non valida.</translation>
+    </message>
+    <message>
         <source>Refund from %1</source>
         <translation>Rimborso da %1</translation>
+    </message>
+    <message>
+        <source>Error communicating with %1: %2</source>
+        <translation>Errore nella comunicazione con %1: %2</translation>
     </message>
     </context>
 <context>
@@ -881,6 +909,10 @@
     <message>
         <source>Label</source>
         <translation>Etichetta</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Portafoglio</translation>
     </message>
     </context>
 <context>
@@ -947,6 +979,10 @@
     <message>
         <source>Copy change</source>
         <translation>Copia cambio</translation>
+    </message>
+    <message>
+        <source>Payment request expired.</source>
+        <translation>Richiesta di pagamento scaduta.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1047,11 +1083,18 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
     <name>WalletModel</name>
-    </context>
+    <message>
+        <source>default wallet</source>
+        <translation>Portafoglio predefinito</translation>
+    </message>
+</context>
 <context>
     <name>WalletView</name>
     </context>

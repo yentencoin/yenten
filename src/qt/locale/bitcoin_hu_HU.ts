@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ezek az Ön kifizetéseinek küldésekor használandó Yenten-címek. Fizetés indítása előtt mindig ellenőrizze az összeget és a fogadó címet!</translation>
+        <translation>Ezek az Ön kifizetéseinek küldésekor használandó Bitcoin-címek. Fizetés indítása előtt mindig ellenőrizze az összeget és a fogadó címet!</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ezek az Ön fizetéseinek fogadásakor használandó Yenten-címek. Célszerű minden tranzakcióhoz új fogadó címet használni.</translation>
+        <translation>Ezek az Ön fizetéseinek fogadásakor használandó Bitcoin-címek. Célszerű minden tranzakcióhoz új fogadó címet használni.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Tárca titkosításának jóváhagyása</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR YENTENS&lt;/b&gt;!</source>
-        <translation>Figyelem: Ha titkosítja a pénztárcáját, és elveszíti a jelszóhalmazt, akkor &lt;b&gt;NEM TUD TÖBBET HOZZÁFÉRNI A YENTENJAIHOZ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation>Figyelem: Ha titkosítja a pénztárcáját, és elveszíti a jelszóhalmazt, akkor &lt;b&gt;NEM TUD TÖBBET HOZZÁFÉRNI A BITCOINJAIHOZ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -182,10 +182,6 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>Tárca titkosítva</translation>
-    </message>
-    <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your yentens from being stolen by malware infecting your computer.</source>
-        <translation>%1 Most az ablak bezáródik, amíg befejeződik a titkosítási folyamat. Kérem vegye figyelembe, hogy a pénztárca titkosítása nem jelenti a yentenjai teljes körű védelmét, a számítógépét esetlegesen megfertőző kártékony programoktól.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -250,10 +246,6 @@
         <translation>Á&amp;ttekintés</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Csomópont</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>A pénztárca általános áttekintése</translation>
     </message>
@@ -310,14 +302,6 @@
         <translation>&amp;Jelszóhalmaz megváltoztatása</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Címek küldése</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>Címek &amp;fogadása</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>&amp;URI... Megnyitása</translation>
     </message>
@@ -343,7 +327,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Érmék küldése egy Yenten címre</translation>
+        <translation>Érmék küldése egy Bitcoin címre</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -367,11 +351,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Yenten</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Tárca</translation>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -395,11 +375,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Írja alá az üzeneteit a Yenten címével, hogy bizonyítsa Öntől származnak</translation>
+        <translation>Írja alá az üzeneteit a Bitcoin címével, hogy bizonyítsa Öntől származnak</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Ellenőrizze az üzeneteket, hogy a megadott Yenten címekkel lettek-e aláírva</translation>
+        <translation>Ellenőrizze az üzeneteket, hogy a megadott Bitcoin címekkel lettek-e aláírva</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -419,7 +399,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Kérjen fizetéseket (QR kódokat generál és yenten: URLeket)</translation>
+        <translation>Kérjen fizetéseket (QR kódokat generál és bitcoin: URLeket)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -431,7 +411,7 @@
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>Nyisson meg egy yenten: URI-t vagy fizetési kérelmet</translation>
+        <translation>Nyisson meg egy bitcoin: URI-t vagy fizetési kérelmet</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -439,7 +419,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n aktív kapcsolat a Yenten-hálózaton</numerusform><numerusform>%n aktív kapcsolat a Yenten-hálózaton</numerusform></translation>
+        <translation><numerusform>%n aktív kapcsolat a Bitcoin-hálózaton</numerusform><numerusform>%n aktív kapcsolat a Bitcoin-hálózaton</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -483,7 +463,11 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Mutassa a %1 súgó üzenetet a lehetséges Yenten parancssori beállítások listájáért</translation>
+        <translation>Mutassa a %1 súgó üzenetet a lehetséges Bitcoin parancssori beállítások listájáért</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>&amp;Ablak</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -553,7 +537,7 @@
     </message>
     <message>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Fatális hiba történt. A Yenten program nem tud tovább biztonságosan működni és be fog záródni.</translation>
+        <translation>Fatális hiba történt. A Bitcoin program nem tud tovább biztonságosan működni és be fog záródni.</translation>
     </message>
 </context>
 <context>
@@ -730,10 +714,6 @@
         <translation>&amp;Cím</translation>
     </message>
     <message>
-        <source>New receiving address</source>
-        <translation>Új fogadási cím</translation>
-    </message>
-    <message>
         <source>New sending address</source>
         <translation>Új küldési cím</translation>
     </message>
@@ -747,11 +727,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>A megadott cím"%1" nem egy érvényes Yenten cím.</translation>
-    </message>
-    <message>
-        <source>The entered address "%1" is already in the address book.</source>
-        <translation>A megadott cím "%1" már szerepel a címlistában.</translation>
+        <translation>A megadott cím"%1" nem egy érvényes Bitcoin cím.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -803,42 +779,6 @@
         <source>Command-line options</source>
         <translation>Parancssor beállításai</translation>
     </message>
-    <message>
-        <source>Usage:</source>
-        <translation>Használat:</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>parancssor beállításai</translation>
-    </message>
-    <message>
-        <source>UI Options:</source>
-        <translation>Felhasználói felület beállításai</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: %u)</source>
-        <translation>Adja meg az indításkor használt adat könyvtárat (alapbeállítás: %u)</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Nyelv beállítása, például "de_DE" (alaphelyzetben: a helyi rendszer nyelve)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Indítás rejtett ablakkal</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>A fizetési kérelmek SSL tanúsítványainak beállítása (alaphelyzetben: -a rendszer beállításai szerint-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: %u)</source>
-        <translation>Mutassa a kezdő képet indításkor (alaphelyzetben: %u)</translation>
-    </message>
-    <message>
-        <source>Reset all settings changed in the GUI</source>
-        <translation>A grafikus felület összes megváltoztatott beállításának a visszaállítása</translation>
-    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -876,7 +816,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Yenten</translation>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -888,7 +828,7 @@
     </message>
     <message>
         <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 le fog töltődni és a Yenten blokk lánc egy másolatát fogja tárolni.</translation>
+        <translation>%1 le fog töltődni és a Bitcoin blokk lánc egy másolatát fogja tárolni.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -914,12 +854,12 @@
         <translation>Űrlap</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the yenten network, as detailed below.</source>
-        <translation>A legutóbbi tranzakciók még lehet, hogy nem látszanak, ezért előfordulhat, hogy a pénztárca egyenlege nem a valós állapotot mutatja. Ha a pénztárca befejezte a szinkronizációt a yenten hálózattal, utána már az aktuális egyenleget fogja mutatni, amint alant részletesen látszik.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <translation>A legutóbbi tranzakciók még lehet, hogy nem látszanak, ezért előfordulhat, hogy a pénztárca egyenlege nem a valós állapotot mutatja. Ha a pénztárca befejezte a szinkronizációt a bitcoin hálózattal, utána már az aktuális egyenleget fogja mutatni, amint alant részletesen látszik.</translation>
     </message>
     <message>
-        <source>Attempting to spend yentens that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>A hálózat nem fogadja el azoknak a yentenoknak az elköltését, amelyek érintettek a még nem látszódó tranzakciókban.</translation>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>A hálózat nem fogadja el azoknak a bitcoinoknak az elköltését, amelyek érintettek a még nem látszódó tranzakciókban.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -953,11 +893,7 @@
         <source>Hide</source>
         <translation>Elrejtés</translation>
     </message>
-    <message>
-        <source>Unknown. Syncing Headers (%1)...</source>
-        <translation>Ismeretlen. Fejlécek szinkronizálása (%1)...</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -1004,10 +940,6 @@
         <translation>Az &amp;adatbázis cache mérete</translation>
     </message>
     <message>
-        <source>MB</source>
-        <translation>MB</translation>
-    </message>
-    <message>
         <source>Number of script &amp;verification threads</source>
         <translation>A szkript &amp;igazolási szálak száma</translation>
     </message>
@@ -1034,10 +966,6 @@
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>Harmadik féltől származó URL-ek (pl. egy blokk felfedező) amelyek a tranzakciós fülön jelennek meg mint a környezetérzékeny menü tételei. %s az URL-ben helyettesítve a tranzakciós hash-el. Több URL esetén, függőleges vonal választja el őket.</translation>
-    </message>
-    <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Aktív parancssori beállítások, melyek felülírják a fenti beállításokat:</translation>
     </message>
     <message>
         <source>Open the %1 configuration file from the working directory.</source>
@@ -1085,7 +1013,7 @@
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatikusan nyissa meg a Yenten kliens által használt portot a routeren. Ez csak akkor működik, ha a router támogatja a UPnP-t, és engedélyezett ez a beállítás.</translation>
+        <translation>Automatikusan nyissa meg a Bitcoin kliens által használt portot a routeren. Ez csak akkor működik, ha a router támogatja a UPnP-t, és engedélyezett ez a beállítás.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1101,7 +1029,7 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Csatlakozás a Yenten hálózathoz SOCKS5 proxy használatával.</translation>
+        <translation>Csatlakozás a Bitcoin hálózathoz SOCKS5 proxy használatával.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1137,7 +1065,7 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Csatlakozás a Yenten hálózathoz külön SOCKS5 proxy használatával a Tor rejtett szolgáltatásainak eléréséhez.</translation>
+        <translation>Csatlakozás a Bitcoin hálózathoz külön SOCKS5 proxy használatával a Tor rejtett szolgáltatásainak eléréséhez.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1319,7 +1247,7 @@
     </message>
     <message>
         <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>A yenten nem tud elindulni: click-to-pay kezelő</translation>
+        <translation>A bitcoin nem tud elindulni: click-to-pay kezelő</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1331,7 +1259,7 @@
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>Az URI nem dolgozható fel! Ennek oka lehet egy érvénytelen Yenten-cím, vagy hibás URI-paraméterek.</translation>
+        <translation>Az URI nem dolgozható fel! Ennek oka lehet egy érvénytelen Bitcoin-cím, vagy hibás URI-paraméterek.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1429,7 +1357,7 @@
     </message>
     <message>
         <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Adjon meg egy Yenten-címet (pl. %1)</translation>
+        <translation>Adjon meg egy Bitcoin-címet (pl. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1841,7 +1769,7 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Opciónális üzenet csatolása a fizetési kérelemhez, ami a kérelem megnyitásakor megjelenik. Megjegyzés: Az üzenet nem lesz elküldve a fizetéssel a Yenten hálózaton.</translation>
+        <translation>Opciónális üzenet csatolása a fizetési kérelemhez, ami a kérelem megnyitásakor megjelenik. Megjegyzés: Az üzenet nem lesz elküldve a fizetéssel a Bitcoin hálózaton.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1949,6 +1877,10 @@
     <message>
         <source>Message</source>
         <translation>Üzenet</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Tárca</translation>
     </message>
     <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
@@ -2137,6 +2069,10 @@
         <translation>vagy</translation>
     </message>
     <message>
+        <source>Transaction fee</source>
+        <translation>Tranzakciós díj</translation>
+    </message>
+    <message>
         <source>The amount to pay must be larger than 0.</source>
         <translation>Az összegnek nagyobbnak kell lennie, mint 0.</translation>
     </message>
@@ -2154,7 +2090,7 @@
     </message>
     <message>
         <source>Warning: Invalid Bitcoin address</source>
-        <translation>Figyelem: érvénytelen Yenten cím</translation>
+        <translation>Figyelem: érvénytelen Bitcoin cím</translation>
     </message>
     <message>
         <source>Confirm custom change address</source>
@@ -2424,10 +2360,6 @@
         <translation>Címke</translation>
     </message>
     <message>
-        <source>Offline</source>
-        <translation>Offline</translation>
-    </message>
-    <message>
         <source>Unconfirmed</source>
         <translation>Nem megerősített</translation>
     </message>
@@ -2571,6 +2503,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -2618,20 +2553,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Options:</source>
-        <translation>Beállítások:</translation>
-    </message>
-    <message>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation>Parancssoros és JSON-RPC parancsok elfogadása</translation>
-    </message>
-    <message>
         <source>Bitcoin Core</source>
-        <translation>Yenten Mag</translation>
-    </message>
-    <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Hibakeresési/Tesztelési beállítások:</translation>
+        <translation>Bitcoin Mag</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -2662,20 +2585,8 @@
         <translation>Blokkok megerősítése...</translation>
     </message>
     <message>
-        <source>Wallet debugging/testing options:</source>
-        <translation>Tárca hibakeresési/tesztelési beállítások:</translation>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation>Tárca beállítások:</translation>
-    </message>
-    <message>
         <source>Information</source>
         <translation>Információ</translation>
-    </message>
-    <message>
-        <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>Összes hibakeresési beállítás mutatása (használat: --help -help-debug)</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -2694,14 +2605,6 @@
         <translation>A tranzakció túl nagy</translation>
     </message>
     <message>
-        <source>Upgrade wallet to latest format on startup</source>
-        <translation>Tárca fejlesztése a legfrissebb formátumra az indításnál</translation>
-    </message>
-    <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>Felhasználónév a JSON-RPC kapcsolódásokhoz</translation>
-    </message>
-    <message>
         <source>Verifying wallet(s)...</source>
         <translation>Tárca/Tárcák megerősítése</translation>
     </message>
@@ -2710,20 +2613,8 @@
         <translation>Figyelmeztetés</translation>
     </message>
     <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Jelszó a JSON-RPC kapcsolódásokhoz</translation>
-    </message>
-    <message>
         <source>%s is set very high!</source>
         <translation>%s túl magasra van állítva!</translation>
-    </message>
-    <message>
-        <source>Error loading wallet %s. Invalid characters in -wallet filename.</source>
-        <translation>Hiba a tárca betöltésekor %s. Érvénytelen karakterek a tárca fájlnévben.</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Figyelés a JSON-RPC kapcsolatokra itt: &lt;port&gt; (alapértelmezett:  %u vagy tesztnet: %u)</translation>
     </message>
     <message>
         <source>Starting network threads...</source>

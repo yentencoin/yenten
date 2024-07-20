@@ -55,11 +55,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Këto janë Yenten adresat e juaja për të dërguar pagesa. Gjithmon kontrolloni shumën dhe adresën pranuese para se të dërgoni monedha.</translation>
+        <translation>Këto janë Bitcoin adresat e juaja për të dërguar pagesa. Gjithmon kontrolloni shumën dhe adresën pranuese para se të dërgoni monedha.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Këto janë Yenten adresat e juaja për të pranuar pagesa. Rekomandohet që gjithmon të përdorni një adresë të re për çdo transaksion.</translation>
+        <translation>Këto janë Bitcoin adresat e juaja për të pranuar pagesa. Rekomandohet që gjithmon të përdorni një adresë të re për çdo transaksion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -222,20 +222,12 @@
         <translation>&amp;Opsione</translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>Duke marr adresen</translation>
-    </message>
-    <message>
         <source>Change the passphrase used for wallet encryption</source>
         <translation>Ndrysho frazkalimin e përdorur per enkriptimin e portofolit</translation>
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Yenten</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Portofol</translation>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -352,10 +344,6 @@
         <translation>&amp;Adresa</translation>
     </message>
     <message>
-        <source>New receiving address</source>
-        <translation>Adresë e re pritëse</translation>
-    </message>
-    <message>
         <source>New sending address</source>
         <translation>Adresë e re dërgimi</translation>
     </message>
@@ -366,10 +354,6 @@
     <message>
         <source>Edit sending address</source>
         <translation>ndrysho adresën dërguese</translation>
-    </message>
-    <message>
-        <source>The entered address "%1" is already in the address book.</source>
-        <translation>Adresa e dhënë "%1" është e zënë në librin e adresave. </translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -402,7 +386,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Yenten</translation>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -519,6 +503,10 @@
     <message>
         <source>Label</source>
         <translation>Etiketë</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Portofol</translation>
     </message>
     </context>
 <context>
@@ -656,10 +644,6 @@
         <translation>%1 konfirmimet</translation>
     </message>
     <message>
-        <source>, has not been successfully broadcast yet</source>
-        <translation>, nuk është transmetuar me sukses deri tani</translation>
-    </message>
-    <message>
         <source>Date</source>
         <translation>Data</translation>
     </message>
@@ -704,10 +688,6 @@
     <message>
         <source>Confirmed (%1 confirmations)</source>
         <translation>I/E konfirmuar(%1 konfirmime)</translation>
-    </message>
-    <message>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>Ky bllok është marrë nga ndonjë nyje dhe ka shumë mundësi të mos pranohet! </translation>
     </message>
     <message>
         <source>Generated but not accepted</source>
@@ -785,6 +765,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -804,12 +787,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Options:</source>
-        <translation>Opsionet:</translation>
-    </message>
-    <message>
         <source>Bitcoin Core</source>
-        <translation>Berthama Yenten</translation>
+        <translation>Berthama Bitcoin</translation>
     </message>
     <message>
         <source>Information</source>

@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>ที่อยู่ Yenten ของคุณสำหรับการส่งการชำระเงิน โปรดตรวจสอบจำนวนเงินและที่อยู่รับก่อนที่จะส่งเหรียญ</translation>
+        <translation>ที่อยู่ Bitcoin ของคุณสำหรับการส่งการชำระเงิน โปรดตรวจสอบจำนวนเงินและที่อยู่รับก่อนที่จะส่งเหรียญ</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>ที่อยู่ Yenten ของคุณสำหรับการรับเงิน แนะนำให้ใช้ที่อยู่รับใหม่สำหรับแต่ละธุรกรรม</translation>
+        <translation>ที่อยู่ Bitcoin ของคุณสำหรับการรับเงิน แนะนำให้ใช้ที่อยู่รับใหม่สำหรับแต่ละธุรกรรม</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -295,6 +295,9 @@
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletController</name>
     </context>
 <context>
     <name>WalletFrame</name>
