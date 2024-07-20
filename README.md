@@ -6,10 +6,7 @@ https://yentencoin.info
 **Download latest wallet:**
 https://github.com/yentencoin/yenten/releases
 
-**Yenten 5.0.0 released**
-The full transition to version 5 will be January 30, 2023.
-The old version will no longer work after Jan. 30.
-The new version is backward-compatible and works fine now, so you can migrate now.
+**Yenten 6.0.0 beta released**
 
 What is Yenten Coin?
 
