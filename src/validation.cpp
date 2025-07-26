@@ -2078,22 +2078,36 @@ if (pindex->nHeight >= 2030000) {
   CAmount nCommunityAutonomousAmount 	= 10;
 	CAmount nSubsidy 							= GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus());
 	CAmount nCommunityAutonomousAmountValue		= nSubsidy*nCommunityAutonomousAmount/100;
-	///* Remove Log to console
+	/* Remove Log to console
 	LogPrintf("==>block.vtx[0]->vout[1].nValue:    %ld \n", block.vtx[0]->vout[1].nValue);
 	LogPrintf("==>nCommunityAutonomousAmountValue: %ld \n", nCommunityAutonomousAmountValue);
 	LogPrintf("==>block.vtx[0]->vout[1].scriptPubKey: %s \n", block.vtx[0]->vout[1].scriptPubKey[3]);
 	LogPrintf("==>GetCommunityAutonomousAddress:   %s \n", GetCommunityAutonomousAddress);
 	LogPrintf("==>scriptPubKeyCommunityAutonomous    Actual: %s \n", HexStr(block.vtx[0]->vout[1].scriptPubKey));
 	LogPrintf("==>scriptPubKeyCommunityAutonomous Should Be: %s \n", HexStr(scriptPubKeyCommunityAutonomous));
-	//*/
+  
+  	LogPrintf("2==>block.vtx[0]->vout[2].nValue:    %ld \n", block.vtx[0]->vout[2].nValue);
+	LogPrintf("2==>nCommunityAutonomousAmountValue: %ld \n", nCommunityAutonomousAmountValue);
+	LogPrintf("2==>block.vtx[0]->vout[2].scriptPubKey: %s \n", block.vtx[0]->vout[2].scriptPubKey[3]);
+	LogPrintf("2==>GetCommunityAutonomousAddress:   %s \n", GetCommunityAutonomousAddress);
+	LogPrintf("2==>scriptPubKeyCommunityAutonomous    Actual: %s \n", HexStr(block.vtx[0]->vout[2].scriptPubKey));
+	LogPrintf("2==>scriptPubKeyCommunityAutonomous Should Be: %s \n", HexStr(scriptPubKeyCommunityAutonomous));
+  
+  	LogPrintf("3==>block.vtx[0]->vout[3].nValue:    %ld \n", block.vtx[0]->vout[3].nValue);
+	LogPrintf("3==>nCommunityAutonomousAmountValue: %ld \n", nCommunityAutonomousAmountValue);
+	LogPrintf("3==>block.vtx[0]->vout[3].scriptPubKey: %s \n", block.vtx[0]->vout[3].scriptPubKey[3]);
+	LogPrintf("3==>GetCommunityAutonomousAddress:   %s \n", GetCommunityAutonomousAddress);
+	LogPrintf("3==>scriptPubKeyCommunityAutonomous    Actual: %s \n", HexStr(block.vtx[0]->vout[3].scriptPubKey));
+	LogPrintf("3==>scriptPubKeyCommunityAutonomous Should Be: %s \n", HexStr(scriptPubKeyCommunityAutonomous));
+	*/
 	//Check 10% Amount
-	if(block.vtx[0]->vout[1].nValue != nCommunityAutonomousAmountValue )		{
+	if(block.vtx[0]->vout[1].nValue != nCommunityAutonomousAmountValue && block.vtx[0]->vout[2].nValue != nCommunityAutonomousAmountValue && block.vtx[0]->vout[3].nValue != nCommunityAutonomousAmountValue)		{
 		return state.DoS(100,
                          error("ConnectBlock(): coinbase Community Autonomous Amount Is Invalid. Actual: %ld Should be:%ld ",block.vtx[0]->vout[1].nValue, nCommunityAutonomousAmountValue),
                          REJECT_INVALID, "bad-cb-community-autonomous-amount");
 	}
 	//Check 10% Address
-	if( HexStr(block.vtx[0]->vout[1].scriptPubKey) != HexStr(scriptPubKeyCommunityAutonomous) )		{
+	if( HexStr(block.vtx[0]->vout[1].scriptPubKey) != HexStr(scriptPubKeyCommunityAutonomous) && HexStr(block.vtx[0]->vout[2].scriptPubKey) != HexStr(scriptPubKeyCommunityAutonomous) && HexStr(block.vtx[0]->vout[3].scriptPubKey) != HexStr(scriptPubKeyCommunityAutonomous) )		{
 		return state.DoS(100,
                          error("ConnectBlock(): coinbase Community Autonomous Address Is Invalid. Actual: %s Should Be: %s \n",HexStr(block.vtx[0]->vout[1].scriptPubKey), HexStr(scriptPubKeyCommunityAutonomous)),
                          REJECT_INVALID, "bad-cb-community-autonomous-address");
