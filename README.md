@@ -6,7 +6,14 @@ https://yentencoin.info
 **Download latest wallet:**
 https://github.com/yentencoin/yenten/releases
 
-**Yenten 6.0.0 beta released**
+**Yenten 6.0.2 released**
+
+It is necessary to update the pools before block 2030000.
+Update by 20.09.2025 !!!
+
+Add the address YentenDWKCJPE9GVN48ecgW7j73xKN4PW7 with a 10% mining fee to the pool settings.
+
+These coins will only be used for the development of Yenten, to support a stable exchange rate, and to attract new users.
 
 What is Yenten Coin?
 
