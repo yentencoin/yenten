@@ -5,6 +5,10 @@
 
 #include <validation.h>
 
+//6.1
+//#include "base58.h"
+#include "key_io.h"
+
 #include <arith_uint256.h>
 #include <chain.h>
 #include <chainparams.h>
@@ -2052,6 +2056,51 @@ bool CChainState::ConnectBlock(const CBlock& block, CValidationState& state, CBl
                          error("ConnectBlock(): coinbase pays too much (actual=%d vs limit=%d)",
                                block.vtx[0]->GetValueOut(), blockReward),
                                REJECT_INVALID, "bad-cb-amount");
+
+//if (pindex->nHeight < 1988319) {
+//LogPrintf("old Height<1988319 \n");
+//}
+
+if (pindex->nHeight >= 2030000) {
+//LogPrintf("New nHeight >= 1988319 \n");
+//start 6.1
+	//CommunityAutonomousAddress Assign 10%
+	//std::string  GetCommunityAutonomousAddress 	= GetParams().CommunityAutonomousAddress();
+  std::string  GetCommunityAutonomousAddress 	= "YentenDWKCJPE9GVN48ecgW7j73xKN4PW7";
+	CTxDestination destCommunityAutonomous 		= DecodeDestination(GetCommunityAutonomousAddress);
+    if (!IsValidDestination(destCommunityAutonomous)) {
+		LogPrintf("IsValidDestination: Invalid YTN address %s \n", GetCommunityAutonomousAddress);
+    }
+	// Parse YTN address
+    CScript scriptPubKeyCommunityAutonomous 	= GetScriptForDestination(destCommunityAutonomous);
+	
+	//CAmount nCommunityAutonomousAmount 			= GetParams().CommunityAutonomousAmount();
+  CAmount nCommunityAutonomousAmount 	= 10;
+	CAmount nSubsidy 							= GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus());
+	CAmount nCommunityAutonomousAmountValue		= nSubsidy*nCommunityAutonomousAmount/100;
+	///* Remove Log to console
+	LogPrintf("==>block.vtx[0]->vout[1].nValue:    %ld \n", block.vtx[0]->vout[1].nValue);
+	LogPrintf("==>nCommunityAutonomousAmountValue: %ld \n", nCommunityAutonomousAmountValue);
+	LogPrintf("==>block.vtx[0]->vout[1].scriptPubKey: %s \n", block.vtx[0]->vout[1].scriptPubKey[3]);
+	LogPrintf("==>GetCommunityAutonomousAddress:   %s \n", GetCommunityAutonomousAddress);
+	LogPrintf("==>scriptPubKeyCommunityAutonomous    Actual: %s \n", HexStr(block.vtx[0]->vout[1].scriptPubKey));
+	LogPrintf("==>scriptPubKeyCommunityAutonomous Should Be: %s \n", HexStr(scriptPubKeyCommunityAutonomous));
+	//*/
+	//Check 10% Amount
+	if(block.vtx[0]->vout[1].nValue != nCommunityAutonomousAmountValue )		{
+		return state.DoS(100,
+                         error("ConnectBlock(): coinbase Community Autonomous Amount Is Invalid. Actual: %ld Should be:%ld ",block.vtx[0]->vout[1].nValue, nCommunityAutonomousAmountValue),
+                         REJECT_INVALID, "bad-cb-community-autonomous-amount");
+	}
+	//Check 10% Address
+	if( HexStr(block.vtx[0]->vout[1].scriptPubKey) != HexStr(scriptPubKeyCommunityAutonomous) )		{
+		return state.DoS(100,
+                         error("ConnectBlock(): coinbase Community Autonomous Address Is Invalid. Actual: %s Should Be: %s \n",HexStr(block.vtx[0]->vout[1].scriptPubKey), HexStr(scriptPubKeyCommunityAutonomous)),
+                         REJECT_INVALID, "bad-cb-community-autonomous-address");
+	}
+//end 6.1
+
+}
 
     if (!control.Wait())
         return state.DoS(100, error("%s: CheckQueue failed", __func__), REJECT_INVALID, "block-validation-failed");
