@@ -164,7 +164,7 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
 
     coinbaseTx.vout.resize(2);
     coinbaseTx.vout[0].scriptPubKey = scriptPubKeyIn;
-    coinbaseTx.vout[0].nValue = nFees + ( (100-nCommunityAutonomousAmount) * nSubsidy / 100 );
+    //coinbaseTx.vout[0].nValue = nFees + ( (100-nCommunityAutonomousAmount) * nSubsidy / 100 );
 
     // Assign the set % in chainparams.cpp to the TX
   //std::string  GetCommunityAutonomousAddress 	= GetParams().CommunityAutonomousAddress();
@@ -178,22 +178,22 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
 	
     coinbaseTx.vout[1].scriptPubKey = scriptPubKeyCommunityAutonomous;
     coinbaseTx.vout[1].nValue = nSubsidy*nCommunityAutonomousAmount/100;
-	LogPrintf("nSubsidy: ====================================================\n");
-	LogPrintf("Miner: %ld \n", coinbaseTx.vout[0].nValue);
-	LogPrintf("scriptPubKeyIn: %s \n", HexStr(scriptPubKeyIn));
+//	LogPrintf("nSubsidy: ====================================================\n");
+//	LogPrintf("Miner: %ld \n", coinbaseTx.vout[0].nValue);
+//	LogPrintf("scriptPubKeyIn: %s \n", HexStr(scriptPubKeyIn));
 	
-	LogPrintf("GetCommunityYTNAddress: %s \n", GetCommunityAutonomousAddress);
-	LogPrintf("scriptPubKeyCommunityAutonomous: %s \n", HexStr(scriptPubKeyCommunityAutonomous));
-	LogPrintf("nCommunityAutonomousAmount: %ld \n", coinbaseTx.vout[1].nValue);
+//	LogPrintf("GetCommunityYTNAddress: %s \n", GetCommunityAutonomousAddress);
+//	LogPrintf("scriptPubKeyCommunityAutonomous: %s \n", HexStr(scriptPubKeyCommunityAutonomous));
+//	LogPrintf("nCommunityAutonomousAmount: %ld \n", coinbaseTx.vout[1].nValue);
     coinbaseTx.vin[0].scriptSig = CScript() << nHeight << OP_0;
 
 //end 6.1
   
     
     
-    //coinbaseTx.vout.resize(1);
+    coinbaseTx.vout.resize(1);
     //coinbaseTx.vout[0].scriptPubKey = scriptPubKeyIn;
-    //coinbaseTx.vout[0].nValue = nFees + GetBlockSubsidy(nHeight, chainparams.GetConsensus());
+    coinbaseTx.vout[0].nValue = nFees + GetBlockSubsidy(nHeight, chainparams.GetConsensus());
     //coinbaseTx.vin[0].scriptSig = CScript() << nHeight << OP_0;
     pblock->vtx[0] = MakeTransactionRef(std::move(coinbaseTx));
     pblocktemplate->vchCoinbaseCommitment = GenerateCoinbaseCommitment(*pblock, pindexPrev, chainparams.GetConsensus());
