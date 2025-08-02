@@ -460,6 +460,12 @@ use_pkgconfig=yes
 case $host in
   *mingw*)
 
+AC_ARG_WITH([libs],
+  [AS_HELP_STRING([--with-libs],
+  [build libraries (default=no)])],
+  [build_bitcoin_libs=$withval],
+  [build_bitcoin_libs=no])
+
      #pkgconfig does more harm than good with MinGW
      use_pkgconfig=no
 
