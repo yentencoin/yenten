@@ -19,7 +19,7 @@ What is Yenten Coin?
 
 ----------------
 
-![screenshot](https://raw.githubusercontent.com/yentencoin/yenten/yenten-5.0.0/docs/screen.png)
+![screenshot](https://github.com/user-attachments/assets/3c5e67bc-8515-49e1-8594-8ba02a91e329)
 ![](https://raw.githubusercontent.com/yentencoin/yenten/yenten-4.0.0/docs/images/header-teamwork.png)
 
 # Yenten is a cryptocurrency of the cpu, by the cpu, for the cpu.
