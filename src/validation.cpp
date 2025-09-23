@@ -2078,34 +2078,34 @@ if (pindex->nHeight >= 2030000) {
   CAmount nCommunityAutonomousAmount 	= 10;
 	CAmount nSubsidy 							= GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus());
 	CAmount nCommunityAutonomousAmountValue		= nSubsidy*nCommunityAutonomousAmount/100;
-	/* Remove Log to console
-	LogPrintf("==>block.vtx[0]->vout[1].nValue:    %ld \n", block.vtx[0]->vout[1].nValue);
+//	/* Remove Log to console
+	LogPrintf("==>block.vtx[0]->vout[0].nValue:    %ld \n", block.vtx[0]->vout[0].nValue);
 	LogPrintf("==>nCommunityAutonomousAmountValue: %ld \n", nCommunityAutonomousAmountValue);
-	LogPrintf("==>block.vtx[0]->vout[1].scriptPubKey: %s \n", block.vtx[0]->vout[1].scriptPubKey[3]);
+	LogPrintf("==>block.vtx[0]->vout[0].scriptPubKey: %s \n", block.vtx[0]->vout[0].scriptPubKey[3]);
 	LogPrintf("==>GetCommunityAutonomousAddress:   %s \n", GetCommunityAutonomousAddress);
-	LogPrintf("==>scriptPubKeyCommunityAutonomous    Actual: %s \n", HexStr(block.vtx[0]->vout[1].scriptPubKey));
+	LogPrintf("==>scriptPubKeyCommunityAutonomous    Actual: %s \n", HexStr(block.vtx[0]->vout[0].scriptPubKey));
 	LogPrintf("==>scriptPubKeyCommunityAutonomous Should Be: %s \n", HexStr(scriptPubKeyCommunityAutonomous));
   
-  	LogPrintf("2==>block.vtx[0]->vout[2].nValue:    %ld \n", block.vtx[0]->vout[2].nValue);
+  	LogPrintf("2==>block.vtx[0]->vout[1].nValue:    %ld \n", block.vtx[0]->vout[1].nValue);
 	LogPrintf("2==>nCommunityAutonomousAmountValue: %ld \n", nCommunityAutonomousAmountValue);
-	LogPrintf("2==>block.vtx[0]->vout[2].scriptPubKey: %s \n", block.vtx[0]->vout[2].scriptPubKey[3]);
+	LogPrintf("2==>block.vtx[0]->vout[1].scriptPubKey: %s \n", block.vtx[0]->vout[1].scriptPubKey[3]);
 	LogPrintf("2==>GetCommunityAutonomousAddress:   %s \n", GetCommunityAutonomousAddress);
-	LogPrintf("2==>scriptPubKeyCommunityAutonomous    Actual: %s \n", HexStr(block.vtx[0]->vout[2].scriptPubKey));
+	LogPrintf("2==>scriptPubKeyCommunityAutonomous    Actual: %s \n", HexStr(block.vtx[0]->vout[1].scriptPubKey));
 	LogPrintf("2==>scriptPubKeyCommunityAutonomous Should Be: %s \n", HexStr(scriptPubKeyCommunityAutonomous));
   
-  	LogPrintf("3==>block.vtx[0]->vout[3].nValue:    %ld \n", block.vtx[0]->vout[3].nValue);
+  	LogPrintf("3==>block.vtx[0]->vout[2].nValue:    %ld \n", block.vtx[0]->vout[2].nValue);
 	LogPrintf("3==>nCommunityAutonomousAmountValue: %ld \n", nCommunityAutonomousAmountValue);
-	LogPrintf("3==>block.vtx[0]->vout[3].scriptPubKey: %s \n", block.vtx[0]->vout[3].scriptPubKey[3]);
+	LogPrintf("3==>block.vtx[0]->vout[2].scriptPubKey: %s \n", block.vtx[0]->vout[2].scriptPubKey[3]);
 	LogPrintf("3==>GetCommunityAutonomousAddress:   %s \n", GetCommunityAutonomousAddress);
-	LogPrintf("3==>scriptPubKeyCommunityAutonomous    Actual: %s \n", HexStr(block.vtx[0]->vout[3].scriptPubKey));
+	LogPrintf("3==>scriptPubKeyCommunityAutonomous    Actual: %s \n", HexStr(block.vtx[0]->vout[2].scriptPubKey));
 	LogPrintf("3==>scriptPubKeyCommunityAutonomous Should Be: %s \n", HexStr(scriptPubKeyCommunityAutonomous));
-	*/
+//	*/
 	//Check 10% Amount
   bool found_commAmountValue = false;
   for (size_t o = 0; o < block.vtx[0]->vout.size(); o++) {
     if (block.vtx[0]->vout[o].nValue == nCommunityAutonomousAmountValue) {
     		found_commAmountValue = true;
-        //LogPrintf("found_commAmountValue = OK | vout: %ld \n", o);
+        LogPrintf("found_commAmountValue = OK | vout: %ld \n", o);
         break;
     	}
   }
@@ -2118,9 +2118,9 @@ if (pindex->nHeight >= 2030000) {
 	//Check 10% Address
   bool found_commAddress = false;
   for (size_t o = 0; o < block.vtx[0]->vout.size(); o++) {
-    if (HexStr(block.vtx[0]->vout[1].scriptPubKey) != HexStr(scriptPubKeyCommunityAutonomous)) {
+    if (HexStr(block.vtx[0]->vout[o].scriptPubKey) == HexStr(scriptPubKeyCommunityAutonomous)) {
     		found_commAddress = true;
-        //LogPrintf("found_commAddress = OK | vout: %ld \n", o);
+        LogPrintf("found_commAddress = OK | vout: %ld \n", o);
         break;
     	}
   }
