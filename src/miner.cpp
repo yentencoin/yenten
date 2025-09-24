@@ -156,28 +156,27 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
     coinbaseTx.vin[0].prevout.SetNull();
     
 	
-//start 6.1  
-  //vout
-	CAmount nSubsidy 					= GetBlockSubsidy(nHeight, chainparams.GetConsensus());
-	//CAmount nCommunityAutonomousAmount 	= GetParams().CommunityAutonomousAmount();
-  CAmount nCommunityAutonomousAmount 	= 10;
+    //start 6.1  
+    //vout
+    CAmount nSubsidy = GetBlockSubsidy(nHeight, chainparams.GetConsensus());
+    CAmount nCommunityAutonomousAmount = 10;
 
-    coinbaseTx.vout.resize(2);
+    coinbaseTx.vout.resize(1);
+
     coinbaseTx.vout[0].scriptPubKey = scriptPubKeyIn;
-    coinbaseTx.vout[0].nValue = nFees + ( (100-nCommunityAutonomousAmount) * nSubsidy / 100 );
+    coinbaseTx.vout[0].nValue = nFees + nSubsidy;
 
-    // Assign the set % in chainparams.cpp to the TX
-  //std::string  GetCommunityAutonomousAddress 	= GetParams().CommunityAutonomousAddress();
-  std::string  GetCommunityAutonomousAddress 	= "YentenDWKCJPE9GVN48ecgW7j73xKN4PW7";
+    if(nHeight >= 2029999) {
+	coinbaseTx.vout.resize(2);
+
+	coinbaseTx.vout[0].nValue -= nSubsidy*nCommunityAutonomousAmount/100;
+
+	std::string  GetCommunityAutonomousAddress 	= "YentenDWKCJPE9GVN48ecgW7j73xKN4PW7";
 	CTxDestination destCommunityAutonomous = DecodeDestination(GetCommunityAutonomousAddress);
-    if (!IsValidDestination(destCommunityAutonomous)) {
-		LogPrintf("IsValidDestination: Invalid YTN address %s \n", GetCommunityAutonomousAddress);
-    }
-    // We need to parse the address ready to send to it
-    CScript scriptPubKeyCommunityAutonomous = GetScriptForDestination(destCommunityAutonomous);
+	CScript scriptPubKeyCommunityAutonomous = GetScriptForDestination(destCommunityAutonomous);
 	
-    coinbaseTx.vout[1].scriptPubKey = scriptPubKeyCommunityAutonomous;
-    coinbaseTx.vout[1].nValue = nSubsidy*nCommunityAutonomousAmount/100;
+	coinbaseTx.vout[1].scriptPubKey = scriptPubKeyCommunityAutonomous;
+	coinbaseTx.vout[1].nValue = nSubsidy*nCommunityAutonomousAmount/100;
   	LogPrintf("nSubsidy: ====================================================\n");
   	LogPrintf("Miner: %ld \n", coinbaseTx.vout[0].nValue);
   	LogPrintf("scriptPubKeyIn: %s \n", HexStr(scriptPubKeyIn));
@@ -185,11 +184,9 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
   	LogPrintf("GetCommunityYTNAddress: %s \n", GetCommunityAutonomousAddress);
   	LogPrintf("scriptPubKeyCommunityAutonomous: %s \n", HexStr(scriptPubKeyCommunityAutonomous));
   	LogPrintf("nCommunityAutonomousAmount: %ld \n", coinbaseTx.vout[1].nValue);
-    coinbaseTx.vin[0].scriptSig = CScript() << nHeight << OP_0;
-
-//end 6.1
-  
-    
+	coinbaseTx.vin[0].scriptSig = CScript() << nHeight << OP_0;
+    }
+    //end 6.1
     
     //coinbaseTx.vout.resize(1);
     //coinbaseTx.vout[0].scriptPubKey = scriptPubKeyIn;

@@ -22,6 +22,7 @@
 #include <unistd.h> // for sysconf
 #endif
 
+#include <stdexcept>
 #include <algorithm>
 
 LockedPoolManager* LockedPoolManager::_instance = nullptr;
