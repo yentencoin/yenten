@@ -162,12 +162,15 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
 	//CAmount nCommunityAutonomousAmount 	= GetParams().CommunityAutonomousAmount();
   CAmount nCommunityAutonomousAmount 	= 10;
 
-    coinbaseTx.vout.resize(2);
+//    coinbaseTx.vout.resize(2);
     coinbaseTx.vout[0].scriptPubKey = scriptPubKeyIn;
     coinbaseTx.vout[0].nValue = nFees + ( (100-nCommunityAutonomousAmount) * nSubsidy / 100 );
 
     // Assign the set % in chainparams.cpp to the TX
   //std::string  GetCommunityAutonomousAddress 	= GetParams().CommunityAutonomousAddress();
+
+if(nHeight >= 2029999) {
+    coinbaseTx.vin.resize(2);
   std::string  GetCommunityAutonomousAddress 	= "YentenDWKCJPE9GVN48ecgW7j73xKN4PW7";
 	CTxDestination destCommunityAutonomous = DecodeDestination(GetCommunityAutonomousAddress);
     if (!IsValidDestination(destCommunityAutonomous)) {
@@ -186,7 +189,7 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
   	LogPrintf("scriptPubKeyCommunityAutonomous: %s \n", HexStr(scriptPubKeyCommunityAutonomous));
   	LogPrintf("nCommunityAutonomousAmount: %ld \n", coinbaseTx.vout[1].nValue);
     coinbaseTx.vin[0].scriptSig = CScript() << nHeight << OP_0;
-
+}
 //end 6.1
   
     
