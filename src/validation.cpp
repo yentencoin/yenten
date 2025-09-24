@@ -2078,7 +2078,7 @@ if (pindex->nHeight >= 2030000) {
   CAmount nCommunityAutonomousAmount 	= 10;
 	CAmount nSubsidy 							= GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus());
 	CAmount nCommunityAutonomousAmountValue		= nSubsidy*nCommunityAutonomousAmount/100;
-//	/* Remove Log to console
+	/* Remove Log to console
 	LogPrintf("==>block.vtx[0]->vout[0].nValue:    %ld \n", block.vtx[0]->vout[0].nValue);
 	LogPrintf("==>nCommunityAutonomousAmountValue: %ld \n", nCommunityAutonomousAmountValue);
 	LogPrintf("==>block.vtx[0]->vout[0].scriptPubKey: %s \n", block.vtx[0]->vout[0].scriptPubKey[3]);
@@ -2099,29 +2099,29 @@ if (pindex->nHeight >= 2030000) {
 	LogPrintf("3==>GetCommunityAutonomousAddress:   %s \n", GetCommunityAutonomousAddress);
 	LogPrintf("3==>scriptPubKeyCommunityAutonomous    Actual: %s \n", HexStr(block.vtx[0]->vout[2].scriptPubKey));
 	LogPrintf("3==>scriptPubKeyCommunityAutonomous Should Be: %s \n", HexStr(scriptPubKeyCommunityAutonomous));
-//	*/
+	*/
 	//Check 10% Amount
   bool found_commAddress = false;
   bool found_commAmountValue = false;
   for (size_t o = 0; o < block.vtx[0]->vout.size(); o++) {
     if (HexStr(block.vtx[0]->vout[o].scriptPubKey) == HexStr(scriptPubKeyCommunityAutonomous)) {
     	found_commAddress = true;
-        LogPrintf("found_commAddress = OK | vout: %ld \n", o);
+//        LogPrintf("found_commAddress = OK | vout: %ld \n", o);
         if (block.vtx[0]->vout[o].nValue <= nCommunityAutonomousAmountValue) {
     	    found_commAmountValue = true;
-            LogPrintf("found_commAmountValue = OK | vout: %ld \n", o);
+//            LogPrintf("found_commAmountValue = OK | vout: %ld \n", o);
             break;
     	}
     }
   }
   if (!found_commAddress) {
         return state.DoS(100,
-            error("ConnectBlock(): coinbase Community Autonomous Address Is Invalid. Actual: %s Should Be: %s \n",HexStr(block.vtx[0]->vout[1].scriptPubKey), HexStr(scriptPubKeyCommunityAutonomous)),
+            error("ConnectBlock(): coinbase Community Autonomous Address Is Invalid\n"),
             REJECT_INVALID, "bad-cb-community-autonomous-address");  
   }    
   if (!found_commAmountValue) {
         return state.DoS(100,
-            error("ConnectBlock(): coinbase Community Autonomous Amount Is Invalid. Actual: %ld Should be:%ld ",block.vtx[0]->vout[1].nValue, nCommunityAutonomousAmountValue),
+            error("ConnectBlock(): coinbase Community Autonomous Amount Is Invalid\n"),
             REJECT_INVALID, "bad-cb-community-autonomous-amount");  
   }
 //end 6.1
