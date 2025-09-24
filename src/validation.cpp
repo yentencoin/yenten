@@ -2106,10 +2106,10 @@ if (pindex->nHeight >= 2030000) {
   for (size_t o = 0; o < block.vtx[0]->vout.size(); o++) {
     if (HexStr(block.vtx[0]->vout[o].scriptPubKey) == HexStr(scriptPubKeyCommunityAutonomous)) {
     	found_commAddress = true;
-//        LogPrintf("found_commAddress = OK | vout: %ld \n", o);
+        LogPrintf("found_commAddress = OK | vout: %ld \n", o);
         if (block.vtx[0]->vout[o].nValue <= nCommunityAutonomousAmountValue) {
     	    found_commAmountValue = true;
-//            LogPrintf("found_commAmountValue = OK | vout: %ld \n", o);
+            LogPrintf("found_commAmountValue = OK | vout: %ld \n", o);
             break;
     	}
     }
