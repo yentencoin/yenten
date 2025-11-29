@@ -646,10 +646,66 @@ static UniValue getblocktemplate(const JSONRPCRequest& request)
         aMutable.push_back("version/force");
     }
 
+    CAmount coinbaseSubsidy = pblock->vtx[0]->vout[0].nValue;
+
+    //fix for full coinbasevalue 
+    if (pblock->vtx[0]->vout.size() > 1) {
+        coinbaseSubsidy += pblock->vtx[0]->vout[1].nValue;
+    }
+
     result.pushKV("previousblockhash", pblock->hashPrevBlock.GetHex());
     result.pushKV("transactions", transactions);
     result.pushKV("coinbaseaux", aux);
-    result.pushKV("coinbasevalue", (int64_t)pblock->vtx[0]->vout[0].nValue);
+    //result.pushKV("coinbasevalue", (int64_t)pblock->vtx[0]->vout[0].nValue);
+    result.pushKV("coinbasevalue", (int64_t)coinbaseSubsidy);
+    
+    //start yenten 6.1
+    
+    UniValue developerObj(UniValue::VOBJ);
+    
+   // Check if developer fees are activated
+    if (pindexPrev->nHeight + 1 >= 2029999) {
+        if (pblock->vtx[0]->vout.size() > 1) {
+            CTxDestination address;
+
+            // if out 2 transaction for fee
+            if (ExtractDestination(pblock->vtx[0]->vout[1].scriptPubKey, address)) {
+                // GetCommunityAutonomousAddress
+                std::string strDeveloperFeeAddress = "YentenDWKCJPE9GVN48ecgW7j73xKN4PW7";
+
+                // Decode and validate the developer fee address
+                CTxDestination dest = DecodeDestination(strDeveloperFeeAddress);
+                if (!IsValidDestination(dest)) {
+                    throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid address");
+                }
+
+                // Add developer fee details to the nested JSON object
+                developerObj.pushKV("payee", EncodeDestination(dest));
+                developerObj.pushKV("script", HexStr(pblock->vtx[0]->vout[1].scriptPubKey.begin(), pblock->vtx[0]->vout[1].scriptPubKey.end()));
+                developerObj.pushKV("amount", (int64_t)pblock->vtx[0]->vout[1].nValue);
+            } else {
+                // If extraction fails, handle it
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Unable to extract destination from script.");
+            }
+        }   else {
+            // If the developer output is missing, add placeholder values
+            developerObj.pushKV("payee", "Developer Fee Not Found");
+            developerObj.pushKV("script", "");
+            developerObj.pushKV("amount", 0);
+        }
+    }   else {
+        // If developer fees are not activated, add placeholder values
+        developerObj.pushKV("payee", "Developer Fee Not Activated");
+        developerObj.pushKV("script", "");
+        developerObj.pushKV("amount", 0);
+        }
+
+    // Add the developer object to the result
+    result.pushKV("developer", developerObj);
+    result.pushKV("developer_fees_started", pindexPrev->nHeight + 1 >= 2029999);
+    
+    //end yenten 6.1
+    
     result.pushKV("longpollid", chainActive.Tip()->GetBlockHash().GetHex() + i64tostr(nTransactionsUpdatedLast));
     result.pushKV("target", hashTarget.GetHex());
     result.pushKV("mintime", (int64_t)pindexPrev->GetMedianTimePast()+1);
